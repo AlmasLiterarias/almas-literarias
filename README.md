@@ -60,6 +60,6 @@ Resumindo:
 
 ## Autor
 
-Desenvolvido por **Sarah Neves, Maria Angélica e Julia Dias**
+Desenvolvido por **Sarah Neves, Maria Angélica, Júlia Dias e Anny Letícia**
 
 Turma de Tecnologia em Informártica para Internet do Vespertivo - Senac DF
