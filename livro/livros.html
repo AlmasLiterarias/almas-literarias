@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-custom navbar-expand-lg navbar-dark px-3">
+            <a class="logolight" href="#">
+                <img src="./imagens/logoescuro.png" alt="logo do site">
+            </a>
+            <a class="logodark" href="#">
+                <img src="./imagens/logoclaro.png" alt="logo do site">
+            </a>
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+                <div class=" container-xl">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"> </span>
+                    </button>
+                </div>
+            </nav>
+
+
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#carouselFinancas"> Início </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lançamentos"> Lançamentos </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destaques"> Destaques </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato"> Contato </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#longin"> Longin </a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#contato"> Carrinho </a></li> -->
+                    <div class="cart-icon" id="cartBtn">
+                        🛒 <span id="cartCount">0</span>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <button id="themeToggle" aria-pressed="false" aria-label="Ativar modo escuro">
+            <img id="theme-icon" src="./imagens/Jerlucitchau.png" alt="Modo escuro">
+
+            <!-- Ativar modo escuro -->
+        </button>
+    </header>
+    <main>
+        <section>
+            <div class="produto">
+                <img src="./imagens/não precisa.jpg">
+                <div class="infos-produto">
+                    <div class="descricao">
+                        <h2>Sou Tudo Que Você (Não) Precisa - Volume único</h2>
+                        <p>por: V.S. VILELA</p>
+                    </div>
+                    <div class="avaliacao">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                    </div>
+
+                    <!-- <p id="nota">Nota: 0</p> -->
+                    <div class="card-preco">
+                        <p class="preco"><strong>R$ 99,00</strong></p>
+                        <input type="number" placeholder="qtd">
+                        <button class="add-to-cart">comprar</button>
+                    </div>
+                    <div class="sinopse">
+                        <p>Agatha Ballard é uma herdeira milionária de um império hoteleiro em Las Vegas — mimada, rica,
+                            acostumada a
+                            festas, luxo e a nunca encarar consequências.
+                            Em uma noite de bebedeira, ela sofre um acidente ao dirigir alcoolizada: colide seu carro de
+                            luxo contra uma
+                            viatura da polícia. Quem está na viatura é Zara Scott — policial competente, responsável,
+                            séria,
+                            e
+                            precisamente o oposto de Agatha.
+                            Embora o dinheiro de Agatha possa pagar a fiança, ela também é condenada a prestar serviço
+                            comunitário — e
+                            será vigiada de perto por Zara. A riquinha terá que limpar banheiros, esfregar chão, lidar
+                            com a
+                            humilhação
+                            de sua nova rotina e com Zara, que será sua supervisora.
+                            No meio desse confronto, entre provocações, farpas e resistências mútuas, surge algo
+                            inesperado:
+                            um desejo,
+                            uma atração, uma conexão que nenhuma das duas enxergava — e que ambas terão que encarar.
+                            Elas
+                            aprendem que
+                            amar não é o mesmo que precisar de alguém, mas sim querer alguém — com todas as diferenças,
+                            forças e
+                            fraquezas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 AlmasLiterárias - Todos os direitos reservados</p>
+        <div>
+            <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </footer>
+    <!-- Modal do Carrinho -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-content">
+            <h2>Seu Carrinho 🛒</h2>
+            <ul id="cartItems"></ul>
+            <p><strong>Total:</strong> <span id="cartTotal">R$ 0,00</span></p>
+            <button id="closeCart" class="close">x</button>
+            <button id="checkout">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
