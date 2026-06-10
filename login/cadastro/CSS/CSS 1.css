@@ -1,0 +1,44 @@
+*{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+}
+
+body{
+    background-color: rgb(193, 163, 232);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form{
+    background-color: crimson;
+    padding: 1.25rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+label{
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+
+
+button{
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 5px;
+    color: black;
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    word-break: break-all;
+    margin: 10px;
+    gap: 10px;
+}
+

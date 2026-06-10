@@ -446,6 +446,11 @@ main .produto p {
 /*Mobile/////////////////////////////////////////////////*/
 
 @media screen and (max-width: 768px) {
+  
+  header .navbar a.logolight img,
+  header .navbar a.logodark img {
+    width: 100px;
+  }
 
   .desktop {
     display: none;
