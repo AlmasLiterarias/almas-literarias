@@ -112,10 +112,17 @@ nav #navbarNav {
   display: none;
 }
 
-.light div#carouselDark {
+.light div#carouselDark-Mobile {
   display: none;
 }
 
+.dark div#carouselLight-Mobile {
+  display: none;
+}
+
+.light div#carouselDark {
+  display: none;
+}
 
 div#carouselLight .carousel-inner .carousel-item.align-items-center.justify-content-center img,
 div#carouselDark .carousel-inner .carousel-item.align-items-center.justify-content-center img {
@@ -398,7 +405,7 @@ header {
   vertical-align: middle;
   height: 300px;
   position: absolute;
-  left: 0;
+  left: 70px;
 
 }
 
