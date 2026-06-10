@@ -388,14 +388,14 @@ main .produto {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 50px auto;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .infos-produto{
   display: flex;
   flex-direction: column;
   margin: 80px 0;
-  width: 100%;
+  width: 900px;
 }
 
 .produto img {
