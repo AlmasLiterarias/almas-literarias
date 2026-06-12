@@ -133,7 +133,7 @@ section {
 
 .sinopse{
   display: flex;
-  padding: 0 12px;
+  padding: 12px;
   font-size: 20px;
   width: 80%;
 }
@@ -421,6 +421,7 @@ main .produto p {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  padding: 10px 40px;
 }
 
 .card-preco input{
@@ -431,12 +432,16 @@ main .produto p {
 
 /* AVALIAÇÃO ///////////////////////////////////////////////*/
 
+.avaliacao{
+  padding-left: 40px;
+}
+
 .avaliacao span {
-  font-size: 40px;
+  font-size: 20px;
   cursor: pointer;
   color: gray;
-   padding: 5px; 
-   margin-left: 25px;
+   padding: 0; 
+   margin-left: 0;
 }
 
 .avaliacao span.ativo {
