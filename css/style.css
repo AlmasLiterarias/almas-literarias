@@ -46,21 +46,22 @@ button#themeToggle {
   background-color: transparent;
   border: none;
 }
-.navbar-custom .navbar-toggler{
+
+.navbar-custom .navbar-toggler {
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
-  .navbar-toggler-icon {
-    /* display: inline-block; */
-    width: 1.5em;
-    height: 1.5em;
-    /* vertical-align: middle; */
-    background-image: var(--bs-navbar-toggler-icon-bg);
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
-    /* background-size: 100%; */
+.navbar-toggler-icon {
+  /* display: inline-block; */
+  width: 1.5em;
+  height: 1.5em;
+  /* vertical-align: middle; */
+  background-image: var(--bs-navbar-toggler-icon-bg);
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* background-size: 100%; */
 }
 
 #themeToggle img {
@@ -221,6 +222,9 @@ p {
   cursor: pointer;
   position: relative;
   font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #cartCount {
@@ -232,6 +236,7 @@ p {
   position: absolute;
   top: -8px;
   right: -10px;
+  display: flex;
 }
 
 .product-list {
@@ -478,7 +483,7 @@ header {
 
 #contato .formulario .btn:hover {
   transform: scale(1.1);
- 
+
 }
 
 .formulario .btn:hover {
@@ -524,16 +529,17 @@ header .navbar a.logodark img {
   width: 100px;
 }
 
-bg-dark{
+bg-dark {
   width: 100%;
 }
 
 @media screen and (max-width: 768px) {
-  .navbar-custom .navbar-toggler{
+  .navbar-custom .navbar-toggler {
     position: absolute;
     top: 10px;
     right: 10px;
   }
+
   .card img {
     width: 100%;
     height: 350px;
@@ -613,12 +619,12 @@ bg-dark{
     border-radius: 10px;
     gap: 10px;
   }
-  
+
   #contato .jerluci img {
-  vertical-align: middle;
-  height: 300px;
-  position: unset;
-  left: unset;
+    vertical-align: middle;
+    height: 300px;
+    position: unset;
+    left: unset;
   }
 
   #contato .infos-contato h2 {
@@ -650,7 +656,7 @@ bg-dark{
     height: 120px;
     width: 100px;
     right: 0px;
-    }
+  }
 
   hr {
     margin: 2px;
@@ -661,13 +667,14 @@ bg-dark{
   #contato .jerluci img {
     height: 150px;
   }
-/* 
+
+  /* 
   footer.bg-dark.text-white.text-center.py-3 {
     width: 100%; */
 
   #contato {
     width: 100%;
-    }
+  }
 
   #contato .infos-contato ul {
     list-style: none;
