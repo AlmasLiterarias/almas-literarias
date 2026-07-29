@@ -98,29 +98,6 @@ function updateCart() {
   cartCount.textContent = totalItems;
 }
 
-// Adiciona item ao carrinho
-addToCartBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const card = btn.closest('.card');
-    const name = card.querySelector('h5').textContent.trim();
-
-    // Extrai preço do texto (ex: "R$ 39,80" → 39.80)
-    const priceText = card.querySelector('.botao p strong').textContent.replace(/[^\d,]/g, '').replace(',', '.');
-    const price = parseFloat(priceText);
-
-    if (isNaN(price)) return alert('Erro ao ler o preço do produto.');
-
-    const existing = cart.find(item => item.name === name);
-    if (existing) {
-      existing.quantity++;
-    } else {
-      cart.push({ name, price, quantity: 1 });
-    }
-
-    updateCart();
-  });
-});
-
 // Remover item
 cartItemsList.addEventListener('click', (e) => {
   if (e.target.classList.contains('remove')) {

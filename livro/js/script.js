@@ -74,8 +74,8 @@ function updateCart() {
 // Adiciona item ao carrinho
 addToCartBtns.forEach(btn => {
   btn.addEventListener('click', () => {
-    const card = btn.closest('.card');
-    const name = card.querySelector('h5').textContent.trim();
+    const card = btn.closest('.infos-produto');
+    const name = card.querySelector('h2').textContent.trim();
 
     // Extrai preço do texto (ex: "R$ 39,80" → 39.80)
     const priceText = card.querySelector('.botao p strong').textContent.replace(/[^\d,]/g, '').replace(',', '.');
