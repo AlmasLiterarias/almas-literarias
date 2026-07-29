@@ -6,20 +6,20 @@ function enableDarkMode() {
   root.classList.add('dark');
   root.classList.remove('light');
   btn.setAttribute('aria-pressed', 'true');
-  const icon = document.getElementById('theme-icon');
-  icon.src = '../imagens/Jerluciacordando.png';
-  // btn.textContent = '🌞';
-  // btn.setAttribute('aria-label', 'Desativar modo escuro');
+  // const icon = document.getElementById('theme-icon');
+  // icon.src = '../imagens/Jerluciacordando.png';
+  btn.textContent = '🌞';
+  btn.setAttribute('aria-label', 'Desativar modo escuro');
 }
 
 function disableDarkMode() {
   root.classList.remove('dark');
   root.classList.add('light');
   btn.setAttribute('aria-pressed', 'false');
-  const icon = document.getElementById('theme-icon');
-  icon.src = '../imagens/Jerlucidormindo.png';
-  // btn.textContent = '🌜';
-  // btn.setAttribute('aria-label', 'Ativar modo escuro');
+  // const icon = document.getElementById('theme-icon');
+  // icon.src = '../imagens/Jerlucidormindo.png';
+  btn.textContent = '🌜';
+  btn.setAttribute('aria-label', 'Ativar modo escuro');
 }
 
 // =================AVALIAÇÃO========================
