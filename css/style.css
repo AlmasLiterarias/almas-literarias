@@ -245,11 +245,12 @@ li.nav-item {
 #cartCount {
   background: white;
   color: #8b75c0;
-  border-radius: 50%;
+  border-radius: 25%;
   padding: 0.1rem 0.5rem;
   font-weight: bold;
   display: flex;
-  width: 60px;
+  min-width: 60px;
+  width: auto;
   height: 60px;
   align-items: center;
   justify-content: center;
