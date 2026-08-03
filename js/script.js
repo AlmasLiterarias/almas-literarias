@@ -78,7 +78,6 @@ if (estrelas.length > 0 && nota) {
       for (let i = 0; i < valor; i++) {
         estrelas[i].classList.add("ativo");
       }
-
       nota.textContent = "Nota: " + valor;
     });
   });
