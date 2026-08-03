@@ -47,7 +47,7 @@ button#themeToggle {
   border-radius: 30px;
   border: 10px solid #0000001f;
   padding: 10px;
-  margin: 20px;
+  margin: 2px;
 }
 
 .navbar-custom .navbar-toggler {
@@ -207,7 +207,7 @@ p {
   position: relative;
   bottom: 5px;
   margin-left: 10px;
-  border-bottom: 1px solid rgba(216, 194, 0, 0.918);
+  border-bottom: 1px solid rgb(86, 15, 134);
   flex-grow: 1;
   content: "";
 }
