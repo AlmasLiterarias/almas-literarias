@@ -46,7 +46,7 @@ button#themeToggle {
   background-color: transparent;
   border-radius: 30px;
   border: 10px solid #0000001f;
-  padding: 5px;
+  padding: 10px;
   margin: 20px;
 }
 
@@ -302,7 +302,7 @@ li.nav-item {
   transform: scale(0.95);
 }
 
-/* Modal do carrinho */
+/*/////////////////////////////////////// Modal do carrinho //////////////////////////////////////////////////////*/
 .cart-modal {
   display: none;
   position: fixed;
@@ -550,7 +550,33 @@ bg-dark {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+.carousel-control-next {
+  right: -120px;
+}
+
+.carousel-control-prev {
+  left: -120px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 60%;
+  border-radius: 100%;
+  background-color: rgba(216, 194, 0, 0.918);
+}
+
+@media screen and (max-width: 768px) { /*/////////////////////////////////MOBILE//////////////////////////*/
+  .carousel-control-next {
+    right: 0;
+  }
+
+  .carousel-control-prev {
+    left: 0;
+  }
   .navbar-custom .navbar-toggler {
     position: absolute;
     top: 10px;
@@ -637,6 +663,11 @@ bg-dark {
     gap: 10px;
   }
 
+button#themeToggle {
+  padding: 5px;
+  margin: 0px;
+}
+
   #contato .jerluci img {
     vertical-align: middle;
     height: 300px;
@@ -653,6 +684,7 @@ bg-dark {
   .contatoInfos {
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
 
   .infos-contato {

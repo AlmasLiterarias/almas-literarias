@@ -1,4 +1,5 @@
-// ========== MODO ESCURO ==========
+// ========== MODO ESCURO ========== //////////////////////////////////////////////////////
+
 const btn = document.getElementById('themeToggle');
 const root = document.documentElement;
 
@@ -38,7 +39,8 @@ if (window.matchMedia) {
 initThemeFromSystem();
 
 
-// ========== CARRINHO ==========
+// ========== CARRINHO ========== ////////////////////////////////////////////////////
+
 const addToCartBtns = document.querySelectorAll('.add-to-cart, .botao button'); // garante que todos "Comprar" funcionem
 const cartBtn = document.getElementById('cartBtn');
 const cartModal = document.getElementById('cartModal');
@@ -49,7 +51,8 @@ const cartTotal = document.getElementById('cartTotal');
 
 let cart = [];
 
-// Atualiza carrinho visualmente
+// Atualiza carrinho visualmente //////////////////////////////////////////////////////
+
 function updateCart() {
   cartItemsList.innerHTML = '';
 
@@ -71,13 +74,15 @@ function updateCart() {
   cartCount.textContent = totalItems;
 }
 
-// Adiciona item ao carrinho
+// Adiciona item ao carrinho ///////////////////////////////////////////////////////////////
+
 addToCartBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     const card = btn.closest('.card');
     const name = card.querySelector('h5').textContent.trim();
 
-    // Extrai preço do texto (ex: "R$ 39,80" → 39.80)
+    // Extrai preço do texto (ex: "R$ 39,80" → 39.80) ///////////////////////////////////
+
     const priceText = card.querySelector('.botao p strong').textContent.replace(/[^\d,]/g, '').replace(',', '.');
     const price = parseFloat(priceText);
 
@@ -94,7 +99,8 @@ addToCartBtns.forEach(btn => {
   });
 });
 
-// Remover item
+// Remover item ////////////////////////////////////////////////////////////////////////
+
 cartItemsList.addEventListener('click', (e) => {
   if (e.target.classList.contains('remove')) {
     const index = e.target.dataset.index;
@@ -103,7 +109,8 @@ cartItemsList.addEventListener('click', (e) => {
   }
 });
 
-// Abrir / fechar carrinho
+// Abrir / fechar carrinho //////////////////////////////////////////////////////////////
+
 cartBtn.addEventListener('click', () => {
   cartModal.classList.add('active');
 });
@@ -112,7 +119,8 @@ closeCart.addEventListener('click', () => {
   cartModal.classList.remove('active');
 });
 
-// Finalizar compra
+// Finalizar compra /////////////////////////////////////////////////////////////////////
+
 document.getElementById('checkout').addEventListener('click', () => {
   if (cart.length === 0) {
     alert('Seu carrinho está vazio!');
