@@ -26,6 +26,14 @@ body {
   flex-direction: column;
 }
 
+.nav-link {
+    color: rgb(86, 15, 134);
+  }
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: rgb(86, 15, 134);
+}
+
 .topbar {
   display: flex;
   justify-content: space-between;
