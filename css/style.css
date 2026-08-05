@@ -26,12 +26,28 @@ body {
   flex-direction: column;
 }
 
-.nav-link {
+.light .nav-link {
     color: rgb(86, 15, 134);
   }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.light .nav-link:hover{ 
+  color: rgb(131, 56, 181);
+}
+
+.light .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: rgb(86, 15, 134);
+}
+
+.dark .nav-link {
+    color: #d4b455;
+  }
+
+.dark .nav-link:hover{ 
+  color: #ffe79e;
+}
+
+.dark .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: #d4b455;
 }
 
 .topbar {
@@ -225,14 +241,14 @@ li.nav-item {
   align-items: center;
 }
 
-.topbar {
+/* .topbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #ff6699;
   color: white;
   padding: 1rem;
-}
+} */
 
 .cart-icon {
   cursor: pointer;
