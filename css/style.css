@@ -299,11 +299,11 @@ div#carouselDark .carousel-inner .carousel-item.align-items-center.justify-conte
 }
 
 .carousel-control-next{
-  left:-120px;
+  right:-120px;
 }
 
 .carousel-control-prev{
-  right:-120px;
+  left:-120px;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -598,25 +598,18 @@ section {
   padding-bottom: .5rem;
 }
 
-#cartCount {
-  /* background: white;
-  color: #46427e;
-  border-radius: 50%;
-  padding: 0.1rem 0.5rem;
-  font-weight: bold;
-  position: absolute;
-  top: -8px;
-  right: -10px; */
-  background: white;
-  color: #8b75c0;
-  border-radius: 50%;
-  padding: 0.1rem 0.5rem;
-  font-weight: bold;
-  display: flex;
-  width: 40px;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
+  #cartCount {
+    background: white;
+    color: #8b75c0;
+    border-radius: 25%;
+    padding: 0.1rem 0.5rem;
+    font-weight: bold;
+    display: flex;
+    min-width: 60px;
+    width: auto;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
 }
 
 .cart-content h2 {
