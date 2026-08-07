@@ -1018,8 +1018,8 @@ bg-dark {
     display: block;
   }
 
-mg.logo {
-    width: 70px;
+  .logo {
+    width: 100px;
   }
 
   img {
@@ -1190,7 +1190,7 @@ hr {
 
   header .navbar a.logolight img,
   header .navbar a.logodark img {
-    width: 70px;
+    width: 90px;
     height: auto;
   }
 
@@ -1259,5 +1259,11 @@ hr {
   flex-direction: row;
   justify-content: space-evenly;
   }
+
+/*////////////////////////////PÁGINA INTERNA//////////////////////////////*/
+
+.infos-produto {
+    margin: 10px 0;
+}
 
 }
