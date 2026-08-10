@@ -861,10 +861,10 @@ button#checkout {
 
 main .produto {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: row-reverse;
+    flex-wrap: wrap;
   margin: 50px auto;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .infos-produto{
@@ -875,12 +875,12 @@ main .produto {
 }
 
 .produto img {
-  padding: 80px;
-  width: auto;
+ padding: 15px 80px;
+    width: 650px;
     height: 100%;
     max-width: 100%;
     max-height: 900px;
-    border-radius: 100px;
+    border-radius: 85px;
 }
 
 main .produto .descricao {
@@ -987,6 +987,46 @@ bg-dark {
   background: #010326;
   color: #d4b455;
   position: relative;
+}
+
+/* ==========================================================
+   19. CARROSEL DE PRODUTOS
+========================================================== */
+
+.miniaturas {
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+.thumb {
+    /*width: 80px;*/
+    height: 250px;
+
+    object-fit: cover;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+
+    opacity: 0.7;
+
+    transition: 0.3s;
+}
+
+.thumb:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.thumb.ativa {
+    opacity: 1;
+    border: 2px solid #d4b455;
 }
 
 /* ==========================================================

@@ -5,32 +5,32 @@ const root = document.documentElement;
 function enableDarkMode() {
   root.classList.add('dark');
   root.classList.remove('light');
- 
+
   if (btn) {
     btn.setAttribute('aria-pressed', 'true');
     btn.textContent = '🌞';
     btn.setAttribute('aria-label', 'Desativar modo escuro');
   }
- 
+
   localStorage.setItem('theme', 'dark');
 }
 
 function disableDarkMode() {
   root.classList.remove('dark');
   root.classList.add('light');
- 
+
   if (btn) {
     btn.setAttribute('aria-pressed', 'false');
     btn.textContent = '🌜';
     btn.setAttribute('aria-label', 'Ativar modo escuro');
   }
- 
+
   localStorage.setItem('theme', 'light');
 }
 
 function checkThemePreference() {
   const savedTheme = localStorage.getItem('theme');
- 
+
   if (savedTheme === 'dark') {
     enableDarkMode();
   } else if (savedTheme === 'light') {
@@ -98,7 +98,7 @@ let cart = JSON.parse(localStorage.getItem('livraria_cart')) || [];
 addToCartBtns.forEach(button => {
   button.addEventListener('click', (event) => {
     const card = event.target.closest('.card, .infos-produto');
-   
+
     if (card) {
       const inputQtd = card.querySelector('input[type="number"]');
       let quantidadeDesejada = 1;
@@ -120,15 +120,15 @@ addToCartBtns.forEach(button => {
       const precoNumerico = parseFloat(precoTexto.replace('R$', '').replace(',', '.').trim());
 
       const itemExistente = cart.find(item => item.name === nomeLivro);
-     
+
       if (itemExistente) {
         itemExistente.quantity += quantidadeDesejada;
       } else {
         cart.push({ name: nomeLivro, price: precoNumerico, quantity: quantidadeDesejada });
       }
-     
-      updateCart();      
-     
+
+      updateCart();
+
       if (inputQtd) {
         inputQtd.value = '';
       }
@@ -219,3 +219,46 @@ if (checkoutBtn) {
 }
 
 updateCart();
+
+/////////////////carroussel interno///////////////
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const imagemPrincipal = document.querySelector(".produto img");
+  const miniaturas = document.querySelectorAll(".miniaturas .thumb");
+
+  // Guarda a capa original
+  const capaOriginal = imagemPrincipal.src;
+
+  miniaturas.forEach(function (miniatura) {
+
+    miniatura.addEventListener("click", function () {
+
+      imagemPrincipal.src = miniatura.src;
+
+      miniaturas.forEach(function (imagem) {
+        imagem.classList.remove("ativa");
+      });
+
+      miniatura.classList.add("ativa");
+
+    });
+
+  });
+  const miniaturasContainer = document.getElementById("miniaturas");
+
+  document.getElementById("miniAnterior").addEventListener("click", function () {
+    miniaturasContainer.scrollBy({
+      left: -200,
+      behavior: "smooth"
+    });
+  });
+
+  document.getElementById("miniProximo").addEventListener("click", function () {
+    miniaturasContainer.scrollBy({
+      left: 200,
+      behavior: "smooth"
+    });
+  });
+
+});
