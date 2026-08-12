@@ -17,7 +17,7 @@
                 <img src="./imagens/logoescurodourada.png" alt="logo do site">
             </a>
             <a class="logodark" href="../index.html">
-                <img src="./imagens/logoclaro.png" alt="logo do site" >
+                <img src="./imagens/logoclaro.png" alt="logo do site">
             </a>
             <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
                 <div class=" container-xl">
@@ -48,37 +48,52 @@
         </button>
     </header>
     <main>
-        <section>
+        <section id="paginaProduto">
             <div class="produto">
-                <img src="./imagens/imperfeitos.jpg">
-                <div class="infos-produto">
-                    <div class="descricao">
-                        <h2>Imperfeitos - Volume único</h2>
-                        <p>por: Chistina Lauren</p>
-                    </div>
-                    <div class="avaliacao">
-                        <span data-value="1">★</span>
-                        <span data-value="2">★</span>
-                        <span data-value="3">★</span>
-                        <span data-value="4">★</span>
-                        <span data-value="5">★</span>
-                    </div>
-                    <div class="card-preco">
-                        <p class="preco"><strong>R$ 19,00</strong></p>
-                        <input type="number" placeholder="qtd" value="1">
-                        <button class="add-to-cart">comprar</button>
-                    </div>
-                    <div class="sinopse">
-                        <p>"Olive se sente como a “gêmea azarada” da família — dos acidentes estranhos à vida amorosa e
-                            profissional que nunca dá certo. Quando a irmã de Olive contrata um buffet para o casamento
-                            que passa mal com intoxicação alimentar, Olive escapa porque é alérgica a frutos do mar. E
-                            Ethan, o irmão do noivo, também não é afetado. Então surge a ideia: aproveitar a viagem de
-                            lua‑de‑mel que não era reembolsável — juntos, ele e Olive — no Havaí. Há apenas um “pequeno”
-                            problema: Olive e Ethan são inimigos declarados. Mas quem vai recusar uma viagem grátis?
-                            Agora eles estão presos num cenário paradisíaco, compartilhando suíte, farpas, sarcasmo… e
-                            talvez algo mais."</p>
+                <img src="./imagens/capas-livros-pi/sou-tudo-que-nao-precisa/capa.jpg">
+                <div class="miniaturas">
+                    <div class="carrossel-miniaturas">
+                        <button class="seta-mini" id="miniAnterior">❮</button>
+                        <div class="miniaturas" id="miniaturas">
+                            <img class="thumb ativa" src="./imagens/capas-livros-pi/sou-tudo-que-nao-precisa/capa.jpg">
+                            <img class="thumb ativa"
+                                src="./imagens/capas-livros-pi/sou-tudo-que-nao-precisa/capatras.jpeg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/sou-tudo-que-nao-precisa/interna1.jpeg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/sou-tudo-que-nao-precisa/interna2.jpeg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/sou-tudo-que-nao-precisa/livrotodo.jpeg">
+                        </div>
+                        <button class="seta-mini" id="miniProximo">❯</button>
                     </div>
                 </div>
+            </div>
+            <div class="infos-produto">
+                <div class="descricao">
+                    <h2>Imperfeitos - Volume único</h2>
+                    <p>por: Chistina Lauren</p>
+                </div>
+                <div class="avaliacao">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+                </div>
+                <div class="card-preco">
+                    <p class="preco"><strong>R$ 19,00</strong></p>
+                    <input type="number" placeholder="qtd" value="1">
+                    <button class="add-to-cart">comprar</button>
+                </div>
+                <div class="sinopse">
+                    <p>"Olive se sente como a “gêmea azarada” da família — dos acidentes estranhos à vida amorosa e
+                        profissional que nunca dá certo. Quando a irmã de Olive contrata um buffet para o casamento
+                        que passa mal com intoxicação alimentar, Olive escapa porque é alérgica a frutos do mar. E
+                        Ethan, o irmão do noivo, também não é afetado. Então surge a ideia: aproveitar a viagem de
+                        lua‑de‑mel que não era reembolsável — juntos, ele e Olive — no Havaí. Há apenas um “pequeno”
+                        problema: Olive e Ethan são inimigos declarados. Mas quem vai recusar uma viagem grátis?
+                        Agora eles estão presos num cenário paradisíaco, compartilhando suíte, farpas, sarcasmo… e
+                        talvez algo mais."</p>
+                </div>
+            </div>
             </div>
         </section>
 
@@ -102,7 +117,7 @@
         </div>
     </div>
 
-     <script src="../js/script.js"></script>
+    <script src="../js/script.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 

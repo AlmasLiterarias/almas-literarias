@@ -17,7 +17,7 @@
                 <img src="./imagens/logoescurodourada.png" alt="logo do site">
             </a>
             <a class="logodark" href="../index.html">
-                <img src="./imagens/logoclaro.png" alt="logo do site" >
+                <img src="./imagens/logoclaro.png" alt="logo do site">
             </a>
             <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
                 <div class=" container-xl">
@@ -48,34 +48,47 @@
         </button>
     </header>
     <main>
-        <section>
+        <section id="paginaProduto">
             <div class="produto">
-                <img src="./imagens/Vermelho, branco e sangue azul.jpg">
-                <div class="infos-produto">
-                    <div class="descricao">
-
-                        <h2>Vermelho, Branco e Sangue Azul - Volume único</h2>
-                        <p>por: Casey McQuiston</p>
-                    </div>
-                    <div class="avaliacao">
-                        <span data-value="1">★</span>
-                        <span data-value="2">★</span>
-                        <span data-value="3">★</span>
-                        <span data-value="4">★</span>
-                        <span data-value="5">★</span>
-                    </div>
-                    <div class="card-preco">
-                        <p class="preco"><strong>R$ 99,00</strong></p>
-                        <input type="number" placeholder="qtd" value="1">
-                        <button class="add-to-cart">comprar</button>
-                    </div>
-                    <div class="sinopse">
-                        <p>"> Alex Claremont‑Diaz, filho da presidente dos EUA, e o príncipe britânico Henry têm uma
-                            rivalidade pública — que vaza para os tablóides após um incidente em um casamento real. Para
-                            controlar o estrago diplomático, são forçados a fingir amizade. Mas esse fingimento acaba
-                            abrindo caminho para algo mais profundo entre eles. "</p>
+                <img src="./imagens/capas-livros-pi/vermelho-branco-azul/Livros de romance que viraram filmes e valem muito a leitura » STEAL THE LOOK.jpg">
+                <div class="miniaturas">
+                    <div class="carrossel-miniaturas">
+                        <button class="seta-mini" id="miniAnterior">❮</button>
+                        <div class="miniaturas" id="miniaturas">
+                            <img class="thumb ativa" src="./imagens/capas-livros-pi/vermelho-branco-azul/Livros de romance que viraram filmes e valem muito a leitura » STEAL THE LOOK.jpg">
+                            <img class="thumb ativa"
+                                src="./imagens/capas-livros-pi/vermelho-branco-azul/Vermelho, branco e sangue azul.jpg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/vermelho-branco-azul/vermelho-branco-azul.jpg">
+                        </div>
+                        <button class="seta-mini" id="miniProximo">❯</button>
                     </div>
                 </div>
+            </div>
+            <div class="infos-produto">
+                <div class="descricao">
+
+                    <h2>Vermelho, Branco e Sangue Azul - Volume único</h2>
+                    <p>por: Casey McQuiston</p>
+                </div>
+                <div class="avaliacao">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+                </div>
+                <div class="card-preco">
+                    <p class="preco"><strong>R$ 99,00</strong></p>
+                    <input type="number" placeholder="qtd" value="1">
+                    <button class="add-to-cart">comprar</button>
+                </div>
+                <div class="sinopse">
+                    <p>"> Alex Claremont‑Diaz, filho da presidente dos EUA, e o príncipe britânico Henry têm uma
+                        rivalidade pública — que vaza para os tablóides após um incidente em um casamento real. Para
+                        controlar o estrago diplomático, são forçados a fingir amizade. Mas esse fingimento acaba
+                        abrindo caminho para algo mais profundo entre eles. "</p>
+                </div>
+            </div>
             </div>
         </section>
 
@@ -99,7 +112,7 @@
         </div>
     </div>
 
-     <script src="../js/script.js"></script>
+    <script src="../js/script.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 

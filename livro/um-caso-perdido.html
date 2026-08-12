@@ -17,7 +17,7 @@
                 <img src="./imagens/logoescurodourada.png" alt="logo do site">
             </a>
             <a class="logodark" href="../index.html">
-                <img src="./imagens/logoclaro.png" alt="logo do site" >
+                <img src="./imagens/logoclaro.png" alt="logo do site">
             </a>
             <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
                 <div class=" container-xl">
@@ -48,37 +48,50 @@
         </button>
     </header>
     <main>
-        <section>
+        <section id="paginaProduto">
             <div class="produto">
-                <img src="./imagens/caso perdido.jpg">
-                <div class="infos-produto">
-                    <div class="descricao">
-
-                        <h2>Um Caso Perdido - Volume único</h2>
-                        <p>por: Colleen Hoover</p>
-                    </div>
-                    <div class="avaliacao">
-                        <span data-value="1">★</span>
-                        <span data-value="2">★</span>
-                        <span data-value="3">★</span>
-                        <span data-value="4">★</span>
-                        <span data-value="5">★</span>
-                    </div>
-                    <div class="card-preco">
-                        <p class="preco"><strong>R$ 39,80</strong></p>
-                        <input type="number" placeholder="qtd" value="1">
-                        <button class="add-to-cart">comprar</button>
-                    </div>
-                    <div class="sinopse">
-                        <p>"Sky nunca se sentiu atraída por nenhum garoto; após anos estudando em casa, entra no último
-                            ano
-                            do ensino médio. Conhece Dean Holder, de reputação duvidosa, e algo nele traz de volta
-                            memórias
-                            que ela tinha enterrado profundamente. À medida que os segredos dele vêm à tona, ela é
-                            forçada a
-                            enfrentar a verdade — e descobrir se está preparada para amar e confiar realmente."</p>
+                <img src="./imagens/capas-livros-pi/um-caso-perdido/Um caso perdido, de Colleen Hoover.jpg">
+                <div class="miniaturas">
+                    <div class="carrossel-miniaturas">
+                        <button class="seta-mini" id="miniAnterior">❮</button>
+                        <div class="miniaturas" id="miniaturas">
+                            <img class="thumb ativa" src="./imagens/capas-livros-pi/um-caso-perdido/Um caso perdido, de Colleen Hoover.jpg">
+                            <img class="thumb ativa"
+                                src="./imagens/capas-livros-pi/um-caso-perdido/download.jpg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/um-caso-perdido/download (8).jpg">
+                        </div>
+                        <button class="seta-mini" id="miniProximo">❯</button>
                     </div>
                 </div>
+            </div>
+            <div class="infos-produto">
+                <div class="descricao">
+
+                    <h2>Um Caso Perdido - Volume único</h2>
+                    <p>por: Colleen Hoover</p>
+                </div>
+                <div class="avaliacao">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+                </div>
+                <div class="card-preco">
+                    <p class="preco"><strong>R$ 39,80</strong></p>
+                    <input type="number" placeholder="qtd" value="1">
+                    <button class="add-to-cart">comprar</button>
+                </div>
+                <div class="sinopse">
+                    <p>"Sky nunca se sentiu atraída por nenhum garoto; após anos estudando em casa, entra no último
+                        ano
+                        do ensino médio. Conhece Dean Holder, de reputação duvidosa, e algo nele traz de volta
+                        memórias
+                        que ela tinha enterrado profundamente. À medida que os segredos dele vêm à tona, ela é
+                        forçada a
+                        enfrentar a verdade — e descobrir se está preparada para amar e confiar realmente."</p>
+                </div>
+            </div>
             </div>
         </section>
 
@@ -102,7 +115,7 @@
         </div>
     </div>
 
-     <script src="../js/script.js"></script>
+    <script src="../js/script.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
