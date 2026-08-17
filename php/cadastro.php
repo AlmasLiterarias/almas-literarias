@@ -20,7 +20,7 @@ $senha_segura = password_hash($senha, PASSWORD_DEFAULT);
 
 # Criando o comando SQL
 
-$sql = "INSERT INTO cadastro(nome, email, nascimento, senha_segura, cpf) VALUES ('$nome', '$email', '$nascimento', '$senha_segura', '$cpf')";
+$sql = "INSERT INTO usuarios(nome, email, nascimento, senha_segura, cpf) VALUES ('$nome', '$email', '$nascimento', '$senha_segura', '$cpf')";
 
 # Executando no banco de dados
 
