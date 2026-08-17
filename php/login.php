@@ -7,7 +7,7 @@ $email = $_POST['email'] ?? '';
 $senha = $_POST['senha'] ?? '';
 
 // Uso de Prepared Statement para evitar SQL Injection
-$stmt = $conexao->prepare("SELECT id_usuario, nome, senha_segura FROM cadastro WHERE email = ?");
+$stmt = $conexao->prepare("SELECT id_usuario, nome, senha_segura FROM usuarios WHERE email = ?");
 $stmt->bind_param("s", $email);
 $stmt->execute();
 $resultado = $stmt->get_result();
