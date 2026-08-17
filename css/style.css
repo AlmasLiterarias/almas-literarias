@@ -1,6 +1,10 @@
+/* ==========================================================
+   1. VARIÁVEIS (ROOT)
+========================================================== */
+
 :root {
   --bg: #d7bbec;
-  --fg: #e4fbfb;
+  --fg: rgb(86, 15, 134);
   --card: #d7bbec;
   ;
 }
@@ -10,6 +14,10 @@
   --fg: #d4b455;
   --card: #072257;
 }
+/* ==========================================================
+   2. RESET
+========================================================== */
+
 
 * {
   box-sizing: border-box;
@@ -26,6 +34,39 @@ body {
   flex-direction: column;
 }
 
+/* ==========================================================
+   3. ESTRUTURA GERAL
+========================================================== */
+
+main {
+  background: #d7bbec;
+  color: rgb(86, 15, 134);
+}
+
+.content {
+  padding: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ==========================================================
+   4. HEADER
+========================================================== */
+
+header {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -35,19 +76,14 @@ body {
   box-shadow: 0 1px 4px rgba(185, 74, 74, 0.05);
 }
 
-.content {
-  padding: 2rem;
-}
+/* ==========================================================
+   5. NAVBAR
+========================================================== */
 
-button#themeToggle {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  background-color: transparent;
-  border-radius: 30px;
-  border: 10px solid #0000001f;
-  padding: 5px;
-  margin: 20px;
+
+.navbar-custom {
+  display: flex;
+  align-items: center;
 }
 
 .navbar-custom .navbar-toggler {
@@ -65,6 +101,97 @@ button#themeToggle {
   /* background-repeat: no-repeat; */
   /* background-position: center; */
   /* background-size: 100%; */
+}
+
+nav #navbarNav {
+  flex-direction: column;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s, border-color 0.3s;
+  height: 70px;
+  backdrop-filter: blur(05px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  padding: 15px;
+}
+
+li.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.light .nav-link {
+    color: rgb(86, 15, 134);
+  }
+
+.light .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: rgb(86, 15, 134);
+}
+
+.light .navbar-nav .nav-link.active, .navbar-nav .nav-link.show:hover {
+  color: rgb(131, 56, 181);
+}
+
+.dark .nav-link {
+    color: #d4b455;
+  }
+
+.dark .nav-link:hover{ 
+  color: #ffe79e;
+}
+
+.dark .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: #d4b455;
+}
+
+/* ==========================================================
+   6. LOGOS E TEMA
+========================================================== */
+
+  a.logolight,
+a.logodark {
+  z-index: 9;
+}
+
+.light a.logolight {
+  display: none;
+}
+
+.dark a.logodark {
+  display: none;
+}
+
+.light img.logolight{
+  display: none;
+}
+
+.dark img.logodark{
+  display: none;
+}
+
+header .navbar a.logolight img,
+header .navbar a.logodark img {
+  width: 100px;
+}
+
+/* ==========================================================
+   7. BOTÃO DE TEMA
+========================================================== */
+
+
+button#themeToggle {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 10px solid #0000001f;
+  padding: 5px;
+  margin: 20px;
 }
 
 #themeToggle img {
@@ -90,31 +217,40 @@ button#themeToggle {
   color: #fff;
 }
 
-header {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-nav #navbarNav {
-  flex-direction: column;
-  width: 100%;
-  background-color: transparent;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  transition: background-color 0.3s, border-color 0.3s;
-  height: 70px;
-  backdrop-filter: blur(05px);
+#themeToggle img {
+  /* border: 20px solid rgba(0, 0, 0, 0.08); */
+  background: transparent;
+  padding: 0.5rem 0.75rem;
+  border-radius: 100%;
+  cursor: pointer;
+  font-weight: 600;
   position: fixed;
-  left: 0;
-  top: 0;
-  justify-content: center;
-  padding: 15px;
+  right: 10px;
+  bottom: 10px;
+  z-index: 99;
 }
 
-.navbar-custom {
-  display: flex;
-  align-items: center;
+/* ==========================================================
+   8. BANNER
+========================================================== */
+
+#banner {
+  margin-top: 70px;
 }
 
+.desktop,
+#banner {
+  display: block;
+}
+
+.mobile,
+#bannerMobile {
+  display: none;
+}
+
+/* ==========================================================
+   9. CARROSSEL
+========================================================== */
 
 .dark div#carouselLight {
   display: none;
@@ -137,18 +273,64 @@ div#carouselDark .carousel-inner .carousel-item.align-items-center.justify-conte
   height: 500px;
 }
 
-section {
-  position: relative;
-}
-
-#banner {
-  margin-top: 70px;
-}
-
 .carousel-inner .card a {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.light .carousel-control-next-icon, .light .carousel-control-prev-icon {
+  background-repeat: no-repeat;
+  background-position: 60%;
+  background-size: 60%;
+  border-radius: 100%;
+  background-color: rgba(101, 0, 216, 0.918);
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.dark .carousel-control-next-icon, .dark .carousel-control-prev-icon {
+  background-repeat: no-repeat;
+  background-position: 60%;
+  background-size: 60%;
+  border-radius: 100%;
+  background-color: rgba(192, 149, 26);
+}
+
+.carousel-control-next{
+  right:-120px;
+}
+
+.carousel-control-prev{
+  left:-120px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+}
+
+/* ==========================================================
+   10. LIVROS
+========================================================== */
+
+#livros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .card {
@@ -176,12 +358,11 @@ section {
   height: 50px;
 }
 
-#livros {
+.sinopse{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+  padding: 12px;
+  font-size: 20px;
+  width: 80%;
 }
 
 h5,
@@ -207,53 +388,35 @@ p {
   position: relative;
   bottom: 5px;
   margin-left: 10px;
-  border-bottom: 1px solid rgba(216, 194, 0, 0.918);
+  border-bottom: 1px solid rgb(84 28 159 / 97%);
   flex-grow: 1;
   content: "";
 }
 
-li.nav-item {
-  display: flex;
-  align-items: center;
+.dark .title-line::after {
+  border-bottom: 1px solid rgba(216, 194, 0, 0.918);
 }
 
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #ff6699;
+.add-to-cart {
+  background: #46427e;
   color: white;
-  padding: 1rem;
-}
-
-.cart-icon {
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 6px;
   cursor: pointer;
-  position: relative;
-  font-size: 1.2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: auto;
-  height: auto;
-  padding: 25px;
-  display: block;
-  padding: 0;
-  display: flex;
-  align-items: center;
+  font-weight: bold;
+  transition: background 0.2s;
 }
 
-#cartCount {
-  background: white;
-  color: #8b75c0;
-  border-radius: 50%;
-  padding: 0.1rem 0.5rem;
-  font-weight: bold;
-  display: flex;
-  width: 60px;
-  height: 60px;
-  align-items: center;
-  justify-content: center;
+.add-to-cart:hover {
+  background: #070b3d;
+  ;
 }
+
+/* ==========================================================
+   11. PRODUTOS
+========================================================== */
 
 .product-list {
   display: flex;
@@ -276,6 +439,94 @@ li.nav-item {
   width: 100%;
   border-radius: 6px;
 }
+
+button {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: #08203A;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.add-to-cart {
+  background: #11079c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+
+}
+
+.add-to-cart:hover {
+  background: #04066c;
+  transform: scale(1.1);
+
+}
+
+.add-to-cart:active {
+  background-color: #4b59f1;
+  transform: scale(0.95);
+}
+
+
+section {
+  position: relative;
+}
+
+
+
+.carousel-inner .card a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* ==========================================================
+   12. CARRINHO
+========================================================== */
+
+.cart-icon {
+  cursor: pointer;
+  position: relative;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  padding: 25px;
+  display: block;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+#cartCount {
+  background: white;
+  color: #8b75c0;
+  border-radius: 25%;
+  padding: 0.1rem 0.5rem;
+  font-weight: bold;
+  display: flex;
+  min-width: 60px;
+  width: auto;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 .add-to-cart {
   background: #11079c;
@@ -347,6 +598,60 @@ li.nav-item {
   padding-bottom: .5rem;
 }
 
+  #cartCount {
+    background: white;
+    color: #8b75c0;
+    border-radius: 25%;
+    padding: 0.1rem 0.5rem;
+    font-weight: bold;
+    display: flex;
+    min-width: 60px;
+    width: auto;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-content h2 {
+  margin-top: 0;
+}
+
+#cartItems {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+
+
+.remove {
+  background: transparent;
+  border: none;
+  color: #070b3d;
+  ;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+
+
+#checkout {
+  background: #46427e;
+  color: white;
+}
+
+.infos-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: start;
+  margin: 0 200px 100px;
+}
+
+
 .remove {
   background: transparent;
   border: none;
@@ -375,48 +680,37 @@ button#checkout {
   color: white;
 }
 
-.hidden {
-  display: none;
-}
 
-/* .infos-contato {
+.topbar {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: start;
-  margin: 0 200px 100px;
-} */
-
-li {
-  text-align: end;
-}
-
-hr {
-  margin: 100px 200px;
-  height: 3px;
-  background-color: #ffffff;
-}
-
-.icones {
-  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-end;
-  gap: 5px;
-  margin: 10px 0;
+  background: #ff6699;
+  color: white;
+  padding: 1rem;
 }
 
-.icones img {
-  width: 40px;
-  padding: 2px;
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #070b3d;
+  color: white;
+  padding: 1rem;
 }
 
-header {
-  background-color: transparent;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9;
+.card-preco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
 }
+
+
+/* ==========================================================
+   13. CONTATO
+========================================================== */
 
 #contato {
   display: flex;
@@ -441,10 +735,6 @@ header {
 }
 
 
-/* #contato .infos-contato {
-  width: 30%;
-} */
-
 #contato .infos-contato h2 {
   font-size: 52px;
   padding-bottom: 20px;
@@ -454,10 +744,6 @@ header {
 #contato .infos-contato ul {
   list-style: none;
 }
-
-/*#contato .infos-contato ul li {
-  padding: 10px 0;
-}*/
 
 #contato .formulario {
   display: flex;
@@ -517,37 +803,263 @@ header {
   width: 30px;
 }
 
-.desktop,
-#banner {
-  display: block;
+#contato .formulario input {
+  height: 40px;
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f3f3f3;
 }
 
-.mobile,
-#bannerMobile {
-  display: none;
+#contato .formulario textarea {
+  height: 80px;
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  margin-top: 10px;
 }
 
-a.logolight,
-a.logodark {
-  z-index: 9;
+#contato .formulario .btn {
+  background: #11079c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
 }
 
-.light a.logolight {
-  display: none;
+#contato .formulario .btn:hover {
+  transform: scale(1.1);
+
 }
 
-.dark a.logodark {
-  display: none;
+.formulario .btn:hover {
+  background: #04066c;
+  transform: scale(1.1);
+
 }
 
-header .navbar a.logolight img,
-header .navbar a.logodark img {
+#contato .img {
+  display: flex;
+  width: 100%;
+}
+
+#contato .img img {
+  width: 30px;
+}
+
+
+/* ==========================================================
+   14. PÁGINA DO PRODUTO
+========================================================== */
+
+#paginaProduto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  justify-content: center;
+}
+
+main .produto {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#paginaProduto .produto {
+  margin: 0;
+}
+
+.infos-produto{
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0;
+  width: 900px;
+}
+
+.produto img {
+  padding: 15px;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  max-height: 900px;
+  border-radius: 85px;
+}
+
+.infos-produto .produto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main .produto .descricao {
+  width: 69%;
+  padding: 40px;
+}
+
+main .produto p {
+  text-align: justify;
+}
+
+.card-preco {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px 40px;
+}
+
+.card-preco input{
+  /* width: 60px; */
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+/* ==========================================================
+   15. AVALIAÇÃO
+========================================================== */
+
+.avaliacao{
+  padding-left: 40px;
+}
+
+.avaliacao span {
+  font-size: 20px;
+  cursor: pointer;
+  color: gray;
+   padding: 0; 
+   margin-left: 0;
+}
+
+.avaliacao span.ativo {
+  color: gold;
+}
+
+/* ==========================================================
+   16. LISTAS E ELEMENTOS GERAIS
+========================================================== */
+
+li {
+  text-align: end;
+}
+
+ul {
+  list-style: none;
+}
+
+ol,
+ul {
+  padding-left: 2rem;
+}
+
+hr {
+  margin: 100px 200px;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+.icones {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.icones img {
   width: 100px;
+  padding: 0;
 }
 
 bg-dark {
   width: 100%;
 }
+
+.icones {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.icones img {
+  width: 40px;
+  padding: 2px;
+}
+
+/* ==========================================================
+   17. MODO ESCURO
+========================================================== */
+
+.dark main {
+  background: #010326;
+  color: #d4b455;
+  position: relative;
+}
+
+/* ==========================================================
+   19. CARROSEL DE PRODUTOS
+========================================================== */
+
+.miniaturas {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  width: auto;
+  flex-direction: column;
+}
+
+img.thumb {
+  width: 80px;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 8px;
+  opacity: 0.7;
+  transition: 0.3s;
+  padding: 0;
+}
+
+img.thumb:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+img.thumb.ativa {
+  opacity: 1;
+  border: 2px solid #d4b455;
+}
+
+button.seta-mini {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  display: none; /*flex*/
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+/* ==========================================================
+   18. RESPONSIVIDADE
+========================================================== */
 
 @media screen and (max-width: 768px) {
   .navbar-custom .navbar-toggler {
@@ -556,13 +1068,26 @@ bg-dark {
     right: 10px;
   }
 
-  .card img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
+/*html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+    }*/
+
+  .desktop {
+    display: none;
   }
 
-  .desktop,
+  .mobile {
+    display: block;
+  }
+
+.desktop,
   #banner {
     display: none;
   }
@@ -572,14 +1097,103 @@ bg-dark {
     display: block;
   }
 
-  header .navbar a.logolight img,
-  header .navbar a.logodark img {
-    width: 70px;
-    height: auto;
+  .logo {
+    width: 100px;
+  }
+
+  /*img {
+    width: 100%;
+    padding: 15px;
+  }*/
+
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    background-color: #ffff;
+    padding: 10px;
+    border-radius: 10px;
   }
 
 
-  #formulario {
+  .card img {
+    width: 100%;
+    /*height: 350px;*/
+    object-fit: cover;
+  }
+
+  /*Página interna*/
+
+  #paginaProduto .produto {
+    margin: 0;
+  }
+
+  .infos-produto .produto {
+    margin-top: 0;
+  }
+
+  .produto img {
+    padding: 20px;
+    height: auto;
+    border-radius: 60px;
+    padding-bottom: 20px;
+  }
+
+  .miniaturas {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  img.thumb {
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 8px;
+    opacity: 0.7;
+    transition: 0.3s;
+    padding: 0;
+  }
+
+  .infos-produto .produto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .infos-produto .produto p{
+    text-align: center;
+  }
+
+ .sinopse{
+  width: 100%;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 18px;
+  }
+
+.card-preco {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin: 0;
+  }
+
+#formulario {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -592,7 +1206,7 @@ bg-dark {
     margin: 0;
   }
 
-  #formulario input,
+#formulario input,
   select {
     width: 100%;
   }
@@ -611,19 +1225,7 @@ bg-dark {
     gap: 10px;
   }
 
-  .card {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    background-color: #ffff;
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  div#salvo {
+ div#salvo {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -636,14 +1238,95 @@ bg-dark {
     gap: 10px;
   }
 
-  #contato .jerluci img {
-    vertical-align: middle;
-    height: 300px;
-    position: unset;
-    left: unset;
+
+#contato {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  width: 100%;
+}
+
+#contato .jerluci img {
+  vertical-align: middle;
+  height: 300px;
+  position: absolute;
+  left: 70px;
+
+}
+
+.infos-contato {
+  display: flex;
+  flex-direction: column;
+  margin: 0 200px 100px;
+}
+
+#contato .infos-contato h2 {
+  font-size: 52px;
+  padding-bottom: 20px;
+  text-align: right;
+}
+
+#contato .infos-contato ul {
+  list-style: none;
+}
+
+#contato .formulario {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 10px;
+}
+
+hr {
+  margin: 100px 200px;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+#themeToggle img {
+    height: 120px;
+    width: 100px;
+    right: 0px;
   }
 
-  #contato .infos-contato h2 {
+.cart-icon {
+  cursor: pointer;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.navbar-nav{
+    align-items: flex-end;
+  }
+
+
+  main .produto .descricao {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  header .navbar a.logolight img,
+  header .navbar a.logodark img {
+    width: 90px;
+    height: auto;
+  }
+
+    #formulario input,
+  select {
+    width: 100%;
+  }
+
+  #contato .jerluci img {
+    vertical-align: middle;
+   /* height: 300px;*/
+    position: unset;
+    left: unset;
+    height: 150px;
+  }
+
+    #contato .infos-contato h2 {
     font-size: 52px;
     padding-bottom: 20px;
     text-align: center;
@@ -668,11 +1351,7 @@ bg-dark {
     align-items: center;
   }
 
-  #themeToggle img {
-    height: 120px;
-    width: 100px;
-    right: 0px;
-  }
+  
 
   hr {
     margin: 2px;
@@ -680,15 +1359,7 @@ bg-dark {
     background-color: #ffffff;
   }
 
-  #contato .jerluci img {
-    height: 150px;
-  }
-
-  /* 
-  footer.bg-dark.text-white.text-center.py-3 {
-    width: 100%; */
-
-  #contato {
+    #contato {
     width: 100%;
   }
 
@@ -707,7 +1378,76 @@ bg-dark {
   flex-direction: row;
   justify-content: space-evenly;
   }
-  .navbar-nav{
-    align-items: flex-end;
-  }
+
+  /*.dark .carousel-control-next-icon, .dark .carousel-control-prev-icon {
+  background-repeat: no-repeat;
+  background-position: 60%;
+  background-size: 60%;
+  border-radius: 100%;
+  background-color: rgba(192, 149, 26);
+}*/
+
+.dark .carousel-control-next {
+    right: 40px;
+    width: 45px;
+}
+
+.dark .carousel-control-prev {
+    left: 40px;
+    width: 45px;
+}
+
+.carousel-control-next {
+        right: 40px ;
+        width: 45px ;
+        gap: 50px;
+    }
+
+    .carousel-control-prev {
+        left: 40px ;
+        width: 45px ;
+    }
+
+
+/*////////////////////////////PÁGINA INTERNA//////////////////////////////*/
+
+.infos-produto {
+    margin: 10px 0;
+}
+
+#navbarNav {
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 160px;
+        z-index: 1000;
+    }
+
+    #navbarNav .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #navbarNav .nav-item {
+        width: 100%;
+        text-align:left;
+    }
+
+    #navbarNav .nav-link {
+        display: block;
+        padding: 8px 15px;
+    }
+
+    /* Botão hambúrguer */
+    .navbar-toggler {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1100;
+    }
+
 }

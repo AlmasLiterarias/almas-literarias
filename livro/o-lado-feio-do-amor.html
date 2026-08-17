@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Almas Literárias - O Lado Feio do Amo - Volume único</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../src/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -14,7 +14,7 @@
     <header>
         <nav class="navbar navbar-custom navbar-expand-lg navbar-dark px-3">
             <a class="logolight" href="../index.html">
-                <img src="./imagens/logoescuro.png" alt="logo do site">
+                <img src="./imagens/logoescurodourada.png" alt="logo do site">
             </a>
             <a class="logodark" href="../index.html">
                 <img src="./imagens/logoclaro.png" alt="logo do site">
@@ -32,13 +32,12 @@
             <div id="navbarNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="../index.html"> Início </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#lançamentos"> Lançamentos </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#destaques"> Destaques </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contato"> Contato </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#longin"> Longin </a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#contato"> Carrinho </a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="../index.html#lançamentos"> Lançamentos </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#destaques"> Destaques </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#contato"> Contato </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#longin"> Login </a></li>
                     <div class="cart-icon" id="cartBtn">
-                        🛒 <span id="cartCount">0</span>
+                        <span id="cartCount">0 🛒</span>
                     </div>
                 </ul>
             </div>
@@ -49,37 +48,52 @@
         </button>
     </header>
     <main>
-        <section>
+        <section id="paginaProduto">
             <div class="produto">
-                <img src="./imagens/lado feio.jpg">
-                <div class="infos-produto">
-                    <div class="descricao">
-                        <h2>O Lado Feio do Amo - Volume único</h2>
-                        <p>por: Colleen Hoover</p>
-                    </div>
-                    <div class="avaliacao">
-                        <span data-value="1">★</span>
-                        <span data-value="2">★</span>
-                        <span data-value="3">★</span>
-                        <span data-value="4">★</span>
-                        <span data-value="5">★</span>
-                    </div>
-                    <div class="card-preco">
-                        <p class="preco"><strong>R$ 39,80</strong></p>
-                        <input type="number" placeholder="qtd" value="1">
-                        <button class="add-to-cart">comprar</button>
-                    </div>
-                    <div class="sinopse">
-                        <p>"Tate Collins muda‑se para o apartamento do irmão, Corbin, para fazer mestrado em enfermagem.
-                            Ela
-                            não esperava conhecer o ‘lado feio do amor’. Miles Archer, piloto de avião, vizinho e melhor
-                            amigo do irmão, tem uma armadura emocional. Eles se sentem atraídos de forma intensa, mas
-                            ele
-                            impõe duas regras: sem perguntas sobre o passado, e sem esperanças para o futuro. Um
-                            relacionamento casual… Tate prometeu não se apaixonar, mas vai descobrir que nenhuma regra
-                            consegue conter o amor e o desejo."</p>
+                <img src="./imagens/capas-livros-pi/sou-tudo-que-nao-precisa/capa.jpg">
+                <div class="miniaturas">
+                    <div class="carrossel-miniaturas">
+                        <button class="seta-mini" id="miniAnterior">❮</button>
+                        <div class="miniaturas" id="miniaturas">
+                            <img class="thumb ativa" src="./imagens/capas-livros-pi/sou-tudo-que-nao-precisa/capa.jpg">
+                            <img class="thumb ativa"
+                                src="./imagens/capas-livros-pi/sou-tudo-que-nao-precisa/capatras.jpeg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/sou-tudo-que-nao-precisa/interna1.jpeg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/sou-tudo-que-nao-precisa/interna2.jpeg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/sou-tudo-que-nao-precisa/livrotodo.jpeg">
+                        </div>
+                        <button class="seta-mini" id="miniProximo">❯</button>
                     </div>
                 </div>
+            </div>
+            <div class="infos-produto">
+                <div class="descricao">
+                    <h2>O Lado Feio do Amo - Volume único</h2>
+                    <p>por: Colleen Hoover</p>
+                </div>
+                <div class="avaliacao">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+                </div>
+                <div class="card-preco">
+                    <p class="preco"><strong>R$ 39,80</strong></p>
+                    <input type="number" placeholder="qtd" value="1">
+                    <button class="add-to-cart">comprar</button>
+                </div>
+                <div class="sinopse">
+                    <p>"Tate Collins muda‑se para o apartamento do irmão, Corbin, para fazer mestrado em enfermagem.
+                        Ela
+                        não esperava conhecer o ‘lado feio do amor’. Miles Archer, piloto de avião, vizinho e melhor
+                        amigo do irmão, tem uma armadura emocional. Eles se sentem atraídos de forma intensa, mas
+                        ele
+                        impõe duas regras: sem perguntas sobre o passado, e sem esperanças para o futuro. Um
+                        relacionamento casual… Tate prometeu não se apaixonar, mas vai descobrir que nenhuma regra
+                        consegue conter o amor e o desejo."</p>
+                </div>
+            </div>
             </div>
             </div>
         </section>
@@ -105,7 +119,7 @@
     </div>
 
     <script src="../js/script.js"></script>
-    <script src="../src/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

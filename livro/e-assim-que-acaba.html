@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Almas Literárias - É Assim que Acaba - Volume único</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../src/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -14,7 +14,7 @@
     <header>
         <nav class="navbar navbar-custom navbar-expand-lg navbar-dark px-3">
             <a class="logolight" href="../index.html">
-                <img src="./imagens/logoescuro.png" alt="logo do site">
+                <img src="./imagens/logoescurodourada.png" alt="logo do site">
             </a>
             <a class="logodark" href="../index.html">
                 <img src="./imagens/logoclaro.png" alt="logo do site">
@@ -32,13 +32,12 @@
             <div id="navbarNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="../index.html"> Início </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#lançamentos"> Lançamentos </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#destaques"> Destaques </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contato"> Contato </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#longin"> Longin </a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#contato"> Carrinho </a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="../index.html#lançamentos"> Lançamentos </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#destaques"> Destaques </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#contato"> Contato </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#longin"> Login </a></li>
                     <div class="cart-icon" id="cartBtn">
-                        🛒 <span id="cartCount">0</span>
+                        <span id="cartCount">0 🛒</span>
                     </div>
                 </ul>
             </div>
@@ -49,35 +48,50 @@
         </button>
     </header>
     <main>
-        <section>
+        <section id="paginaProduto">
             <div class="produto">
-                <img src="./imagens/acaba.jpg">
-                <div class="infos-produto">
-                    <div class="descricao">
-                        <h2>É Assim que Acaba - Volume único</h2>
-                        <p>por: Colleen Hoover</p>
-                    </div>
-                    <div class="avaliacao">
-                        <span data-value="1">★</span>
-                        <span data-value="2">★</span>
-                        <span data-value="3">★</span>
-                        <span data-value="4">★</span>
-                        <span data-value="5">★</span>
-                    </div>
-                    <div class="card-preco">
-                        <p class="preco"><strong>R$ 35,72</strong></p>
-                        <input type="number" placeholder="qtd" value="1">
-                        <button class="add-to-cart">comprar</button>
-                    </div>
-                    <div class="sinopse">
-                        <p>"Lily nem sempre teve vida fácil, mas trabalhou duro para conquistar seus sonhos: saiu da
-                            cidadezinha no Maine, mudou‑se para Boston, formou‑se em marketing e abriu sua própria
-                            floricultura. Ao conhecer Ryle — neurocirurgião confiante, teimoso, talvez arrogante — Lily
-                            acredita ter encontrado o amor verdadeiro. Mas logo percebe que o relacionamento é
-                            turbulento e não era exatamente o que ela esperava. Será que ela conseguirá enxergar o que
-                            realmente está vivendo, por mais doloroso que seja?"</p>
+                <img src="./imagens/capas-livros-pi/sou-tudo-que-nao-precisa/capa.jpg">
+                <div class="miniaturas">
+                    <div class="carrossel-miniaturas">
+                        <button class="seta-mini" id="miniAnterior">❮</button>
+                        <div class="miniaturas" id="miniaturas">
+                            <img class="thumb ativa" src="./imagens/capas-livros-pi/sou-tudo-que-nao-precisa/capa.jpg">
+                            <img class="thumb ativa"
+                                src="./imagens/capas-livros-pi/sou-tudo-que-nao-precisa/capatras.jpeg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/sou-tudo-que-nao-precisa/interna1.jpeg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/sou-tudo-que-nao-precisa/interna2.jpeg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/sou-tudo-que-nao-precisa/livrotodo.jpeg">
+                        </div>
+                        <button class="seta-mini" id="miniProximo">❯</button>
                     </div>
                 </div>
+            </div>
+            <div class="infos-produto">
+                <div class="descricao">
+                    <h2>É Assim que Acaba - Volume único</h2>
+                    <p>por: Colleen Hoover</p>
+                </div>
+                <div class="avaliacao">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+                </div>
+                <div class="card-preco">
+                    <p class="preco"><strong>R$ 35,72</strong></p>
+                    <input type="number" placeholder="qtd" value="1">
+                    <button class="add-to-cart">comprar</button>
+                </div>
+                <div class="sinopse">
+                    <p>"Lily nem sempre teve vida fácil, mas trabalhou duro para conquistar seus sonhos: saiu da
+                        cidadezinha no Maine, mudou‑se para Boston, formou‑se em marketing e abriu sua própria
+                        floricultura. Ao conhecer Ryle — neurocirurgião confiante, teimoso, talvez arrogante — Lily
+                        acredita ter encontrado o amor verdadeiro. Mas logo percebe que o relacionamento é
+                        turbulento e não era exatamente o que ela esperava. Será que ela conseguirá enxergar o que
+                        realmente está vivendo, por mais doloroso que seja?"</p>
+                </div>
+            </div>
             </div>
         </section>
 
@@ -102,7 +116,7 @@
     </div>
 
     <script src="../js/script.js"></script>
-    <script src="../src/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

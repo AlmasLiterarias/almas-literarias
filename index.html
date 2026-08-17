@@ -13,22 +13,18 @@
     <header>
         <nav class="navbar navbar-custom navbar-expand-lg navbar-dark px-3">
             <a class="logolight" href="index.html">
-                <img src="./imagens/logoescuro.png" alt="logo do site">
+                <img src="./imagens/logoescurodourada.png" alt="logo do site">
             </a>
             <a class="logodark" href="index.html">
                 <img src="./imagens/logoclaro.png" alt="logo do site">
             </a>
-            <!-- Menu Mobile -->
-            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-                <div class=" container-xl">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"> </span>
-                    </button>
-                </div>
-            </nav>
-            <!-- FIM Menu Mobile -->
-
+            
+            <div class="container-xl d-lg-none">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"> </span>
+                </button>
+            </div>
             <div id="navbarNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html"> Início </a></li>
@@ -36,19 +32,20 @@
                     <li class="nav-item"><a class="nav-link" href="#destaques"> Destaques </a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato"> Contato </a></li>
                     <li class="nav-item"><a class="nav-link" href="./login/cadastro.html"> Login </a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#contato"> Carrinho </a></li> -->
-                    <div class="cart-icon" id="cartBtn">
-                         <span id="cartCount">0🛒</span>
-                    </div>
-                    
+                    <li class="nav-item">
+                        <div class="cart-icon nav-link" id="cartBtn" style="cursor: pointer;">
+                            <span id="cartCount">0 🛒</span>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </nav>
+        
         <button id="themeToggle" aria-pressed="false" aria-label="Ativar modo escuro">
             <img id="theme-icon" src="./imagens/Jerlucitchau.png" alt="Modo escuro">
-            <!-- Ativar modo escuro -->
         </button>
     </header>
+
     <section id="banner">
         <div id="carouselLight" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -58,12 +55,12 @@
                 <div class="carousel-item align-items-center justify-content-center">
                     <img src="./imagens/bannerclaro2.png" class="d-blok w-100" alt="Investimentos">
                 </div>
-                <buton class="carousel-control-prev" type="button" data-bs-target="#carouselLight" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselLight" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"> </span>
-                </buton>
-                <buton class="carousel-control-next" type="button" data-bs-target="#carouselLight" data-bs-slide="next">
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselLight" data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
-                </buton>
+                </button>
             </div>
         </div>
         <div id="carouselDark" class="carousel slide" data-bs-ride="carousel">
@@ -74,15 +71,16 @@
                 <div class="carousel-item align-items-center justify-content-center">
                     <img src="./imagens/bannerescuro2.png" class="d-blok w-100" alt="Investimentos">
                 </div>
-                <buton class="carousel-control-prev" type="button" data-bs-target="#carouselDark" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDark" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"> </span>
-                </buton>
-                <buton class="carousel-control-next" type="button" data-bs-target="#carouselDark" data-bs-slide="next">
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDark" data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
-                </buton>
+                </button>
             </div>
         </div>
     </section>
+
     <section id="bannerMobile">
         <div id="carouselLight-Mobile" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -92,12 +90,12 @@
                 <div class="carousel-item align-items-center justify-content-center">
                     <img src="./imagens/bannerclaro2mobile.png" class="d-blok w-100" alt="Investimentos">
                 </div>
-                <buton class="carousel-control-prev" type="button" data-bs-target="#carouselLight-Mobile" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselLight-Mobile" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"> </span>
-                </buton>
-                <buton class="carousel-control-next" type="button" data-bs-target="#carouselLight-Mobile" data-bs-slide="next">
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselLight-Mobile" data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
-                </buton>
+                </button>
             </div>
         </div>
         <div id="carouselDark-Mobile" class="carousel slide" data-bs-ride="carousel">
@@ -108,12 +106,12 @@
                 <div class="carousel-item align-items-center justify-content-center">
                     <img src="./imagens/bannerescuro2mobile.png" class="d-blok w-100" alt="Investimentos">
                 </div>
-                <buton class="carousel-control-prev" type="button" data-bs-target="#carouselDark-Mobile" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDark-Mobile" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"> </span>
-                </buton>
-                <buton class="carousel-control-next" type="button" data-bs-target="#carouselDark-Mobile" data-bs-slide="next">
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDark-Mobile" data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
-                </buton>
+                </button>
             </div>
         </div>
     </section>
@@ -122,13 +120,14 @@
         <section id="lançamentos" class="py-5">
             <div class="container">
                 <h3 class="title-line">Lançamentos</h3>
+                
                 <div id="carousel1" class="carousel slide desktop" data-bs-ride="carousel1">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/sou-tudo-que-voce-nao-precisa.html">
-                                        <img src="./imagens/não precisa.jpg"></a>
+                                        <img src="./livro/imagens/capas-livros-pi/sou-tudo-que-nao-precisa/nao precisa.jpg" alt="Livro"></a>
                                     <h5>Sou Tudo Que Você (Não) Precisa</h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -138,7 +137,7 @@
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/a-pior-das-boas-ideias.html">
-                                        <img src="./imagens/pior ideias.jpg"></a>
+                                        <img src="./imagens/pior ideias.jpg" alt="Livro"></a>
                                     <h5>A Pior das Boas Ideias</h5>
                                     <p> Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -148,7 +147,7 @@
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/amor-fati.html">
-                                        <img src="./imagens/Amor Fati.jpg"></a>
+                                        <img src="./imagens/Amor Fati.jpg" alt="Livro"></a>
                                     <h5>Amor Fati</h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -167,7 +166,8 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/sou-tudo-que-voce-nao-precisa.html">
-                                        <img src="./imagens/não precisa.jpg"></a>
+                                        <img src="./livro/imagens/capas-livros-pi/sou-tudo-que-nao-precisa/nao precisa.jpg" alt="Livro"></a>
+
                                     <h5>Sou Tudo Que Você (Não) Precisa</h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -180,8 +180,8 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/a-pior-das-boas-ideias.html">
-                                        <img src="./imagens/pior ideias.jpg">
+                                    <a href="./livro/imagens/capas-livros-pi/a-pior-das-boas-ideias/capa.jpg">
+                                        <img src="./imagens/pior ideias.jpg" alt="Livro">
                                     </a>
                                     <h5>A Pior das Boas Ideias</h5>
                                     <p> Capa comum- edição em Português</p>
@@ -196,7 +196,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/amor-fati.html">
-                                        <img src="./imagens/Amor Fati.jpg">
+                                        <img src="./livro/imagens/capas-livros-pi/amor-fati/Amor Fati.jpg" alt="Livro">
                                     </a>
                                     <h5>Amor Fati</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -208,39 +208,19 @@
                             </div>
                         </div>
                     </div>
+                    <button class="carousel-control-prev mobile" type="button" data-bs-target="#carousel1mob" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next mobile" type="button" data-bs-target="#carousel1mob" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev mobile" type="button" data-bs-target="#carousel1mob"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next mobile" type="button" data-bs-target="#carousel1mob"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            </div>
-
-            <button class="carousel-control-prev mobile" type="button" data-bs-target="#carousel1mob"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next mobile" type="button" data-bs-target="#carousel1mob"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            <button class="carousel-control-next mobile" type="button" data-bs-target="#carousel1mob"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
             </div>
         </section>
 
-        <section id="destaques" class="py-5 ">
+        <section id="destaques" class="py-5">
             <div class="container">
                 <h3 class="title-line">
                     Destaques
@@ -251,7 +231,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/e-assim-que-acaba.html">
-                                        <img src="./imagens/acaba.jpg"></a>
+                                        <img src="./livro/imagens/capas-livros-pi/e-assim-que-acaba/acaba.jpg" alt="Livro"></a>
                                     <h5> É Assim que Acaba</h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -261,7 +241,7 @@
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/cancao-de-aquiles.html">
-                                        <img src="./imagens/aquiles.jpg"></a>
+                                        <img src="./livro/imagens/capas-livros-pi/cancao-de-aquiles/aquiles.jpeg" alt="Livro"></a>
                                     <h5> Canção de Aquiles</h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -271,7 +251,7 @@
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/o-lado-feio-do-amor.html">
-                                        <img src="./imagens/lado feio.jpg"></a>
+                                        <img src="./livro/imagens/capas-livros-pi/o-lado-feio-do-amor/lado feio.jpg" alt="Livro"></a>
                                     <h5> O Lado Feio do Amor</h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -281,7 +261,7 @@
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/o-pequeno-principe.html">
-                                        <img src="./imagens/principe.jpg"></a>
+                                        <img src="./livro/imagens/capas-livros-pi/pequeno-principe/principe.jpg" alt="Livro"></a>
                                     <h5> O Pequeno Príncipe </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -295,7 +275,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/cartas-de-amor-aos-mortos.html">
-                                        <img src="./imagens/cartas mortos.jpg"></a>
+                                        <img src="./livro/imagens/capas-livros-pi/cartas-de-amor-aos-mortos/cartas mortos.jpg" alt="Livro"></a>
                                     <h5>Cartas de Amor aos Mortos</h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -305,7 +285,7 @@
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/fabricante-de-lagrimas.html">
-                                        <img src="./imagens/fabricante.jpg"></a>
+                                        <img src="./livro/imagens/capas-livros-pi/fabricante-de-lagrimas/fabricante.jpg" alt="Livro"></a>
                                     <h5>Fabricante de Lágrimas </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -315,7 +295,7 @@
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/um-caso-perdido.html">
-                                        <img src="./imagens/caso perdido.jpg"></a>
+                                        <img src="./livro/imagens/capas-livros-pi/um-caso-perdido/caso perdido.jpg" alt="Livro"></a>
                                     <h5>Um Caso Perdido </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -325,7 +305,7 @@
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/sem-esperanca.html">
-                                        <img src="./imagens/sem esperança.jpg"></a>
+                                        <img src="./livro/imagens/capas-livros-pi/sem-esperanca/sem esperança.jpg" alt="Livro"></a>
                                     <h5>Sem Esperança </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -337,24 +317,23 @@
                             </div>
                         </div>
                     </div>
+                    <button class="carousel-control-prev desktop" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next desktop" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev desktop" type="button" data-bs-target="#carousel2"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next desktop" type="button" data-bs-target="#carousel2"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                
                 <div id="carousel2mob" class="carousel slide mobile" data-bs-ride="carousel2mob">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/e-assim-que-acaba.html">
-                                        <img src="./imagens/acaba.jpg">
+                                        <img src="./livro/imagens/capas-livros-pi/e-assim-que-acaba/acaba.jpg" alt="Livro">
                                     </a>
                                     <h5> É Assim que Acaba</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -369,7 +348,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/cancao-de-aquiles.html">
-                                        <img src="./imagens/aquiles.jpg">
+                                        <img src="./livro/imagens/capas-livros-pi/cancao-de-aquiles/aquiles.jpeg" alt="Livro">
                                     </a>
                                     <h5> Canção de Aquiles</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -384,7 +363,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/o-lado-feio-do-amor.html">
-                                        <img src="./imagens/lado feio.jpg">
+                                        <img src="./livro/imagens/capas-livros-pi/o-lado-feio-do-amor/lado feio.jpg" alt="Livro">
                                     </a>
                                     <h5> O Lado Feio do Amor</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -399,7 +378,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/o-pequeno-principe.html">
-                                        <img src="./imagens/principe.jpg">
+                                        <img src="./livro/imagens/capas-livros-pi/pequeno-principe/principe.jpg" alt="Livro">
                                     </a>
                                     <h5> O Pequeno Príncipe </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -414,7 +393,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/cartas-de-amor-aos-mortos.html">
-                                        <img src="./imagens/cartas mortos.jpg">
+                                        <img src="./livro/imagens/capas-livros-pi/cartas-de-amor-aos-mortos/cartas mortos.jpg" alt="Livro">
                                     </a>
                                     <h5>Cartas de Amor aos Mortos</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -429,7 +408,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/fabricante-de-lagrimas.html">
-                                        <img src="./imagens/fabricante.jpg">
+                                        <img src="./livro/imagens/capas-livros-pi/fabricante-de-lagrimas/fabricante.jpg" alt="Livro">
                                     </a>
                                     <h5>Fabricante de Lágrimas </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -444,7 +423,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/um-caso-perdido.html">
-                                        <img src="./imagens/caso perdido.jpg">
+                                        <img src="./livro/imagens/capas-livros-pi/um-caso-perdido/caso perdido.jpg" alt="Livro">
                                     </a>
                                     <h5>Um Caso Perdido </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -459,7 +438,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/sem-esperanca.html">
-                                        <img src="./imagens/sem esperança.jpg">
+                                        <img src="./livro/imagens/capas-livros-pi/sem-esperanca/sem esperança.jpg" alt="Livro">
                                     </a>
                                     <h5>Sem Esperança </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -471,22 +450,19 @@
                             </div>
                         </div>
                     </div>
+                    <button class="carousel-control-prev mobile" type="button" data-bs-target="#carousel2mob" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next mobile" type="button" data-bs-target="#carousel2mob" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev mobile" type="button" data-bs-target="#carousel2mob"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next mobile" type="button" data-bs-target="#carousel2mob"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
             </div>
         </section>
-        </section>
-        <section id="romances" class="py-5 ">
+
+        <section id="romances" class="py-5">
             <div class="container">
                 <h3 class="title-line">
                     Romances Leves e aconchegantes
@@ -497,7 +473,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/amor-e-gelato.html">
-                                        <img src="./imagens/gelato.jpg"></a>
+                                        <img src="./livro/imagens/capas-livros-pi/amor-gelato/gelato.jpg" alt="Livro"></a>
                                     <h5>Amor e Gelato</h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -507,7 +483,7 @@
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/imperfeitos.html">
-                                        <img src="./imagens/imperfeitos.jpg"></a>
+                                        <img src="./livro/imagens/capas-livros-pi/im-perfeitos/imperfeitos.jpg" alt="Livro"></a>
                                     <h5> Imperfeitos </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -517,7 +493,7 @@
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/a-escolha.html">
-                                        <img src="./imagens/escolha.jpg"></a>
+                                        <img src="./livro/imagens/capas-livros-pi/a-escolha/escolha.jpg" alt="Livro"></a>
                                     <h5> A Escolha </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -527,7 +503,7 @@
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/mil-beijos-de-garoto.html">
-                                        <img src="./imagens/mil beijos.jpg"></a>
+                                        <img src="./livro/imagens/capas-livros-pi/mil-beijos-de-garotos/mil beijos.jpg" alt="Livro"></a>
                                     <h5> Mil Beijos de Garoto </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -541,7 +517,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/vermelho-branco-e-sangue-azul.html">
-                                        <img src="./imagens/Vermelho, branco e sangue azul.jpg"></a>
+                                        <img src="./livro/imagens/capas-livros-pi/vermelho-branco-azul/sangue azul.jpg" alt="Livro"></a>
                                     <h5> Vermelho, Branco e Sangue Azul </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -551,7 +527,7 @@
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/todas-as-perfeicoes.html">
-                                        <img src="./imagens/perfeicoes.jpg"></a>
+                                        <img src="./livro/imagens/capas-livros-pi/todas-as-suas-imperfeicoes/perfeições.jpg" alt="Livro"></a>
                                     <h5> Todas as Perfeições </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -561,7 +537,7 @@
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/sapatilhas-de-gelo-por-babi.html">
-                                        <img src="./imagens/Sapatilhas de Gelo por Babi A_ Sette.jpg"></a>
+                                        <img src="./livro/imagens/capas-livros-pi/sapatilhas-de-gelo/gelo.jpg" alt="Livro"></a>
                                     <h5> Sapatilhas de Gelo por Babi </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -571,7 +547,7 @@
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/a-culpa-e-das-estrelas.html">
-                                        <img src="./imagens/culpa.jpg"></a>
+                                        <img src="./livro/imagens/capas-livros-pi/a-culpa-e-das-estrelas/culpa das estrelas.jpg" alt="Livro"></a>
                                     <h5> A Culpa é das Estrelas </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -583,24 +559,23 @@
                         </div>
 
                     </div>
+                    <button class="carousel-control-prev desktop" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next desktop" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev desktop" type="button" data-bs-target="#carousel3"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next desktop" type="button" data-bs-target="#carousel3"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                
                 <div id="carousel3mob" class="carousel slide mobile" data-bs-ride="carousel3mob">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/amor-e-gelato.html">
-                                        <img src="./imagens/gelato.jpg">
+                                        <img src="./livro/imagens/capas-livros-pi/amor-gelato/gelato.jpg" alt="Livro">
                                     </a>
                                     <h5>Amor e Gelato</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -615,7 +590,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/imperfeitos.html">
-                                        <img src="./imagens/imperfeitos.jpg">
+                                        <img src="./livro/imagens/capas-livros-pi/im-perfeitos/imperfeitos.jpg" alt="Livro">
                                     </a>
                                     <h5> Imperfeitos </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -630,7 +605,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/a-escolha.html">
-                                        <img src="./imagens/escolha.jpg">
+                                        <img src="./livro/imagens/capas-livros-pi/a-escolha/escolha.jpg" alt="Livro">
                                     </a>
                                     <h5> A Escolha </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -645,7 +620,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/mil-beijos-de-garoto.html">
-                                        <img src="./imagens/mil beijos.jpg">
+                                        <img src="./livro/imagens/capas-livros-pi/mil-beijos-de-garotos/mil beijos.jpg" alt="Livro">
                                     </a>
                                     <h5> Mil Beijos de Garoto </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -660,7 +635,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/vermelho-branco-e-sangue-azul.html">
-                                        <img src="./imagens/Vermelho, branco e sangue azul.jpg">
+                                        <img src="./livro/imagens/capas-livros-pi/vermelho-branco-azul/sangue azul.jpg" alt="Livro">
                                     </a>
                                     <h5> Vermelho, Branco e Sangue Azul </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -675,7 +650,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/todas-as-perfeicoes.html">
-                                        <img src="./imagens/perfeicoes.jpg">
+                                        <img src="./livro/imagens/capas-livros-pi/todas-as-suas-imperfeicoes/perfeições.jpg" alt="Livro">
                                     </a>
                                     <h5> Todas as Perfeições </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -690,7 +665,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/sapatilhas-de-gelo-por-babi.html">
-                                        <img src="./imagens/Sapatilhas de Gelo por Babi A_ Sette.jpg">
+                                        <img src="./imagens/Sapatilhas de Gelo por Babi A_ Sette.jpg" alt="Livro">
                                     </a>
                                     <h5> Sapatilhas de Gelo por Babi </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -705,7 +680,7 @@
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
                                     <a href="./livro/a-culpa-e-das-estrelas.html">
-                                        <img src="./imagens/culpa.jpg">
+                                        <img src="./livro/imagens/capas-livros-pi/a-culpa-e-das-estrelas/culpa das estrelas.jpg" alt="Livro">
                                     </a>
                                     <h5> A Culpa é das Estrelas </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -717,20 +692,21 @@
                             </div>
                         </div>
                     </div>
+                    <button class="carousel-control-prev mobile" type="button" data-bs-target="#carousel3mob" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next mobile" type="button" data-bs-target="#carousel3mob" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev mobile" type="button" data-bs-target="#carousel3mob"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next mobile" type="button" data-bs-target="#carousel3mob"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            </div>
         </section>
     </main>
+
     <hr>
+    
     <div class="cart-modal" id="cartModal">
         <div class="cart-content">
             <h2>Seu carrinho</h2>
@@ -740,22 +716,22 @@
             <button id="checkout">Finalizar compra</button>
         </div>
     </div>
-    <section id="contato">
 
+    <section id="contato">
         <div class="infos-contato">
             <h2>Contato</h2>
             <div class="contatoInfos">
                 <div class="jerluci">
-                    <img src="./imagens/Jerlucitchau.png">
+                    <img src="./imagens/Jerlucitchau.png" alt="Mascote Jerluci">
                 </div>
                 <ul>
                     <li>(99) 9 9999-9999</li>
                     <li>AlmasLiterarias@gmail.com</li>
                     <li>Brazlândia, DF</li>
                     <div class="icones">
-                        <img src="./imagens/facebook.png">
-                        <img src="./imagens/instagram.png">
-                        <img src="./imagens/linkedin.png">
+                        <img src="./imagens/facebook.png" alt="Facebook">
+                        <img src="./imagens/instagram.png" alt="Instagram">
+                        <img src="./imagens/linkedin.png" alt="LinkedIn">
                     </div>
                 </ul>
             </div>
@@ -769,9 +745,7 @@
             <input class="btn" type="submit" value="ENVIAR">
         </form>
     </section>
-    <!-- <div id="Jerluci">
-        <img src="./imagens/Jerlucitchau.png">
-    </div> -->
+
     <footer class="bg-dark text-white text-center py-3">
         <p class="mb-0">&copy; 2025 AlmasLiterárias - Todos os direitos reservados</p>
         <div>
@@ -779,10 +753,10 @@
             <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
             <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
         </div>
-
     </footer>
-    <script src="./js/bootstrap.bundle.min.js "></script>
-    <script src="./livro/script.js"></script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
