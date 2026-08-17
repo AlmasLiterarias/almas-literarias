@@ -14,23 +14,26 @@
 <body>
     <main class="form_container"> <!-- main com a classe "form_container" -->
         <h1>Criar conta</h1>
-        <form action="cadastrar" id="form">
+        <form action="../php/cadastro.php" id="formCadastro" method="POST">
             <div id="input_container">
                 <!--Primeiro nome-->
                 <div class="nome">
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" id="nome" placeholder="Nome">
                 </div>
-                <!--Sobrenome-->
-                <div class="sobrenome">
-                    <label for="sobrenome">Sobrenome</label>
-                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                <!--CPF-->
+                <div class="cpf">
+                    <label for="cpf">cpf</label>
+                    <input type="number" name="cpf" id="cpf" placeholder="Digite seu CPF">
                 </div>
                 <!-- E-mail -->
                 <div class="email">
                     <label for="email">E-mail</label>
                     <input type="text" name="email" id="email" placeholder="E-mail">
                 </div>
+                <div class="nascimento">
+                    <label for="nascimento">nascimento</label>
+                    <input type="date" name="nascimento" id="nascimento" placeholder="Data de nascimento">
                 <div class="senha">
                     <label for="senha">Senha </label>
                     <input type="password" name="senha" id="senha1" placeholder="Insira sua senha">
@@ -39,7 +42,7 @@
                     <input type="checkbox" name="" id="termos">
                     <p>Estou ciente e CONCORDO com os termos <a href="./Termos aceite.html"></a></p>
                 </div>
-                <a class="btn-cadastrar" href="../index.html">Cadastrar</a>
+                <button type="submit">Cadastrar</button>
                 <a href="./login.html">Voltar ao Login</a>
             </div>
         </form>

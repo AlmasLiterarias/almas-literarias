@@ -11,14 +11,14 @@
 <body>
     <main class="form_container">
         <h1>Login</h1>
-        <form action="login" method="post">
+        <form action="../php/login.php" method="post">
             <div class="campo">
                 <label for="E-mail">E-mail </label>
-                <input type="email" id="email" nome="email" placeholder="seu@gmail.com" required>
+                <input type="email" id="email" name="email" placeholder="seu@gmail.com" required>
             </div>
             <div class="campo">
                 <label for="senha">Senha</label>
-                <input type="password" id="senha" nome="senha" placeholder="********" required>
+                <input type="password" id="senha" name="senha" placeholder="********" required>
             </div>
             <p>Esqueci minha senha</p>
             <button type="submit">Entrar</button>
