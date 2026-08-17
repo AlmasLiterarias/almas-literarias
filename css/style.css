@@ -1388,23 +1388,23 @@ hr {
 }*/
 
 .dark .carousel-control-next {
-    right: 70px;
+    right: 40px;
     width: 45px;
 }
 
 .dark .carousel-control-prev {
-    left: 70px;
+    left: 40px;
     width: 45px;
 }
 
 .carousel-control-next {
-        right: 65px ;
+        right: 40px ;
         width: 45px ;
         gap: 50px;
     }
 
     .carousel-control-prev {
-        left: 65px ;
+        left: 40px ;
         width: 45px ;
     }
 
