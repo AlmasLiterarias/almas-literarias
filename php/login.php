@@ -1,38 +1,33 @@
 <?php
-
 include('conexao.php');
 session_start();
 
-#capturando dados
+// Capturando dados do formulário
+$email = $_POST['email'] ?? '';
+$senha = $_POST['senha'] ?? '';
 
-$email = $_POST['email'];
-$senha = $_POST['senha'];
+// Uso de Prepared Statement para evitar SQL Injection
+$stmt = $conexao->prepare("SELECT id_usuario, nome, senha_segura FROM usuarios WHERE email = ?");
+$stmt->bind_param("s", $email);
+$stmt->execute();
+$resultado = $stmt->get_result();
 
-#criando a consulta SQL
-
-$sql = "SELECT * FROM usuarios WHERE email = '$email'";
-
-#Execcutando a busca
-
-$resutado = $conexao->query($sql);
-
-if($resultado->num_rows > 0) {
-    //usuario encontarado
+if ($resultado->num_rows > 0) {
     $usuario = $resultado->fetch_assoc();
 } else {
     die("E-mail não cadastrado!");
 }
+// CORREÇÃO: Substitua 'senha' pelo nome exato da coluna da senha no seu banco de dados (ex: 'senha' ou 'senha_hash')
+$coluna_senha_banco = 'senha_segura'; 
 
-if (password_verify($senha, $usuario[$senha_segura])) {
+if (password_verify($senha, $usuario[$coluna_senha_banco])) {
+    // Definindo variáveis de sessão
     $_SESSION['id_usuario'] = $usuario['id_usuario'];
     $_SESSION['nome'] = $usuario['nome'];
-//Criando o crachá do usuário
-    $_SESSION['usuario'] = $usuario['id'];
+    $_SESSION['usuario'] = $usuario['id_usuario'];
 
-header("Location: ../index.html");
-
-exit();
-
+    header("Location: ../index.html");
+    exit();
 } else {
     die("Senha incorreta!");
 }
