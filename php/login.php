@@ -10,11 +10,11 @@ $senha = $_POST['senha'];
 
 #criando a consulta SQL
 
-$sql = "SELECT * FROM usuarios WHERE email = '$email'";
+$sql = "SELECT * FROM cadastro WHERE email = '$email'";
 
 #Execcutando a busca
 
-$resutado = $conexao->query($sql);
+$resultado = $conexao->query($sql);
 
 if($resultado->num_rows > 0) {
     //usuario encontarado
