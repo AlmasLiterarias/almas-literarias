@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almas Literárias - Um Caso Perdido - Volume único</title>
+    <title>Almas Literárias - O Pequeno Príncipe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -13,10 +13,10 @@
 <body>
     <header>
         <nav class="navbar navbar-custom navbar-expand-lg navbar-dark px-3">
-            <a class="logolight" href="../index.html">
+            <a class="logolight" href="../index.php">
                 <img src="./imagens/logoescurodourada.png" alt="logo do site">
             </a>
-            <a class="logodark" href="../index.html">
+            <a class="logodark" href="../index.php">
                 <img src="./imagens/logoclaro.png" alt="logo do site">
             </a>
             <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
@@ -31,11 +31,11 @@
 
             <div id="navbarNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="../index.html"> Início </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#lançamentos"> Lançamentos </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#destaques"> Destaques </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#contato"> Contato </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#longin"> Login </a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../index.php"> Início </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#lançamentos"> Lançamentos </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#destaques"> Destaques </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#contato"> Contato </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#longin"> Login </a></li>
                     <div class="cart-icon" id="cartBtn">
                         <span id="cartCount">0 🛒</span>
                     </div>
@@ -50,14 +50,13 @@
     <main>
         <section id="paginaProduto">
             <div class="produto">
-                <img src="./imagens/capas-livros-pi/um-caso-perdido/caso perdido.jpg">
+                <img src="./imagens/capas-livros-pi/pequeno-principe/principe.jpg">
                 <div class="miniaturas">
                     <div class="carrossel-miniaturas">
                         <button class="seta-mini" id="miniAnterior">❮</button>
                         <div class="miniaturas" id="miniaturas">
-                            <img class="thumb ativa" src="./imagens/capas-livros-pi/um-caso-perdido/caso perdido.jpg">
-                            <img class="thumb ativa" src="./imagens/capas-livros-pi/um-caso-perdido/livro.jpg">
-                            <img class="thumb" src="./imagens/capas-livros-pi/um-caso-perdido/verso.jpg">
+                            <img class="thumb ativa" src="./imagens/capas-livros-pi/pequeno-principe/pequeno principe.jpg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/pequeno-principe/verso.jpg">
                         </div>
                         <button class="seta-mini" id="miniProximo">❯</button>
                     </div>
@@ -65,9 +64,9 @@
             </div>
             <div class="infos-produto">
                 <div class="descricao">
-
-                    <h2>Um Caso Perdido - Volume único </h2>
-                    <p>por: Colleen Hoover</p>
+                    <h2>O Pequeno Príncipe
+                        Capa comum- edição em Português - Volume único</h2>
+                    <p>por: Antonie de Saint-Expéry</p>
                 </div>
                 <div class="avaliacao">
                     <span data-value="1">★</span>
@@ -77,18 +76,22 @@
                     <span data-value="5">★</span>
                 </div>
                 <div class="card-preco">
-                    <p class="preco"><strong>R$ 39,80</strong></p>
+                    <p class="preco"><strong>R$ R$ 39,68</strong></p>
                     <input type="number" placeholder="qtd" value="1">
                     <button class="add-to-cart">comprar</button>
                 </div>
                 <div class="sinopse">
-                    <p>"Sky nunca se sentiu atraída por nenhum garoto; após anos estudando em casa, entra no último
-                        ano
-                        do ensino médio. Conhece Dean Holder, de reputação duvidosa, e algo nele traz de volta
-                        memórias
-                        que ela tinha enterrado profundamente. À medida que os segredos dele vêm à tona, ela é
-                        forçada a
-                        enfrentar a verdade — e descobrir se está preparada para amar e confiar realmente."</p>
+                    <p>"Quando a glória de um semideus encontra o amor de um príncipe. Grécia Antiga, o lar de
+                        deuses e reis. Pátroclo, um jovem e tímido príncipe, acaba exilado no reino de Fítia,
+                        após um acontecimento trágico. Em seu novo lar, longe de tudo o que conhecia, ele
+                        encontra Aquiles – filho do rei e da deusa Tétis. Aquiles é tudo o que Pátroclo não é:
+                        extraordinário em todos os sentidos, belo e com um futuro brilhante já delimitado por
+                        uma profecia. Mesmo com essas diferenças, eles desenvolvem uma conexão profunda e se
+                        tornam inseparáveis. Durante anos, passam a vida assim, lado a lado, crescendo juntos.
+                        E, quando se tornam jovens adultos, esse relacionamento muda para algo ainda mais
+                        intenso. A vida idílica que levam é interrompida quando surge a notícia de que Helena de
+                        Esparta foi raptada e que os homens gregos devem partir imediatamente para Tróia a fim
+                        de libertá‑la."</p>
                 </div>
             </div>
             </div>

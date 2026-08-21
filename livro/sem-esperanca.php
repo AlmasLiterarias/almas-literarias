@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almas Literárias - Amor Fati - Volume único</title>
+    <title>Almas Literárias - Sem Esperança - Volume único</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -13,10 +13,10 @@
 <body>
     <header>
         <nav class="navbar navbar-custom navbar-expand-lg navbar-dark px-3">
-            <a class="logolight" href="../index.html">
+            <a class="logolight" href="../index.php">
                 <img src="./imagens/logoescurodourada.png" alt="logo do site">
             </a>
-            <a class="logodark" href="../index.html">
+            <a class="logodark" href="../index.php">
                 <img src="./imagens/logoclaro.png" alt="logo do site">
             </a>
             <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
@@ -31,11 +31,11 @@
 
             <div id="navbarNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="../index.html"> Início </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#lançamentos"> Lançamentos </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#destaques"> Destaques </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#contato"> Contato </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#longin"> Login </a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../index.php"> Início </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#lançamentos"> Lançamentos </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#destaques"> Destaques </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#contato"> Contato </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#longin"> Login </a></li>
                     <div class="cart-icon" id="cartBtn">
                         <span id="cartCount">0 🛒</span>
                     </div>
@@ -50,27 +50,23 @@
     <main>
         <section id="paginaProduto">
             <div class="produto">
-                <img src="./imagens/capas-livros-pi/amor-fati/1.png">
+                <img src="./imagens/capas-livros-pi/sem-esperanca/sem esperança.jpg">
                 <div class="miniaturas">
                     <div class="carrossel-miniaturas">
                         <button class="seta-mini" id="miniAnterior">❮</button>
                         <div class="miniaturas" id="miniaturas">
-                            <img class="thumb ativa" src="./imagens/capas-livros-pi/amor-fati/1.png">
-                            <img class="thumb" src="./imagens/capas-livros-pi/amor-fati/capa.jpg">
-                            <img class="thumb" src="./imagens/capas-livros-pi/amor-fati/colorido.jpg">
-                            <img class="thumb" src="./imagens/capas-livros-pi/amor-fati/desenho1.jpg">
-                            <img class="thumb" src="./imagens/capas-livros-pi/amor-fati/desenho2.jpg">
-                            <img class="thumb" src="./imagens/capas-livros-pi/amor-fati/verso.jpg">
-                            <img class="thumb" src="./imagens/capas-livros-pi/amor-fati/livro.jpg">
-                        </div>
+                            <img class="thumb ativa" src="./imagens/capas-livros-pi/sem-esperanca/sem esperança.jpg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/sem-esperanca/livro.jpg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/sem-esperanca/verso.jpg">
                         <button class="seta-mini" id="miniProximo">❯</button>
                     </div>
                 </div>
             </div>
             <div class="infos-produto">
                 <div class="descricao">
-                    <h2>Amor Fati - Volume único</h2>
-                    <p>por: V.S. VILELA</p>
+
+                    <h2>Sem Esperança - Volume único</h2>
+                    <p>por: Colleen Hoover</p>
                 </div>
                 <div class="avaliacao">
                     <span data-value="1">★</span>
@@ -80,22 +76,24 @@
                     <span data-value="5">★</span>
                 </div>
                 <div class="card-preco">
-                    <p class="preco"><strong>R$ 41,30</strong></p>
+                    <p class="preco"><strong>R$ 29,90</strong></p>
                     <input type="number" placeholder="qtd" value="1">
                     <button class="add-to-cart">comprar</button>
                 </div>
                 <div class="sinopse">
-                    <p>"Abby trabalha em uma academia de luta e, para levantar dinheiro, aceita lutar contra a
-                        campeã
-                        nacional de boxe, mesmo sendo apenas amadora. Ao mesmo tempo, sua vida pessoal se complica
-                        quando uma menina de 9 anos aparece na porta dizendo ser sua filha. Eva é advogada
-                        bem‑sucedida,
-                        tem tudo sob controle até o dia em que sua filha foge de casa e volta com a mãe biológica.
-                        Lily,
-                        a menina, decide buscar sua mãe biológica e desencadeia uma confusão na vida de Abby e Eva.
-                        “Amor Fati” é uma história sobre encontros e desencontros, escolhas, segundas chances, e
-                        sobretudo sobre família e pertencimento."</p>
+                    <p>"Assombrado pela culpa e pelo remorso por não conseguir salvar Hope nem Less, Holder
+                        desenvolveu
+                        uma personalidade agressiva. Mas, quando finalmente se depara com Hope (que agora se chama
+                        Sky)
+                        depois de tantos anos, ele não poderia imaginar que o sofrimento seria ainda maior após o
+                        reencontro. Em Sem Esperanças, Holder revela como os acontecimentos da infância de Hope
+                        afetaram
+                        sua vida e sua família, fazendo‑o buscar a própria redenção na possibilidade de salvá‑la.
+                        Mas é
+                        apenas amando Sky que ele finalmente será capaz de começar a se reconciliar com si mesmo."
+                    </p>
                 </div>
+            </div>
             </div>
         </section>
 

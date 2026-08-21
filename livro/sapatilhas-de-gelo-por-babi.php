@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almas Literárias - Todas as (Im)Perfeições - Volume único</title>
+    <title>Almas Literárias - Sapatilhas de Gelo por Babi - Volume único</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -13,10 +13,10 @@
 <body>
     <header>
         <nav class="navbar navbar-custom navbar-expand-lg navbar-dark px-3">
-            <a class="logolight" href="../index.html">
+            <a class="logolight" href="../index.php">
                 <img src="./imagens/logoescurodourada.png" alt="logo do site">
             </a>
-            <a class="logodark" href="../index.html">
+            <a class="logodark" href="../index.php">
                 <img src="./imagens/logoclaro.png" alt="logo do site">
             </a>
             <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
@@ -31,11 +31,11 @@
 
             <div id="navbarNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="../index.html"> Início </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#lançamentos"> Lançamentos </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#destaques"> Destaques </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#contato"> Contato </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#longin"> Login </a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../index.php"> Início </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#lançamentos"> Lançamentos </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#destaques"> Destaques </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#contato"> Contato </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#longin"> Login </a></li>
                     <div class="cart-icon" id="cartBtn">
                         <span id="cartCount">0 🛒</span>
                     </div>
@@ -50,15 +50,14 @@
     <main>
         <section id="paginaProduto">
             <div class="produto">
-                <img src="./imagens/capas-livros-pi/todas-as-suas-imperfeicoes/perfeições.jpg">
+                <img src="./imagens/capas-livros-pi/sapatilhas-de-gelo/gelo.jpg">
                 <div class="miniaturas">
                     <div class="carrossel-miniaturas">
                         <button class="seta-mini" id="miniAnterior">❮</button>
                         <div class="miniaturas" id="miniaturas">
-                            <img class="thumb ativa" src="./imagens/capas-livros-pi/todas-as-suas-imperfeicoes/perfeições.jpg">
-                            <img class="thumb" src="./imagens/capas-livros-pi/todas-as-suas-imperfeicoes/capa.jpg">
-                            <img class="thumb" src="./imagens/capas-livros-pi/todas-as-suas-imperfeicoes/verso.jpg">
-                            <img class="thumb" src="./imagens/capas-livros-pi/todas-as-suas-imperfeicoes/livro.jpg">
+                            <img class="thumb ativa" src="./imagens/capas-livros-pi/sapatilhas-de-gelo/gelo.jpg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/sapatilhas-de-gelo/livro.jpg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/sapatilhas-de-gelo/verso.jpg">
                         </div>
                         <button class="seta-mini" id="miniProximo">❯</button>
                     </div>
@@ -66,8 +65,8 @@
             </div>
             <div class="infos-produto">
                 <div class="descricao">
-                    <h2>Todas as (Im)Perfeições - Volume único</h2>
-                    <p>por: Colleen Hoover</p>
+                    <h2>Sapatilhas de Gelo por Babi - Volume único</h2>
+                    <p>por: Bibi A. Sette</p>
                 </div>
                 <div class="avaliacao">
                     <span data-value="1">★</span>
@@ -82,12 +81,7 @@
                     <button class="add-to-cart">comprar</button>
                 </div>
                 <div class="sinopse">
-                    <p>"Quinn e Graham se conhecem no “pior dia de suas vidas”: ela descobre a traição do noivo, ele
-                        descobre a traição da namorada. Alguns meses depois se reencontram, se apaixonam e casam —
-                        parece perfeito, mas nem tudo é como parece. Com o passar dos anos, a frustração por não
-                        conseguirem ter filhos, silêncios e desconfianças vão minando o casamento. O livro pergunta:
-                        um amor “perfeito” é suficiente para manter vivo o casamento entre duas pessoas
-                        imperfeitas?"</p>
+                    <p>Em "Sapatilhas de Gelo", de Babi A. Sette, acompanhamos Natalie, uma bailarina que, após decepções amorosas e profissionais em Londres, busca recomeçar sua carreira em Toronto. Ao dividir apartamento com Lucas, um jogador de hóquei arrogante e antigo conhecido, ela precisa lidar com a convivência forçada e a atração inesperada, enquanto enfrenta pressões profissionais e segredos do passado. O romance explora a superação de traumas e o desenvolvimento de um novo amor.</p>
                 </div>
             </div>
             </div>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almas Literárias - Imperfeitos - Volume único</title>
+    <title>Almas Literárias - A Escolha - Volume único</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -13,10 +13,10 @@
 <body>
     <header>
         <nav class="navbar navbar-custom navbar-expand-lg navbar-dark px-3">
-            <a class="logolight" href="../index.html">
+            <a class="logolight" href="../index.php">
                 <img src="./imagens/logoescurodourada.png" alt="logo do site">
             </a>
-            <a class="logodark" href="../index.html">
+            <a class="logodark" href="../index.php">
                 <img src="./imagens/logoclaro.png" alt="logo do site">
             </a>
             <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
@@ -31,11 +31,11 @@
 
             <div id="navbarNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="../index.html"> Início </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#lançamentos"> Lançamentos </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#destaques"> Destaques </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#contato"> Contato </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#longin"> Login </a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../index.php"> Início </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#lançamentos"> Lançamentos </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#destaques"> Destaques </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#contato"> Contato </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#longin"> Login </a></li>
                     <div class="cart-icon" id="cartBtn">
                         <span id="cartCount">0 🛒</span>
                     </div>
@@ -50,15 +50,14 @@
     <main>
         <section id="paginaProduto">
             <div class="produto">
-                <img src="./imagens/capas-livros-pi/im-perfeitos/imperfeitos.jpg">
+                <img src="./imagens/capas-livros-pi/a-escolha/escolha.jpg">
                 <div class="miniaturas">
                     <div class="carrossel-miniaturas">
                         <button class="seta-mini" id="miniAnterior">❮</button>
                         <div class="miniaturas" id="miniaturas">
-                            <img class="thumb ativa" src="./imagens/capas-livros-pi/im-perfeitos/imperfeitos.jpg">
-                            <img class="thumb" src="./imagens/capas-livros-pi/im-perfeitos/capa.jpg">
-                            <img class="thumb" src="./imagens/capas-livros-pi/im-perfeitos/frente verso.jpg">
-                            <img class="thumb" src="./imagens/capas-livros-pi/im-perfeitos/livro.jpg">
+                            <img class="thumb ativa"  src="./imagens/capas-livros-pi/a-escolha/escolha.jpg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/a-escolha/capa.jpg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/a-escolha/verso.jpg">
                         </div>
                         <button class="seta-mini" id="miniProximo">❯</button>
                     </div>
@@ -66,8 +65,8 @@
             </div>
             <div class="infos-produto">
                 <div class="descricao">
-                    <h2>Imperfeitos - Volume único</h2>
-                    <p>por: Chistina Lauren</p>
+                    <h2>A Escolha - Volume único </h2>
+                    <p>por: Kiera Cass</p>
                 </div>
                 <div class="avaliacao">
                     <span data-value="1">★</span>
@@ -77,19 +76,19 @@
                     <span data-value="5">★</span>
                 </div>
                 <div class="card-preco">
-                    <p class="preco"><strong>R$ 19,00</strong></p>
+                    <p class="preco"><strong>R$ 40,39</strong></p>
                     <input type="number" placeholder="qtd" value="1">
                     <button class="add-to-cart">comprar</button>
                 </div>
                 <div class="sinopse">
-                    <p>"Olive se sente como a “gêmea azarada” da família — dos acidentes estranhos à vida amorosa e
-                        profissional que nunca dá certo. Quando a irmã de Olive contrata um buffet para o casamento
-                        que passa mal com intoxicação alimentar, Olive escapa porque é alérgica a frutos do mar. E
-                        Ethan, o irmão do noivo, também não é afetado. Então surge a ideia: aproveitar a viagem de
-                        lua‑de‑mel que não era reembolsável — juntos, ele e Olive — no Havaí. Há apenas um “pequeno”
-                        problema: Olive e Ethan são inimigos declarados. Mas quem vai recusar uma viagem grátis?
-                        Agora eles estão presos num cenário paradisíaco, compartilhando suíte, farpas, sarcasmo… e
-                        talvez algo mais."</p>
+                    <p>"Em um reino dividido por castas, onde a vida de cada pessoa é definida desde o nascimento, a
+                        jovem America Singer consegue superar as adversidades: da casta em que nasceu à pressão de
+                        um concurso real para se casar com o príncipe. Depois de tantos desafios na competição para
+                        conquistar o coração do Príncipe Maxon, America agora está mais perto de alcançar o que
+                        parecia impossível. No entanto, mesmo à beira da vitória, ela se vê forçada a tomar a maior
+                        decisão de sua vida — escolher entre o amor verdadeiro e o dever, entre o passado e o
+                        futuro. A escolha que fizer não afetará apenas seu destino, mas também o destino de todo o
+                        reino."</p>
                 </div>
             </div>
             </div>

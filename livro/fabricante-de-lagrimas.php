@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almas Literárias - Sem Esperança - Volume único</title>
+    <title>Almas Literárias - Fabricante de Lágrimas - Volume único</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -13,10 +13,10 @@
 <body>
     <header>
         <nav class="navbar navbar-custom navbar-expand-lg navbar-dark px-3">
-            <a class="logolight" href="../index.html">
+            <a class="logolight" href="../index.php">
                 <img src="./imagens/logoescurodourada.png" alt="logo do site">
             </a>
-            <a class="logodark" href="../index.html">
+            <a class="logodark" href="../index.php">
                 <img src="./imagens/logoclaro.png" alt="logo do site">
             </a>
             <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
@@ -31,11 +31,11 @@
 
             <div id="navbarNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="../index.html"> Início </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#lançamentos"> Lançamentos </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#destaques"> Destaques </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#contato"> Contato </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#longin"> Login </a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../index.php"> Início </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#lançamentos"> Lançamentos </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#destaques"> Destaques </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#contato"> Contato </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#longin"> Login </a></li>
                     <div class="cart-icon" id="cartBtn">
                         <span id="cartCount">0 🛒</span>
                     </div>
@@ -50,23 +50,23 @@
     <main>
         <section id="paginaProduto">
             <div class="produto">
-                <img src="./imagens/capas-livros-pi/sem-esperanca/sem esperança.jpg">
+                <img src="./imagens/capas-livros-pi/fabricante-de-lagrimas/capa.jpg">
                 <div class="miniaturas">
                     <div class="carrossel-miniaturas">
                         <button class="seta-mini" id="miniAnterior">❮</button>
                         <div class="miniaturas" id="miniaturas">
-                            <img class="thumb ativa" src="./imagens/capas-livros-pi/sem-esperanca/sem esperança.jpg">
-                            <img class="thumb" src="./imagens/capas-livros-pi/sem-esperanca/livro.jpg">
-                            <img class="thumb" src="./imagens/capas-livros-pi/sem-esperanca/verso.jpg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/fabricante-de-lagrimas/capa.jpg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/fabricante-de-lagrimas/verso.jpg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/fabricante-de-lagrimas/livro.jpg">
+                        </div>
                         <button class="seta-mini" id="miniProximo">❯</button>
                     </div>
                 </div>
             </div>
             <div class="infos-produto">
                 <div class="descricao">
-
-                    <h2>Sem Esperança - Volume único</h2>
-                    <p>por: Colleen Hoover</p>
+                    <h2>Fabricante de Lágrimas - Volume único</h2>
+                    <p>por: Erin Doom</p>
                 </div>
                 <div class="avaliacao">
                     <span data-value="1">★</span>
@@ -76,22 +76,18 @@
                     <span data-value="5">★</span>
                 </div>
                 <div class="card-preco">
-                    <p class="preco"><strong>R$ 29,90</strong></p>
+                    <p class="preco"><strong>R$ 57,70</strong></p>
                     <input type="number" placeholder="qtd" value="1">
                     <button class="add-to-cart">comprar</button>
                 </div>
                 <div class="sinopse">
-                    <p>"Assombrado pela culpa e pelo remorso por não conseguir salvar Hope nem Less, Holder
-                        desenvolveu
-                        uma personalidade agressiva. Mas, quando finalmente se depara com Hope (que agora se chama
-                        Sky)
-                        depois de tantos anos, ele não poderia imaginar que o sofrimento seria ainda maior após o
-                        reencontro. Em Sem Esperanças, Holder revela como os acontecimentos da infância de Hope
-                        afetaram
-                        sua vida e sua família, fazendo‑o buscar a própria redenção na possibilidade de salvá‑la.
-                        Mas é
-                        apenas amando Sky que ele finalmente será capaz de começar a se reconciliar com si mesmo."
-                    </p>
+                    <p>"Entre as paredes do orfanato onde Nica cresceu, histórias e lendas sempre foram contadas à
+                        luz das velas. A mais famosa de todas é a do Fabricante de Lágrimas, um misterioso artesão,
+                        com olhos claros como vidro, uma figura aterradora que forja todos os medos que habitam no
+                        coração das pessoas. Quando, aos dezassete anos, Nica é adotada pelo casal Milligan, pensa
+                        que está a deixar para trás este mundo de contos de fadas sombrios, mas os Milligan também
+                        adotam Rigel, um órfão inquieto e misterioso, e ele é a última pessoa que Nica desejaria
+                        como irmão adotivo."</p>
                 </div>
             </div>
             </div>

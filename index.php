@@ -12,10 +12,10 @@
 <body>
     <header>
         <nav class="navbar navbar-custom navbar-expand-lg navbar-dark px-3">
-            <a class="logolight" href="index.html">
+            <a class="logolight" href="index.php">
                 <img src="./imagens/logoescurodourada.png" alt="logo do site">
             </a>
-            <a class="logodark" href="index.html">
+            <a class="logodark" href="index.php">
                 <img src="./imagens/logoclaro.png" alt="logo do site">
             </a>
             
@@ -27,11 +27,11 @@
             </div>
             <div id="navbarNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html"> Início </a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.php"> Início </a></li>
                     <li class="nav-item"><a class="nav-link" href="#lançamentos"> Lançamentos </a></li>
                     <li class="nav-item"><a class="nav-link" href="#destaques"> Destaques </a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato"> Contato </a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html"> Login </a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.php"> Login </a></li>
                     <li class="nav-item">
                         <div class="cart-icon nav-link" id="cartBtn" style="cursor: pointer;">
                             <span id="cartCount">0 🛒</span>
@@ -126,7 +126,7 @@
                         <div class="carousel-item active">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/sou-tudo-que-voce-nao-precisa.html">
+                                    <a href="./livro/sou-tudo-que-voce-nao-precisa.php">
                                         <img src="./livro/imagens/capas-livros-pi/sou-tudo-que-nao-precisa/nao precisa.jpg" alt="Livro"></a>
                                     <h5>Sou Tudo Que Você (Não) Precisa</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -136,7 +136,7 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/a-pior-das-boas-ideias.html">
+                                    <a href="./livro/a-pior-das-boas-ideias.php">
                                         <img src="./imagens/pior ideias.jpg" alt="Livro"></a>
                                     <h5>A Pior das Boas Ideias</h5>
                                     <p> Capa comum- edição em Português</p>
@@ -146,7 +146,7 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/amor-fati.html">
+                                    <a href="./livro/amor-fati.php">
                                         <img src="./imagens/Amor Fati.jpg" alt="Livro"></a>
                                     <h5>Amor Fati</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -165,7 +165,7 @@
                         <div class="carousel-item active">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/sou-tudo-que-voce-nao-precisa.html">
+                                    <a href="./livro/sou-tudo-que-voce-nao-precisa.php">
                                         <img src="./livro/imagens/capas-livros-pi/sou-tudo-que-nao-precisa/nao precisa.jpg" alt="Livro"></a>
 
                                     <h5>Sou Tudo Que Você (Não) Precisa</h5>
@@ -180,7 +180,7 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/a-pior-das-boas-ideias.html">
+                                    <a href="./livro/a-pior-das-boas-ideias.php">
                                        <img src="./livro/imagens/capas-livros-pi/a-pior-das-boas-ideias/pior ideias.jpg" alt="Livro"></a>
                                     <h5>A Pior das Boas Ideias</h5>
                                     <p> Capa comum- edição em Português</p>
@@ -194,7 +194,7 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/amor-fati.html">
+                                    <a href="./livro/amor-fati.php">
                                         <img src="./livro/imagens/capas-livros-pi/amor-fati/Amor Fati.jpg" alt="Livro">
                                     </a>
                                     <h5>Amor Fati</h5>
@@ -229,7 +229,7 @@
                         <div class="carousel-item active">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/e-assim-que-acaba.html">
+                                    <a href="./livro/e-assim-que-acaba.php">
                                         <img src="./livro/imagens/capas-livros-pi/e-assim-que-acaba/acaba.jpg" alt="Livro"></a>
                                     <h5> É Assim que Acaba</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -239,7 +239,7 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/cancao-de-aquiles.html">
+                                    <a href="./livro/cancao-de-aquiles.php">
                                         <img src="./livro/imagens/capas-livros-pi/cancao-de-aquiles/aquiles.jpeg" alt="Livro"></a>
                                     <h5> Canção de Aquiles</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -249,7 +249,7 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/o-lado-feio-do-amor.html">
+                                    <a href="./livro/o-lado-feio-do-amor.php">
                                         <img src="./livro/imagens/capas-livros-pi/o-lado-feio-do-amor/lado feio.jpg" alt="Livro"></a>
                                     <h5> O Lado Feio do Amor</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -259,7 +259,7 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/o-pequeno-principe.html">
+                                    <a href="./livro/o-pequeno-principe.php">
                                         <img src="./livro/imagens/capas-livros-pi/pequeno-principe/pequeno principe.jpg" alt="Livro"></a>
                                     <h5> O Pequeno Príncipe </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -273,7 +273,7 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/cartas-de-amor-aos-mortos.html">
+                                    <a href="./livro/cartas-de-amor-aos-mortos.php">
                                         <img src="./livro/imagens/capas-livros-pi/cartas-de-amor-aos-mortos/cartas mortos.jpg" alt="Livro"></a>
                                     <h5>Cartas de Amor aos Mortos</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -283,7 +283,7 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/fabricante-de-lagrimas.html">
+                                    <a href="./livro/fabricante-de-lagrimas.php">
                                         <img src="./livro/imagens/capas-livros-pi/fabricante-de-lagrimas/capa.jpg" alt="Livro"></a>
                                     <h5>Fabricante de Lágrimas </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -293,7 +293,7 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/um-caso-perdido.html">
+                                    <a href="./livro/um-caso-perdido.php">
                                         <img src="./livro/imagens/capas-livros-pi/um-caso-perdido/caso perdido.jpg" alt="Livro"></a>
                                     <h5>Um Caso Perdido </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -303,7 +303,7 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/sem-esperanca.html">
+                                    <a href="./livro/sem-esperanca.php">
                                         <img src="./livro/imagens/capas-livros-pi/sem-esperanca/sem esperança.jpg" alt="Livro"></a>
                                     <h5>Sem Esperança </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -331,7 +331,7 @@
                         <div class="carousel-item active">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/e-assim-que-acaba.html">
+                                    <a href="./livro/e-assim-que-acaba.php">
                                         <img src="./livro/imagens/capas-livros-pi/e-assim-que-acaba/acaba.jpg" alt="Livro">
                                     </a>
                                     <h5> É Assim que Acaba</h5>
@@ -346,7 +346,7 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/cancao-de-aquiles.html">
+                                    <a href="./livro/cancao-de-aquiles.php">
                                         <img src="./livro/imagens/capas-livros-pi/cancao-de-aquiles/aquiles.jpeg" alt="Livro">
                                     </a>
                                     <h5> Canção de Aquiles</h5>
@@ -361,7 +361,7 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/o-lado-feio-do-amor.html">
+                                    <a href="./livro/o-lado-feio-do-amor.php">
                                         <img src="./livro/imagens/capas-livros-pi/o-lado-feio-do-amor/lado feio.jpg" alt="Livro">
                                     </a>
                                     <h5> O Lado Feio do Amor</h5>
@@ -376,7 +376,7 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/o-pequeno-principe.html">
+                                    <a href="./livro/o-pequeno-principe.php">
                                         <img src="./livro/imagens/capas-livros-pi/pequeno-principe/principe.jpg" alt="Livro">
                                     </a>
                                     <h5> O Pequeno Príncipe </h5>
@@ -391,7 +391,7 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/cartas-de-amor-aos-mortos.html">
+                                    <a href="./livro/cartas-de-amor-aos-mortos.php">
                                         <img src="./livro/imagens/capas-livros-pi/cartas-de-amor-aos-mortos/cartas mortos.jpg" alt="Livro">
                                     </a>
                                     <h5>Cartas de Amor aos Mortos</h5>
@@ -406,7 +406,7 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/fabricante-de-lagrimas.html">
+                                    <a href="./livro/fabricante-de-lagrimas.php">
                                         <img src="./livro/imagens/capas-livros-pi/fabricante-de-lagrimas/fabricante.jpg" alt="Livro">
                                     </a>
                                     <h5>Fabricante de Lágrimas </h5>
@@ -421,7 +421,7 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/um-caso-perdido.html">
+                                    <a href="./livro/um-caso-perdido.php">
                                         <img src="./livro/imagens/capas-livros-pi/um-caso-perdido/caso perdido.jpg" alt="Livro">
                                     </a>
                                     <h5>Um Caso Perdido </h5>
@@ -436,7 +436,7 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/sem-esperanca.html">
+                                    <a href="./livro/sem-esperanca.php">
                                         <img src="./livro/imagens/capas-livros-pi/sem-esperanca/sem esperança.jpg" alt="Livro">
                                     </a>
                                     <h5>Sem Esperança </h5>
@@ -471,7 +471,7 @@
                         <div class="carousel-item active">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/amor-e-gelato.html">
+                                    <a href="./livro/amor-e-gelato.php">
                                         <img src="./livro/imagens/capas-livros-pi/amor-gelato/gelato.jpg" alt="Livro"></a>
                                     <h5>Amor e Gelato</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -481,7 +481,7 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/imperfeitos.html">
+                                    <a href="./livro/imperfeitos.php">
                                         <img src="./livro/imagens/capas-livros-pi/im-perfeitos/imperfeitos.jpg" alt="Livro"></a>
                                     <h5> Imperfeitos </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -491,7 +491,7 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/a-escolha.html">
+                                    <a href="./livro/a-escolha.php">
                                         <img src="./livro/imagens/capas-livros-pi/a-escolha/escolha.jpg" alt="Livro"></a>
                                     <h5> A Escolha </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -501,7 +501,7 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/mil-beijos-de-garoto.html">
+                                    <a href="./livro/mil-beijos-de-garoto.php">
                                         <img src="./livro/imagens/capas-livros-pi/mil-beijos-de-garotos/mil beijos.jpg" alt="Livro"></a>
                                     <h5> Mil Beijos de Garoto </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -515,7 +515,7 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/vermelho-branco-e-sangue-azul.html">
+                                    <a href="./livro/vermelho-branco-e-sangue-azul.php">
                                         <img src="./livro/imagens/capas-livros-pi/vermelho-branco-azul/sangue azul.jpg" alt="Livro"></a>
                                     <h5> Vermelho, Branco e Sangue Azul </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -525,7 +525,7 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/todas-as-perfeicoes.html">
+                                    <a href="./livro/todas-as-perfeicoes.php">
                                         <img src="./livro/imagens/capas-livros-pi/todas-as-suas-imperfeicoes/perfeições.jpg" alt="Livro"></a>
                                     <h5> Todas as Perfeições </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -535,7 +535,7 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/sapatilhas-de-gelo-por-babi.html">
+                                    <a href="./livro/sapatilhas-de-gelo-por-babi.php">
                                         <img src="./livro/imagens/capas-livros-pi/sapatilhas-de-gelo/gelo.jpg" alt="Livro"></a>
                                     <h5> Sapatilhas de Gelo por Babi </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -545,7 +545,7 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/a-culpa-e-das-estrelas.html">
+                                    <a href="./livro/a-culpa-e-das-estrelas.php">
                                         <img src="./livro/imagens/capas-livros-pi/a-culpa-e-das-estrelas/culpa das estrelas.jpg" alt="Livro"></a>
                                     <h5> A Culpa é das Estrelas </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -573,7 +573,7 @@
                         <div class="carousel-item active">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/amor-e-gelato.html">
+                                    <a href="./livro/amor-e-gelato.php">
                                         <img src="./livro/imagens/capas-livros-pi/amor-gelato/gelato.jpg" alt="Livro">
                                     </a>
                                     <h5>Amor e Gelato</h5>
@@ -588,7 +588,7 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/imperfeitos.html">
+                                    <a href="./livro/imperfeitos.php">
                                         <img src="./livro/imagens/capas-livros-pi/im-perfeitos/imperfeitos.jpg" alt="Livro">
                                     </a>
                                     <h5> Imperfeitos </h5>
@@ -603,7 +603,7 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/a-escolha.html">
+                                    <a href="./livro/a-escolha.php">
                                         <img src="./livro/imagens/capas-livros-pi/a-escolha/escolha.jpg" alt="Livro">
                                     </a>
                                     <h5> A Escolha </h5>
@@ -618,7 +618,7 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/mil-beijos-de-garoto.html">
+                                    <a href="./livro/mil-beijos-de-garoto.php">
                                         <img src="./livro/imagens/capas-livros-pi/mil-beijos-de-garotos/mil beijos.jpg" alt="Livro">
                                     </a>
                                     <h5> Mil Beijos de Garoto </h5>
@@ -633,7 +633,7 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/vermelho-branco-e-sangue-azul.html">
+                                    <a href="./livro/vermelho-branco-e-sangue-azul.php">
                                         <img src="./livro/imagens/capas-livros-pi/vermelho-branco-azul/sangue azul.jpg" alt="Livro">
                                     </a>
                                     <h5> Vermelho, Branco e Sangue Azul </h5>
@@ -648,7 +648,7 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/todas-as-perfeicoes.html">
+                                    <a href="./livro/todas-as-perfeicoes.php">
                                         <img src="./livro/imagens/capas-livros-pi/todas-as-suas-imperfeicoes/perfeições.jpg" alt="Livro">
                                     </a>
                                     <h5> Todas as Perfeições </h5>
@@ -663,7 +663,7 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/sapatilhas-de-gelo-por-babi.html">
+                                    <a href="./livro/sapatilhas-de-gelo-por-babi.php">
                                         <img src="./imagens/Sapatilhas de Gelo por Babi A_ Sette.jpg" alt="Livro">
                                     </a>
                                     <h5> Sapatilhas de Gelo por Babi </h5>
@@ -678,7 +678,7 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
-                                    <a href="./livro/a-culpa-e-das-estrelas.html">
+                                    <a href="./livro/a-culpa-e-das-estrelas.php">
                                         <img src="./livro/imagens/capas-livros-pi/a-culpa-e-das-estrelas/culpa das estrelas.jpg" alt="Livro">
                                     </a>
                                     <h5> A Culpa é das Estrelas </h5>
