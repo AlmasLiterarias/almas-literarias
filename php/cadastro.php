@@ -10,7 +10,7 @@ $senha = $_POST['senha'];
 $nascimento = $_POST['nascimento']; 
 
 if (empty($nome) || empty($email) || empty($senha) || empty($nascimento) || empty($cpf)){ # o empty verifica se os campos estao vazios
-    echo "Preencha todos os campos!!";
+    echo '<p class="vazio">Preencha todos os campos!!</p>';
     exit();
 }
 

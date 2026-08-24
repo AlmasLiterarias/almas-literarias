@@ -1068,7 +1068,7 @@ button.seta-mini {
     border-radius: 15px;
     margin: 50px auto;
     width: 400px;
-    height: 550px;
+    height: auto;
 }
 
 #form{
@@ -1085,6 +1085,7 @@ width: 15px;
 
 .termos{
     display: flex;
+    align-items: center;
 }
 
 label{

@@ -8,7 +8,7 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Cadastrar</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -41,6 +41,9 @@
                 <div class="termos">
                     <input type="checkbox" name="" id="termos">
                     <a href="./Termos aceite.html"> Estou ciente e CONCORDO com os termos </a>
+                </div>
+                <button type="submit">Cadastrar</button>
+            </div>
         </form>
     </main>
     <footer class="bg-dark text-white text-center py-3">
@@ -50,7 +53,8 @@
             <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
             <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
         </div>
-        <script src="./js/script.js"></script><script src="./JS/script.js"></script>
+    </footer>
+    <script src="./js/script.js"></script><script src="./JS/script.js"></script>
 </body>
 
 </html>
