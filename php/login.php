@@ -26,7 +26,7 @@ if (password_verify($senha, $usuario[$coluna_senha_banco])) {
     $_SESSION['nome'] = $usuario['nome'];
     $_SESSION['usuario'] = $usuario['id_usuario'];
 
-    header("Location: ../index.html");
+    header("Location: ../index.php");
     exit();
 } else {
     die("Senha incorreta!");
