@@ -25,7 +25,7 @@ $sql = "INSERT INTO usuarios(nome, email, nascimento, senha_segura, cpf) VALUES 
 # Executando no banco de dados
 
 $conexao->query($sql);
-header("Location: login.html");
+header("Location: login.php");
 exit();
 
 # O dado agora e permanente
