@@ -1059,85 +1059,204 @@ button.seta-mini {
 }
 
 /* ==========================================================
-   19. LOGIN E CADASTRO
+   22. LOGIN / CADASTRO
 ========================================================== */
-.form_container{
-        justify-self: center;
-    background-color: #f0f0f0;
-    padding: 30px;
-    border-radius: 15px;
-    margin: 50px auto;
-    width: 400px;
-    height: auto;
+
+.form_container {
+  width: min(90%, 450px);
+  margin: 120px auto 50px;
+  padding: 30px;
+  background-color: var(--card);
+  color: var(--fg);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-#form{
-    width: 300px;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+.form_container h1 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: var(--fg);
 }
 
-#termos{
-width: 15px;
+.form_container form {
+  width: 100%;
+  max-width: 350px;
+
+  padding: 25px;
+  background-color: var(--bg);
+  border-radius: 12px;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-.termos{
-    display: flex;
-    align-items: center;
+
+/* --------------------------
+   CAMPOS
+-------------------------- */
+
+.form_container .campo {
+  width: 100%;
 }
 
-label{
-    display: block;
-    margin-top: 10px;
+.form_container label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+  color: var(--fg);
+  font-weight: 600;
 }
 
-input{
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    height: 40px;
-    margin-bottom: 15px;
-    padding-left: 10px;
-    box-sizing: border-box;
+.form_container input {
+  width: 100%;
+  height: 42px;
+
+  padding: 10px;
+  margin: 0 0 10px;
+
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 8px;
+
+  background-color: var(--card);
+  color: var(--fg);
+
+  outline: none;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
-.btn_default{
-    display: block;
-    margin: 20px auto;
+.form_container input::placeholder {
+  color: var(--fg);
+  opacity: 0.55;
 }
 
-/*#form .btn-cadastrar{
-    background-color: blue;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}*/
-
-#form .btn-cadastrar:hover{
-    transform: scale(1.1);
+.form_container input:focus {
+  border-color: var(--fg);
+  box-shadow: 0 0 0 3px rgba(212, 180, 85, 0.15);
 }
 
-#form .btn-cadastrar:active{
-    background-color: #00cc66;
+
+/* --------------------------
+   LINK ESQUECI A SENHA
+-------------------------- */
+
+.form_container .esqueci-senha {
+  display: block;
+
+  margin: 5px 0 15px;
+
+  color: var(--fg);
+  text-decoration: none;
+  font-size: 14px;
+
+  transition: opacity 0.3s ease;
 }
 
-#input_container{
-    display: flex;
-    flex-direction: column;
+.form_container .esqueci-senha:hover {
+  opacity: 0.7;
+  text-decoration: underline;
 }
 
-#form a{
-    margin-left: 10px;
-    text-decoration: none;
+
+/* --------------------------
+   BOTÃO ENTRAR
+-------------------------- */
+
+.form_container .btn-cadastrar {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 12px 20px;
+  margin: 10px 0 0;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: var(--fg);
+  color: var(--bg);
+
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form_container .btn-cadastrar:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form_container .btn-cadastrar:active {
+  transform: scale(0.97);
+}
+
+
+/* --------------------------
+   ÁREA DE CADASTRO
+-------------------------- */
+
+.form_cadastro {
+  width: 100%;
+  max-width: 350px;
+
+  margin-top: 20px;
+
+  text-align: center;
+}
+
+.form_cadastro p {
+  margin-bottom: 10px;
+  padding: 0;
+
+  color: var(--fg);
+}
+
+.form_cadastro a {
+  color: var(--fg);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.form_cadastro a:hover {
+  text-decoration: underline;
+}
+
+ne;
 }
 
 /* ==========================================================
-   20. RESPONSIVIDADE
+   20. FOOTER
 ========================================================== */
 
 footer{

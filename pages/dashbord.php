@@ -21,7 +21,7 @@
         </aside>
         <main class="contant">
             <h1> Meu Perfil </h1>
-            <p> Gerencie suas informações abixo: </p>
+            <p> Gerencie suas informações abaixo: </p>
 
             <form action="../php/dashbord.php" method="POST">
                 <label for="nome"> Nome: </label>

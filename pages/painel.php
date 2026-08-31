@@ -24,7 +24,7 @@
     <main class="content">
         <header class="painel">
             <div>
-                <span class="painelUsuario"><strong>Meu Perfil</strong></span>
+                <span class="painelUsuario"><strong>Meu Perfil </strong></span>
                 <h1>Olá</h1>
             </div>
         </header>
