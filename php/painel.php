@@ -47,10 +47,10 @@ $eh_moderador = in_array($usuario['tipo_usuario'], ['moderador', 'admin']);
 
 $denuncias = [];
 if ($eh_moderador) {
-    $sql_denuncias = "SELECT c.id_comentario, c.comentario, c.data_comentario, u.nome AS autor, f.titulo AS filme_titulo, f.id_filme
+    $sql_denuncias = "SELECT c.id_comentario, c.comentario, c.data_comentario, u.nome AS autor, l.titulo AS livro_titulo, l.id_livro
                       FROM comentarios c
                       INNER JOIN usuarios u ON c.id_usuario = u.id_usuario
-                      INNER JOIN filmes f ON c.id_filme = f.id_filme
+                      INNER JOIN livros l ON c.id_livro = l.id_livro
                       WHERE c.status = 'analise'
                       ORDER BY c.data_comentario DESC";
     $res_denuncias = $conexao->query($sql_denuncias);
@@ -69,9 +69,9 @@ $tipos_rotulo = [
 
 $rotulo_atual = $tipos_rotulo[$usuario['tipo_usuario']] ?? 'Usuário';
 
-$sql_favoritos = "SELECT f.id_filme, f.titulo, f.imagem, f.genero, fav.data_favoritado 
+$sql_favoritos = "SELECT l.id_livro, l.titulo, l.imagem, l.genero, fav.data_favoritado 
                   FROM favoritos fav 
-                  INNER JOIN filmes f ON fav.id_filme = f.id_filme 
+                  INNER JOIN livros f ON fav.id_livro = l.id_livro 
                   WHERE fav.id_usuario = ? 
                   ORDER BY fav.data_favoritado DESC";
 $stmt_fav_list = $conexao->prepare($sql_favoritos);
@@ -86,10 +86,10 @@ while ($row = $res_favoritos->fetch_assoc()) {
 $stmt_fav_list->close();
 
 $sql_compras = "SELECT p.id_pedido, p.valor_total, p.status, p.data_pedido, 
-                       GROUP_CONCAT(CONCAT(f.titulo, ' (x', ip.quantidade, ')') SEPARATOR ', ') AS filmes_comprados
+                       GROUP_CONCAT(CONCAT(l.titulo, ' (x', ip.quantidade, ')') SEPARATOR ', ') AS livros_comprados
                 FROM pedidos p
                 INNER JOIN itens_pedido ip ON p.id_pedido = ip.id_pedido
-                INNER JOIN filmes f ON ip.id_filme = f.id_filme
+                INNER JOIN livros f ON ip.id_livro = l.id_livro
                 WHERE p.id_usuario = ?
                 GROUP BY p.id_pedido
                 ORDER BY p.data_pedido DESC";
@@ -202,7 +202,7 @@ $res_compras = $stmt_compras->get_result();
                         <option value="">Selecione uma pergunta...</option>
                         <option value="Qual é o nome do seu primeiro pet?" <?= ($usuario['pergunta_seguranca'] === 'Qual é o nome do seu primeiro pet?') ? 'selected' : '' ?>>Qual é o nome do seu primeiro pet?</option>
                         <option value="Qual é o nome da sua cidade natal?" <?= ($usuario['pergunta_seguranca'] === 'Qual é o nome da sua cidade natal?') ? 'selected' : '' ?>>Qual é o nome da sua cidade natal?</option>
-                        <option value="Qual o nome do seu filme favorito?" <?= ($usuario['pergunta_seguranca'] === 'Qual o nome do seu filme favorito?') ? 'selected' : '' ?>>Qual o nome do seu filme favorito?</option>
+                        <option value="Qual o nome do seu livro favorito?" <?= ($usuario['pergunta_seguranca'] === 'Qual o nome do seu livro favorito?') ? 'selected' : '' ?>>Qual o nome do seu livro favorito?</option>
                     </select>
                 </div>
 
@@ -270,7 +270,7 @@ $res_compras = $stmt_compras->get_result();
                                 <p><?= htmlspecialchars($fav['genero']) ?></p>
                                 <small>Favoritado em: <?= date('d/m/Y', strtotime($fav['data_favoritado'])) ?></small>
                                 
-                                <a href="filme.php?id=<?= $fav['id_filme'] ?>" class="btn-salvar link btn-ver-filme-favorito">Ver livro</a>
+                                <a href="livro.php?id=<?= $fav['id_livro'] ?>" class="btn-salvar link btn-ver-livro-favorito">Ver livro</a>
                             </div>
                         <?php endforeach; ?>
                     </div>
@@ -300,7 +300,7 @@ $res_compras = $stmt_compras->get_result();
                                 <tr>
                                     <td>#<?= $ped['id_pedido'] ?></td>
                                     <td><?= date('d/m/Y H:i', strtotime($ped['data_pedido'])) ?></td>
-                                    <td><?= htmlspecialchars($ped['filmes_comprados']) ?></td>
+                                    <td><?= htmlspecialchars($ped['livros_comprados']) ?></td>
                                     <td>R$ <?= number_format($ped['valor_total'], 2, ',', '.') ?></td>
                                     <td>
                                         <span class="status-tag <?= $ped['status'] ?>"><?= ucfirst($ped['status']) ?></span>
@@ -344,7 +344,7 @@ $res_compras = $stmt_compras->get_result();
                                     <td>#<?= $ped_adm['id_pedido'] ?></td>
                                     <td><?= htmlspecialchars($ped_adm['cliente_nome']) ?></td>
                                     <td><?= date('d/m/Y H:i', strtotime($ped_adm['data_pedido'])) ?></td>
-                                    <td><?= htmlspecialchars($ped_adm['filmes_comprados']) ?></td>
+                                    <td><?= htmlspecialchars($ped_adm['livros_comprados']) ?></td>
                                     <td>R$<?= number_format($ped_adm['valor_total'], 2, ',', '.') ?></td>
                                     <td>
                                         <form action="../php/atualizar_status_pedido.php" method="POST" class="form-status-inline">
