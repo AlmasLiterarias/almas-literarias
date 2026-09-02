@@ -394,7 +394,16 @@ p {
 }
 
 .dark .title-line::after {
+<<<<<<< Updated upstream
   border-bottom: 1px solid rgba(216, 194, 0, 0.918);
+=======
+    border-color: rgb(192 149 26);
+}
+
+li.nav-item {
+  display: flex;
+  align-items: center;
+>>>>>>> Stashed changes
 }
 
 .add-to-cart {
@@ -1049,12 +1058,16 @@ button.seta-mini {
   height: 30px;
   padding: 0;
   border-radius: 100%;
+<<<<<<< Updated upstream
   color: white;
   text-align: center;
   display: none; /*flex*/
   align-items: center;
   justify-content: center;
   border: none;
+=======
+  background-color: rgba(101, 0, 216, 0.918);
+>>>>>>> Stashed changes
 }
 
 /* ==========================================================
