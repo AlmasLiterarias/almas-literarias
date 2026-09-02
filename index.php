@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+-----TYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -31,7 +31,7 @@
                     <li class="nav-item"><a class="nav-link" href="#lançamentos"> Lançamentos </a></li>
                     <li class="nav-item"><a class="nav-link" href="#destaques"> Destaques </a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato"> Contato </a></li>
-                    <li class="nav-item"><a class="nav-link" href="./login/login.php"> Login </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/login.php"> Login </a></li>
                     <li class="nav-item">
                         <div class="cart-icon nav-link" id="cartBtn" style="cursor: pointer;">
                             <span id="cartCount">0 🛒</span>
@@ -90,7 +90,163 @@
                 <div class="carousel-item align-items-center justify-content-center">
                     <img src="./imagens/bannerclaro2mobile.png" class="d-blok w-100" alt="Investimentos">
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselLight-Mobile" data-bs-slide="prev">
++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-+
+*+
+button class="carousel-control-prev" type="button" data-bs-target="#carouselLight-Mobile" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"> </span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselLight-Mobile" data-bs-slide="next">
@@ -126,8 +282,13 @@
                         <div class="carousel-item active">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/sou-tudo-que-voce-nao-precisa.html">
+                                        <img src="./imagens/não precisa.jpg" alt="Livro"></a>
+=======
                                     <a href="./livro/sou-tudo-que-voce-nao-precisa.php">
                                         <img src="./livro/imagens/capas-livros-pi/sou-tudo-que-nao-precisa/nao precisa.jpg" alt="Livro"></a>
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5>Sou Tudo Que Você (Não) Precisa</h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -165,9 +326,14 @@
                         <div class="carousel-item active">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/sou-tudo-que-voce-nao-precisa.html">
+                                        <img src="./imagens/não precisa.jpg" alt="Livro"></a>
+=======
                                     <a href="./livro/sou-tudo-que-voce-nao-precisa.php">
                                         <img src="./livro/imagens/capas-livros-pi/sou-tudo-que-nao-precisa/nao precisa.jpg" alt="Livro"></a>
 
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5>Sou Tudo Que Você (Não) Precisa</h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -180,8 +346,14 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/a-pior-das-boas-ideias.html">
+                                        <img src="./imagens/pior ideias.jpg" alt="Livro">
+                                    </a>
+=======
                                     <a href="./livro/a-pior-das-boas-ideias.php">
                                        <img src="./livro/imagens/capas-livros-pi/a-pior-das-boas-ideias/pior ideias.jpg" alt="Livro"></a>
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5>A Pior das Boas Ideias</h5>
                                     <p> Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -194,8 +366,13 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/amor-fati.html">
+                                        <img src="./imagens/Amor Fati.jpg" alt="Livro">
+=======
                                     <a href="./livro/amor-fati.php">
                                         <img src="./livro/imagens/capas-livros-pi/amor-fati/Amor Fati.jpg" alt="Livro">
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     </a>
                                     <h5>Amor Fati</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -229,8 +406,13 @@
                         <div class="carousel-item active">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/e-assim-que-acaba.html">
+                                        <img src="./imagens/acaba.jpg" alt="Livro"></a>
+=======
                                     <a href="./livro/e-assim-que-acaba.php">
                                         <img src="./livro/imagens/capas-livros-pi/e-assim-que-acaba/acaba.jpg" alt="Livro"></a>
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5> É Assim que Acaba</h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -239,8 +421,13 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/cancao-de-aquiles.html">
+                                        <img src="./imagens/aquiles.jpg" alt="Livro"></a>
+=======
                                     <a href="./livro/cancao-de-aquiles.php">
                                         <img src="./livro/imagens/capas-livros-pi/cancao-de-aquiles/aquiles.jpeg" alt="Livro"></a>
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5> Canção de Aquiles</h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -249,8 +436,13 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/o-lado-feio-do-amor.html">
+                                        <img src="./imagens/lado feio.jpg" alt="Livro"></a>
+=======
                                     <a href="./livro/o-lado-feio-do-amor.php">
                                         <img src="./livro/imagens/capas-livros-pi/o-lado-feio-do-amor/lado feio.jpg" alt="Livro"></a>
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5> O Lado Feio do Amor</h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -259,8 +451,13 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/o-pequeno-principe.html">
+                                        <img src="./imagens/principe.jpg" alt="Livro"></a>
+=======
                                     <a href="./livro/o-pequeno-principe.php">
                                         <img src="./livro/imagens/capas-livros-pi/pequeno-principe/pequeno principe.jpg" alt="Livro"></a>
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5> O Pequeno Príncipe </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -273,8 +470,13 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/cartas-de-amor-aos-mortos.html">
+                                        <img src="./imagens/cartas mortos.jpg" alt="Livro"></a>
+=======
                                     <a href="./livro/cartas-de-amor-aos-mortos.php">
                                         <img src="./livro/imagens/capas-livros-pi/cartas-de-amor-aos-mortos/cartas mortos.jpg" alt="Livro"></a>
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5>Cartas de Amor aos Mortos</h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -283,8 +485,13 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/fabricante-de-lagrimas.html">
+                                        <img src="./imagens/fabricante.jpg" alt="Livro"></a>
+=======
                                     <a href="./livro/fabricante-de-lagrimas.php">
                                         <img src="./livro/imagens/capas-livros-pi/fabricante-de-lagrimas/capa.jpg" alt="Livro"></a>
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5>Fabricante de Lágrimas </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -293,8 +500,13 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/um-caso-perdido.html">
+                                        <img src="./imagens/caso perdido.jpg" alt="Livro"></a>
+=======
                                     <a href="./livro/um-caso-perdido.php">
                                         <img src="./livro/imagens/capas-livros-pi/um-caso-perdido/caso perdido.jpg" alt="Livro"></a>
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5>Um Caso Perdido </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -303,8 +515,13 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/sem-esperanca.html">
+                                        <img src="./imagens/sem esperança.jpg" alt="Livro"></a>
+=======
                                     <a href="./livro/sem-esperanca.php">
                                         <img src="./livro/imagens/capas-livros-pi/sem-esperanca/sem esperança.jpg" alt="Livro"></a>
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5>Sem Esperança </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -331,8 +548,13 @@
                         <div class="carousel-item active">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/e-assim-que-acaba.html">
+                                        <img src="./imagens/acaba.jpg" alt="Livro">
+=======
                                     <a href="./livro/e-assim-que-acaba.php">
                                         <img src="./livro/imagens/capas-livros-pi/e-assim-que-acaba/acaba.jpg" alt="Livro">
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     </a>
                                     <h5> É Assim que Acaba</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -346,8 +568,13 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/cancao-de-aquiles.html">
+                                        <img src="./imagens/aquiles.jpg" alt="Livro">
+=======
                                     <a href="./livro/cancao-de-aquiles.php">
                                         <img src="./livro/imagens/capas-livros-pi/cancao-de-aquiles/aquiles.jpeg" alt="Livro">
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     </a>
                                     <h5> Canção de Aquiles</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -361,8 +588,13 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/o-lado-feio-do-amor.html">
+                                        <img src="./imagens/lado feio.jpg" alt="Livro">
+=======
                                     <a href="./livro/o-lado-feio-do-amor.php">
                                         <img src="./livro/imagens/capas-livros-pi/o-lado-feio-do-amor/lado feio.jpg" alt="Livro">
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     </a>
                                     <h5> O Lado Feio do Amor</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -376,8 +608,13 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/o-pequeno-principe.html">
+                                        <img src="./imagens/principe.jpg" alt="Livro">
+=======
                                     <a href="./livro/o-pequeno-principe.php">
                                         <img src="./livro/imagens/capas-livros-pi/pequeno-principe/principe.jpg" alt="Livro">
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     </a>
                                     <h5> O Pequeno Príncipe </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -391,8 +628,13 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/cartas-de-amor-aos-mortos.html">
+                                        <img src="./imagens/cartas mortos.jpg" alt="Livro">
+=======
                                     <a href="./livro/cartas-de-amor-aos-mortos.php">
                                         <img src="./livro/imagens/capas-livros-pi/cartas-de-amor-aos-mortos/cartas mortos.jpg" alt="Livro">
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     </a>
                                     <h5>Cartas de Amor aos Mortos</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -406,8 +648,13 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/fabricante-de-lagrimas.html">
+                                        <img src="./imagens/fabricante.jpg" alt="Livro">
+=======
                                     <a href="./livro/fabricante-de-lagrimas.php">
                                         <img src="./livro/imagens/capas-livros-pi/fabricante-de-lagrimas/fabricante.jpg" alt="Livro">
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     </a>
                                     <h5>Fabricante de Lágrimas </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -421,8 +668,13 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/um-caso-perdido.html">
+                                        <img src="./imagens/caso perdido.jpg" alt="Livro">
+=======
                                     <a href="./livro/um-caso-perdido.php">
                                         <img src="./livro/imagens/capas-livros-pi/um-caso-perdido/caso perdido.jpg" alt="Livro">
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     </a>
                                     <h5>Um Caso Perdido </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -436,8 +688,13 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/sem-esperanca.html">
+                                        <img src="./imagens/sem esperança.jpg" alt="Livro">
+=======
                                     <a href="./livro/sem-esperanca.php">
                                         <img src="./livro/imagens/capas-livros-pi/sem-esperanca/sem esperança.jpg" alt="Livro">
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     </a>
                                     <h5>Sem Esperança </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -471,8 +728,13 @@
                         <div class="carousel-item active">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/amor-e-gelato.html">
+                                        <img src="./imagens/gelato.jpg" alt="Livro"></a>
+=======
                                     <a href="./livro/amor-e-gelato.php">
                                         <img src="./livro/imagens/capas-livros-pi/amor-gelato/gelato.jpg" alt="Livro"></a>
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5>Amor e Gelato</h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -481,8 +743,13 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/imperfeitos.html">
+                                        <img src="./imagens/imperfeitos.jpg" alt="Livro"></a>
+=======
                                     <a href="./livro/imperfeitos.php">
                                         <img src="./livro/imagens/capas-livros-pi/im-perfeitos/imperfeitos.jpg" alt="Livro"></a>
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5> Imperfeitos </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -491,8 +758,13 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/a-escolha.html">
+                                        <img src="./imagens/escolha.jpg" alt="Livro"></a>
+=======
                                     <a href="./livro/a-escolha.php">
                                         <img src="./livro/imagens/capas-livros-pi/a-escolha/escolha.jpg" alt="Livro"></a>
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5> A Escolha </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -501,8 +773,13 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/mil-beijos-de-garoto.html">
+                                        <img src="./imagens/mil beijos.jpg" alt="Livro"></a>
+=======
                                     <a href="./livro/mil-beijos-de-garoto.php">
                                         <img src="./livro/imagens/capas-livros-pi/mil-beijos-de-garotos/mil beijos.jpg" alt="Livro"></a>
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5> Mil Beijos de Garoto </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -515,8 +792,13 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/vermelho-branco-e-sangue-azul.html">
+                                        <img src="./imagens/Vermelho, branco e sangue azul.jpg" alt="Livro"></a>
+=======
                                     <a href="./livro/vermelho-branco-e-sangue-azul.php">
                                         <img src="./livro/imagens/capas-livros-pi/vermelho-branco-azul/sangue azul.jpg" alt="Livro"></a>
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5> Vermelho, Branco e Sangue Azul </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -525,8 +807,13 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/todas-as-perfeicoes.html">
+                                        <img src="./imagens/perfeicoes.jpg" alt="Livro"></a>
+=======
                                     <a href="./livro/todas-as-perfeicoes.php">
                                         <img src="./livro/imagens/capas-livros-pi/todas-as-suas-imperfeicoes/perfeições.jpg" alt="Livro"></a>
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5> Todas as Perfeições </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -535,8 +822,13 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/sapatilhas-de-gelo-por-babi.html">
+                                        <img src="./imagens/Sapatilhas de Gelo por Babi A_ Sette.jpg" alt="Livro"></a>
+=======
                                     <a href="./livro/sapatilhas-de-gelo-por-babi.php">
                                         <img src="./livro/imagens/capas-livros-pi/sapatilhas-de-gelo/gelo.jpg" alt="Livro"></a>
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5> Sapatilhas de Gelo por Babi </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -545,8 +837,13 @@
                                     </div>
                                 </div>
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/a-culpa-e-das-estrelas.html">
+                                        <img src="./imagens/culpa.jpg" alt="Livro"></a>
+=======
                                     <a href="./livro/a-culpa-e-das-estrelas.php">
                                         <img src="./livro/imagens/capas-livros-pi/a-culpa-e-das-estrelas/culpa das estrelas.jpg" alt="Livro"></a>
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     <h5> A Culpa é das Estrelas </h5>
                                     <p>Capa comum- edição em Português</p>
                                     <div class="botao">
@@ -573,8 +870,13 @@
                         <div class="carousel-item active">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/amor-e-gelato.html">
+                                        <img src="./imagens/gelato.jpg" alt="Livro">
+=======
                                     <a href="./livro/amor-e-gelato.php">
                                         <img src="./livro/imagens/capas-livros-pi/amor-gelato/gelato.jpg" alt="Livro">
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     </a>
                                     <h5>Amor e Gelato</h5>
                                     <p>Capa comum- edição em Português</p>
@@ -588,8 +890,13 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/imperfeitos.html">
+                                        <img src="./imagens/imperfeitos.jpg" alt="Livro">
+=======
                                     <a href="./livro/imperfeitos.php">
                                         <img src="./livro/imagens/capas-livros-pi/im-perfeitos/imperfeitos.jpg" alt="Livro">
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     </a>
                                     <h5> Imperfeitos </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -603,8 +910,13 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/a-escolha.html">
+                                        <img src="./imagens/escolha.jpg" alt="Livro">
+=======
                                     <a href="./livro/a-escolha.php">
                                         <img src="./livro/imagens/capas-livros-pi/a-escolha/escolha.jpg" alt="Livro">
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     </a>
                                     <h5> A Escolha </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -618,8 +930,13 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/mil-beijos-de-garoto.html">
+                                        <img src="./imagens/mil beijos.jpg" alt="Livro">
+=======
                                     <a href="./livro/mil-beijos-de-garoto.php">
                                         <img src="./livro/imagens/capas-livros-pi/mil-beijos-de-garotos/mil beijos.jpg" alt="Livro">
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     </a>
                                     <h5> Mil Beijos de Garoto </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -633,8 +950,13 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/vermelho-branco-e-sangue-azul.html">
+                                        <img src="./imagens/Vermelho, branco e sangue azul.jpg" alt="Livro">
+=======
                                     <a href="./livro/vermelho-branco-e-sangue-azul.php">
                                         <img src="./livro/imagens/capas-livros-pi/vermelho-branco-azul/sangue azul.jpg" alt="Livro">
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     </a>
                                     <h5> Vermelho, Branco e Sangue Azul </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -648,8 +970,13 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/todas-as-perfeicoes.html">
+                                        <img src="./imagens/perfeicoes.jpg" alt="Livro">
+=======
                                     <a href="./livro/todas-as-perfeicoes.php">
                                         <img src="./livro/imagens/capas-livros-pi/todas-as-suas-imperfeicoes/perfeições.jpg" alt="Livro">
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     </a>
                                     <h5> Todas as Perfeições </h5>
                                     <p>Capa comum- edição em Português</p>
@@ -678,8 +1005,13 @@
                         <div class="carousel-item">
                             <div class="row justify-content-around">
                                 <div class="card col-md-3" style="width: 18rem;">
+<<<<<<< HEAD:index.html
+                                    <a href="./livro/a-culpa-e-das-estrelas.html">
+                                        <img src="./imagens/culpa.jpg" alt="Livro">
+=======
                                     <a href="./livro/a-culpa-e-das-estrelas.php">
                                         <img src="./livro/imagens/capas-livros-pi/a-culpa-e-das-estrelas/culpa das estrelas.jpg" alt="Livro">
+>>>>>>> 0c6c6b635c7e3b68db1995be8991bde640e3b9ac:index.php
                                     </a>
                                     <h5> A Culpa é das Estrelas </h5>
                                     <p>Capa comum- edição em Português</p>

@@ -19,16 +19,16 @@ if (
 }
 
 // ------------------------------------------------------------------
-// 2. PROCESSAMENTO E SEGURANÇA DO ARQUIVO DE IMAGEM ($_LIVRO)
+// 2. PROCESSAMENTO E SEGURANÇA DO ARQUIVO DE capa ($_LIVRO)
 // ------------------------------------------------------------------
 
 // Verificação 1: Checar se o arquivo foi enviado sem erros
-if (!isset($_LIVRO['imagem']) || $_LIVRO['imagem']['error'] !== UPLOAD_ERR_OK) {
-    echo "Erro no envio da imagem do filme.";
+if (!isset($_LIVRO['capa']) || $_LIVRO['capa']['error'] !== UPLOAD_ERR_OK) {
+    echo "Erro no envio da capa do filme.";
     exit();
 }
 
-$arquivo = $_LIVRO['imagem'];
+$arquivo = $_LIVRO['capa'];
 
 // Verificação 2: Checar o tamanho do arquivo (limite de 5 MB, por exemplo)
 $tamanhoMaximo = 5 * 1024 * 1024; // 5MB em bytes
@@ -41,13 +41,13 @@ $extensao = strtolower(pathinfo($arquivo['name'], PATHINFO_EXTENSION));
 $extensoesPermitidas = ['jpg', 'jpeg', 'png', 'webp'];
 
 if (!in_array($extensao, $extensoesPermitidas)) {
-    die("Formato não permitido. Envie uma imagem JPG, JPEG, PNG ou WEBP.");
+    die("Formato não permitido. Envie uma capa JPG, JPEG, PNG ou WEBP.");
 }
 
 // Gerar nome único para o arquivo para evitar duplicações/sobrescritas
 $novoNome = uniqid("livro_") . "." . $extensao;
 
-// Caminho físico onde o PHP vai salvar a imagem no servidor (pasta uploads/)
+// Caminho físico onde o PHP vai salvar a capa no servidor (pasta uploads/)
 $diretorioDestino = "../../uploads/";
 
 // Cria a pasta uploads caso ela ainda não exista
@@ -62,14 +62,14 @@ $caminhoBanco = "uploads/" . $novoNome;
 
 // Mover o arquivo da pasta temporária para a pasta uploads/ do projeto
 if (!move_uploaded_file($arquivo['tmp_name'], $caminhoFisico)) {
-    die("Falha ao salvar a imagem na pasta do sistema.");
+    die("Falha ao salvar a capa na pasta do sistema.");
 }
 
 // ------------------------------------------------------------------
 // 3. GRAVAÇÃO NO BANCO DE DADOS (MySQL)
 // ------------------------------------------------------------------
 
-$sql = "INSERT INTO filmes (titulo, imagem, sinopse, genero, classificacao_indicativa, autor, qtd_paginas) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+$sql = "INSERT INTO filmes (titulo, capa, sinopse, genero, classificacao_indicativa, autor, qtd_paginas) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
 $stmt = $conexao->prepare($sql);
 if (!$stmt) {
@@ -80,7 +80,7 @@ if (!$stmt) {
 $stmt->bind_param(
     "ssssssss",
     $titulo,
-    $caminhoBanco, // Salva "uploads/nome_da_imagem.jpg" no banco
+    $caminhoBanco, // Salva "uploads/nome_da_capa.jpg" no banco
     $sinopse,
     $genero,
     $classificacao,
