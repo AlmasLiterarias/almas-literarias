@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Painel</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2> Menu </h2>
+            <ul>
+                <li><a href="#"> Meu Perfil </a></li>
+                <li><a href="#"> Meus Favoritos </a></li>
+                <li><a href="#"> Minhas Compras </a></li>
+                <li><a href="../php/logout.php"> Sair </a></li>
+            </ul>
+        </aside>
+        <main class="contant">
+            <h1> Meu Perfil </h1>
+            <p> Gerencie suas informações abaixo: </p>
+
+            <form action="../php/dashbord.php" method="POST">
+                <label for="nome"> Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+
+                <label for="email"> E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+
+                <label for="date"> Data de Nascimento </label>
+                <input type="date" name="nascimento" id="nascimento" required>
+
+                <label for="senha_nova"> Nova senha (deixe em branco para não alterar): </label>
+                <input type="password" name="senha_nova" id="senha_nova" placeholder="Nova senha">
+
+                <button type="submit"> Salvar Alterações </button>
+            </form>
+            <hr>
+            <div class="danger-zone">
+                <h3> Zona de Perigo </h3>
+                <form action
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

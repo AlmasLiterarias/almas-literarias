@@ -10,7 +10,7 @@ $senha = $_POST['senha'];
 $nascimento = $_POST['nascimento']; 
 
 if (empty($nome) || empty($email) || empty($senha) || empty($nascimento) || empty($cpf)){ # o empty verifica se os campos estao vazios
-    echo "Preencha todos os campos!!";
+    echo '<p class="vazio">Preencha todos os campos!!</p>';
     exit();
 }
 
@@ -25,7 +25,7 @@ $sql = "INSERT INTO usuarios(nome, email, nascimento, senha_segura, cpf) VALUES 
 # Executando no banco de dados
 
 $conexao->query($sql);
-header("Location: login.html");
+header("Location: login.php");
 exit();
 
 # O dado agora e permanente

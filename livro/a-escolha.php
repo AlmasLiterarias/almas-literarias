@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almas Literárias - A Escolha - Volume único</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-custom navbar-expand-lg navbar-dark px-3">
+            <a class="logolight" href="../index.php">
+                <img src="./imagens/logoescurodourada.png" alt="logo do site">
+            </a>
+            <a class="logodark" href="../index.php">
+                <img src="./imagens/logoclaro.png" alt="logo do site">
+            </a>
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+                <div class=" container-xl">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"> </span>
+                    </button>
+                </div>
+            </nav>
+
+
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="../index.php"> Início </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#lançamentos"> Lançamentos </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#destaques"> Destaques </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#contato"> Contato </a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#longin"> Login </a></li>
+                    <div class="cart-icon" id="cartBtn">
+                        <span id="cartCount">0 🛒</span>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <button id="themeToggle" aria-pressed="false" aria-label="Ativar modo escuro">
+            <img id="theme-icon" src="./imagens/Jerlucitchau.png" alt="Modo escuro">
+            <!-- Ativar modo escuro -->
+        </button>
+    </header>
+    <main>
+        <section id="paginaProduto">
+            <div class="produto">
+                <img src="./imagens/capas-livros-pi/a-escolha/escolha.jpg">
+                <div class="miniaturas">
+                    <div class="carrossel-miniaturas">
+                        <button class="seta-mini" id="miniAnterior">❮</button>
+                        <div class="miniaturas" id="miniaturas">
+                            <img class="thumb ativa"  src="./imagens/capas-livros-pi/a-escolha/escolha.jpg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/a-escolha/capa.jpg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/a-escolha/verso.jpg">
+                        </div>
+                        <button class="seta-mini" id="miniProximo">❯</button>
+                    </div>
+                </div>
+            </div>
+            <div class="infos-produto">
+                <div class="descricao">
+                    <h2>A Escolha - Volume único </h2>
+                    <p>por: Kiera Cass</p>
+                </div>
+                <div class="avaliacao">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+                </div>
+                <div class="card-preco">
+                    <p class="preco"><strong>R$ 40,39</strong></p>
+                    <input type="number" placeholder="qtd" value="1">
+                    <button class="add-to-cart">comprar</button>
+                </div>
+                <div class="sinopse">
+                    <p>"Em um reino dividido por castas, onde a vida de cada pessoa é definida desde o nascimento, a
+                        jovem America Singer consegue superar as adversidades: da casta em que nasceu à pressão de
+                        um concurso real para se casar com o príncipe. Depois de tantos desafios na competição para
+                        conquistar o coração do Príncipe Maxon, America agora está mais perto de alcançar o que
+                        parecia impossível. No entanto, mesmo à beira da vitória, ela se vê forçada a tomar a maior
+                        decisão de sua vida — escolher entre o amor verdadeiro e o dever, entre o passado e o
+                        futuro. A escolha que fizer não afetará apenas seu destino, mas também o destino de todo o
+                        reino."</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 AlmasLiterárias - Todos os direitos reservados</p>
+        <div>
+            <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </footer>
+    <!-- Modal do Carrinho -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-content">
+            <h2>Seu Carrinho 🛒</h2>
+            <ul id="cartItems"></ul>
+            <p><strong>Total:</strong> <span id="cartTotal">R$ 0,00</span></p>
+            <button id="closeCart" class="close">x</button>
+            <button id="checkout">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

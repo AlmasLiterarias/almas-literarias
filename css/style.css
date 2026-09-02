@@ -23,6 +23,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  justify-content: center;
 }
 
 body {
@@ -449,19 +450,6 @@ li.nav-item {
   border-radius: 6px;
 }
 
-button {
-  display: inline-block;
-  padding: 12px 18px;
-  border-radius: 12px;
-  background: #08203A;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  font-weight: 700;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto;
-}
 
 .add-to-cart {
   background: #11079c;
@@ -1071,7 +1059,266 @@ button.seta-mini {
 }
 
 /* ==========================================================
-   18. RESPONSIVIDADE
+   22. LOGIN / CADASTRO
+========================================================== */
+
+.form_container {
+  width: min(90%, 450px);
+  margin: 120px auto 50px;
+  padding: 30px;
+  background-color: var(--card);
+  color: var(--fg);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.form_container input#termos{
+  width: 30px;
+  height: 20px;
+}
+
+.form_container form#formCadastro{
+  background: white;
+}
+
+.form_container h1 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: var(--fg);
+}
+
+.form_container form {
+  width: 100%;
+  max-width: 350px;
+
+  padding: 25px;
+  background-color: var(--bg);
+  border-radius: 12px;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+button {
+    background: #11079c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+
+}
+
+/* --------------------------
+   CAMPOS
+-------------------------- */
+
+.form_container .campo {
+  width: 100%;
+}
+
+.form_container label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+  color: var(--fg);
+  font-weight: 600;
+}
+
+.form_container input {
+  width: 100%;
+  height: 42px;
+
+  padding: 10px;
+  margin: 0 0 10px;
+
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 8px;
+
+  background-color: var(--card);
+  color: var(--fg);
+
+  outline: none;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.form_container input {
+    width: 100%;
+    height: 42px;
+    padding: 10px;
+    margin: 0 0 10px;
+    border: 1px solid rgba(61, 58, 58, 0.4);
+    border-radius: 8px;
+    background-color: white;
+    color: var(--fg);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.form_container input::placeholder {
+  color: var(--fg);
+  opacity: 0.55;
+}
+
+.form_container input:focus {
+  border-color: var(--fg);
+  box-shadow: 0 0 0 3px rgba(212, 180, 85, 0.15);
+}
+
+
+/* --------------------------
+   LINK ESQUECI A SENHA
+-------------------------- */
+
+.form_container .esqueci-senha {
+  display: block;
+
+  margin: 5px 0 15px;
+
+  color: var(--fg);
+  text-decoration: none;
+  font-size: 14px;
+
+  transition: opacity 0.3s ease;
+}
+
+.form_container .esqueci-senha:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+
+/* --------------------------
+   BOTÃO ENTRAR
+-------------------------- */
+
+.form_container .btn-cadastrar {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 12px 20px;
+  margin: 10px 0 0;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: var(--fg);
+  color: var(--bg);
+
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form_container .btn-cadastrar:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form_container .btn-cadastrar:active {
+  transform: scale(0.97);
+}
+
+
+/* --------------------------
+   ÁREA DE CADASTRO
+-------------------------- */
+
+.form_cadastro {
+  width: 100%;
+  max-width: 350px;
+
+  margin-top: 20px;
+
+  text-align: center;
+}
+
+.form_cadastro p {
+  margin-bottom: 10px;
+  padding: 0;
+
+  color: var(--fg);
+}
+
+.form_cadastro a {
+  color: var(--fg);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.form_cadastro a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------
+  MODO ESCURO
+-------------------------- */
+
+:root.dark .form_container {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+:root.dark .form_container form {
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.35);
+}
+
+:root.dark .form_container input {
+  border-color: rgba(212, 180, 85, 0.35);
+}
+
+
+
+/* ==========================================================
+   20. FOOTER
+========================================================== */
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* ==========================================================
+   21. RESPONSIVIDADE
 ========================================================== */
 
 @media screen and (max-width: 768px) {
@@ -1422,7 +1669,9 @@ hr {
     }
 
 
-/*////////////////////////////PÁGINA INTERNA//////////////////////////////*/
+/* --------------------------
+ PÁGINA INTERNA
+-------------------------- */
 
 .infos-produto {
     margin: 10px 0;
@@ -1463,4 +1712,44 @@ hr {
         z-index: 1100;
     }
 
+}
+
+/* --------------------------
+  LOGIN 
+-------------------------- */
+
+@media screen and (max-width: 768px) {
+
+  .form_container {
+    width: calc(100% - 30px);
+    max-width: 450px;
+
+    margin: 100px auto 30px;
+    padding: 20px 15px;
+
+    border-radius: 12px;
+  }
+
+  .form_container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .form_container form {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .form_container input {
+    height: 44px;
+    font-size: 16px;
+  }
+
+  .form_container .btn-cadastrar {
+    min-height: 44px;
+  }
+
+  .form_cadastro {
+    width: 100%;
+  }
 }
