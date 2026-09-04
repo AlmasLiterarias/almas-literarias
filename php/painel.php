@@ -167,25 +167,25 @@ $res_compras = $stmt_compras->get_result();
                 </form>
             </div>
                 
-            /* HTML da segurança*/
-            /*Segurança*/
+            <!-- /* HTML da segurança*/ -->
+            <!-- /*Segurança*/ -->
             <form action="../php/dashboard.php" method="post" id="aba-seguranca" class="aba-conteudo perfil-sessao">
                 <h1>Dados de Login e Segurança</h1>
                 <p class="descricao">Atualize sua senha, e-mail ou pergunta de segurança.</p>
 
-            /*Atualizar e-mail*/
+            <!-- /*Atualizar e-mail*/ -->
                 <div class="campo">
                     <label for="email">E-mail:</label>
                     <input type="email" name="email" id="email" value="<?php echo htmlspecialchars($usuario['email']); ?>" required>
                 </div>    
 
-'           /*Alterar senha*/'
+           <!-- /*Alterar senha*/' -->
                 <div class="campo">
                     <label for="senha_nova">Nova Senha (deixe em branco se não quiser alterar):</label>
                     <input type="password" name="senha_nova" id="senha_nova" placeholder="Nova senha">
                 </div>
             
-            /*Confirmar a senha nova*/
+            <!-- /*Confirmar a senha nova*/ -->
                 <div class="campo">
                     <label for="confirmar_senha">Confirme a Nova Senha:</label>
                     <input type="password" name="confirmar_senha" id="confirmar_senha" placeholder="Confirme a nova senha">

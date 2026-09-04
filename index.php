@@ -30,8 +30,26 @@
                     <li class="nav-item"><a class="nav-link" href="#lançamentos"> Lançamentos </a></li>
                     <li class="nav-item"><a class="nav-link" href="#destaques"> Destaques </a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato"> Contato </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../pages/login.php"> Login </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../php/logout.php"> Sair </a></li>
+                    <?php if (isset($_SESSION['id_usuario'])): ?>                    
+                    <!-- Se for administrador, exibe a rota de cadastro de livros -->
+                    <?php if (isset($_SESSION['tipo_usuario']) && $_SESSION['tipo_usuario'] === 'admin'): ?>
+                        <a href="../src/pages/cadastroLivro.php" class="nav-link <?php echo ($pagina_atual === 'cadastroLivro.php') ? 'ativo' : ''; ?>">Cadastrar Filme</a>
+                    <?php endif; ?>
+                    <li class="nav-item">
+                        <a href="./pages/painel.php" class="nav-link <?php echo ($pagina_atual === 'painel.php') ? 'ativo' : ''; ?>">Meu Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./php/logout.php">Sair</a>
+                    </li>
+                    <?php else: ?>
+                        <!-- Exibe opções para visitantes não logados -->
+                        <li class="nav-item">                        
+                            <a href="./pages/login.php" class="nav-link <?php echo ($pagina_atual === 'login.php') ? 'ativo' : ''; ?>">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/cadastro.php" class="nav-link <?php echo ($pagina_atual === 'cadastro.php') ? 'ativo' : ''; ?>">Cadastrar-se</a>
+                        </li>
+                    <?php endif; ?>
                     <li class="nav-item">
                         <div class="cart-icon nav-link" id="cartBtn" style="cursor: pointer;">
                             <span id="cartCount">0 🛒</span>
