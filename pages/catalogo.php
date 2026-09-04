@@ -3,19 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Catálogo de Livros</title>
+=======
+    <title>Catálogo de Livro</title>
+>>>>>>> 30b846226fd0fb4afafe077e8b1c62c716bdd643
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body class="preload">
     <?php include('../php/header.php'); ?>
     <main class="container">
         <header class="header-catalogo">
+<<<<<<< HEAD
             <h1>Catálogo de Livros</h1>
+=======
+            <h1>Catálogo de Livro</h1>
+>>>>>>> 30b846226fd0fb4afafe077e8b1c62c716bdd643
             <div class="busca-livro">
                 <form method="GET" action="../pages/busca.php">
                     <select name="categoria" id="categoria">
                         <option value="" <?= empty($categoria) ? 'selected' : '' ?>>Todas</option>
+<<<<<<< HEAD
                         <option value="Romance" <?= (isset($categoria) && $categoria === 'Romance') ? 'selected' : '' ?>>Romance</option>
+=======
+                        <option value="Drama" <?= (isset($categoria) && $categoria === 'Drama') ? 'selected' : '' ?>>Drama</option>
+>>>>>>> 30b846226fd0fb4afafe077e8b1c62c716bdd643
                         <option value="Ação" <?= (isset($categoria) && $categoria === 'Ação') ? 'selected' : '' ?>>Ação</option>
                         <option value="Ficção Científica" <?= (isset($categoria) && $categoria === 'Ficção Científica') ? 'selected' : '' ?>>Ficção Científica</option>
                     </select>            
@@ -71,7 +83,11 @@
         </section>
 
         <?php if (isset($_SESSION['tipo_usuario']) && $_SESSION['tipo_usuario'] === 'admin'): ?>
+<<<<<<< HEAD
             <a href="cadastroLivro.php" class="botao">+ Cadastrar Novo Livro</a>
+=======
+            <a href="cadastrolivro.php" class="botao">+ Cadastrar Novo livro</a>
+>>>>>>> 30b846226fd0fb4afafe077e8b1c62c716bdd643
         <?php endif; ?>
     </main>    
     <?php include('../php/footer.php'); ?>

@@ -395,7 +395,16 @@ p {
 }
 
 .dark .title-line::after {
+<<<<<<< Updated upstream
   border-bottom: 1px solid rgba(216, 194, 0, 0.918);
+=======
+    border-color: rgb(192 149 26);
+}
+
+li.nav-item {
+  display: flex;
+  align-items: center;
+>>>>>>> Stashed changes
 }
 
 .add-to-cart {
@@ -441,19 +450,6 @@ p {
   border-radius: 6px;
 }
 
-button {
-  display: inline-block;
-  padding: 12px 18px;
-  border-radius: 12px;
-  background: #08203A;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  font-weight: 700;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto;
-}
 
 .add-to-cart {
   background: #11079c;
@@ -1050,12 +1046,16 @@ button.seta-mini {
   height: 30px;
   padding: 0;
   border-radius: 100%;
+<<<<<<< Updated upstream
   color: white;
   text-align: center;
   display: none; /*flex*/
   align-items: center;
   justify-content: center;
   border: none;
+=======
+  background-color: rgba(101, 0, 216, 0.918);
+>>>>>>> Stashed changes
 }
 
 /* ==========================================================
@@ -1079,6 +1079,15 @@ button.seta-mini {
     background-color 0.3s ease,
     color 0.3s ease,
     box-shadow 0.3s ease;
+}
+
+.form_container input#termos{
+  width: 30px;
+  height: 20px;
+}
+
+.form_container form#formCadastro{
+  background: white;
 }
 
 .form_container h1 {
@@ -1106,6 +1115,18 @@ button.seta-mini {
     box-shadow 0.3s ease;
 }
 
+button {
+    background: #11079c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+
+}
 
 /* --------------------------
    CAMPOS
@@ -1144,6 +1165,19 @@ button.seta-mini {
     box-shadow 0.3s ease,
     background-color 0.3s ease,
     color 0.3s ease;
+}
+
+.form_container input {
+    width: 100%;
+    height: 42px;
+    padding: 10px;
+    margin: 0 0 10px;
+    border: 1px solid rgba(61, 58, 58, 0.4);
+    border-radius: 8px;
+    background-color: white;
+    color: var(--fg);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .form_container input::placeholder {
@@ -1252,8 +1286,23 @@ button.seta-mini {
   text-decoration: underline;
 }
 
-ne;
+/* --------------------------
+  MODO ESCURO
+-------------------------- */
+
+:root.dark .form_container {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
 }
+
+:root.dark .form_container form {
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.35);
+}
+
+:root.dark .form_container input {
+  border-color: rgba(212, 180, 85, 0.35);
+}
+
+
 
 /* ==========================================================
    20. FOOTER
@@ -1620,7 +1669,9 @@ hr {
     }
 
 
-/*////////////////////////////PÁGINA INTERNA//////////////////////////////*/
+/* --------------------------
+ PÁGINA INTERNA
+-------------------------- */
 
 .infos-produto {
     margin: 10px 0;
@@ -1661,4 +1712,44 @@ hr {
         z-index: 1100;
     }
 
+}
+
+/* --------------------------
+  LOGIN 
+-------------------------- */
+
+@media screen and (max-width: 768px) {
+
+  .form_container {
+    width: calc(100% - 30px);
+    max-width: 450px;
+
+    margin: 100px auto 30px;
+    padding: 20px 15px;
+
+    border-radius: 12px;
+  }
+
+  .form_container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .form_container form {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .form_container input {
+    height: 44px;
+    font-size: 16px;
+  }
+
+  .form_container .btn-cadastrar {
+    min-height: 44px;
+  }
+
+  .form_cadastro {
+    width: 100%;
+  }
 }

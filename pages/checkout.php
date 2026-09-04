@@ -120,8 +120,11 @@ while ($f = $resultado->fetch_assoc()) {
             </div>
         </div>
     </main>
+<<<<<<< HEAD
 
     <?php include('../php/footer.php'); ?>
     <script src="../assets/js/script.js" defer></script>
+=======
+>>>>>>> 30b846226fd0fb4afafe077e8b1c62c716bdd643
 </body>
 </html>

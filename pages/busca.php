@@ -85,7 +85,4 @@
         </div>
     </main>
     
-    <?php include('../php/footer.php'); ?>
-    <script src="../assets/js/script.js" defer></script>
-</body>
 </html>
