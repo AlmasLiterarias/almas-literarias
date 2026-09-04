@@ -395,16 +395,7 @@ p {
 }
 
 .dark .title-line::after {
-<<<<<<< Updated upstream
   border-bottom: 1px solid rgba(216, 194, 0, 0.918);
-=======
-    border-color: rgb(192 149 26);
-}
-
-li.nav-item {
-  display: flex;
-  align-items: center;
->>>>>>> Stashed changes
 }
 
 .add-to-cart {
@@ -1046,16 +1037,12 @@ button.seta-mini {
   height: 30px;
   padding: 0;
   border-radius: 100%;
-<<<<<<< Updated upstream
   color: white;
   text-align: center;
   display: none; /*flex*/
   align-items: center;
   justify-content: center;
   border: none;
-=======
-  background-color: rgba(101, 0, 216, 0.918);
->>>>>>> Stashed changes
 }
 
 /* ==========================================================
@@ -1069,12 +1056,10 @@ button.seta-mini {
   background-color: var(--card);
   color: var(--fg);
   border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-
+  box-shadow: 0 8px 25px rgba(135, 7, 185, 0.514);
   display: flex;
   flex-direction: column;
   align-items: center;
-
   transition:
     background-color 0.3s ease,
     color 0.3s ease,
@@ -1099,20 +1084,14 @@ button.seta-mini {
 .form_container form {
   width: 100%;
   max-width: 350px;
-
   padding: 25px;
-  background-color: var(--bg);
+  background-color: white;
   border-radius: 12px;
-
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
-
   display: flex;
   flex-direction: column;
   gap: 5px;
-
-  transition:
-    background-color 0.3s ease,
-    box-shadow 0.3s ease;
+  transition:background-color 0.3s ease,box-shadow 0.3s ease;
 }
 
 button {
@@ -1291,17 +1270,20 @@ button {
 -------------------------- */
 
 :root.dark .form_container {
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 30px rgba(252, 220, 40, 0.596);
 }
 
 :root.dark .form_container form {
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 3px 15px rgba(255, 214, 30, 0.575);
 }
 
 :root.dark .form_container input {
-  border-color: rgba(212, 180, 85, 0.35);
+  border-color: rgba(235, 178, 8, 0.644);
 }
 
+a{
+  color:rgb(0, 162, 255);
+}
 
 
 /* ==========================================================

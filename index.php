@@ -30,7 +30,7 @@
                     <li class="nav-item"><a class="nav-link" href="#lançamentos"> Lançamentos </a></li>
                     <li class="nav-item"><a class="nav-link" href="#destaques"> Destaques </a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato"> Contato </a></li>
-                    <li class="nav-item"><a class="nav-link" href="../pages/login.php"> Login </a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/login.php"> Login </a></li>
                     <li class="nav-item">
                         <div class="cart-icon nav-link" id="cartBtn" style="cursor: pointer;">
                             <span id="cartCount">0 🛒</span>

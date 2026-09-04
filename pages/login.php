@@ -28,8 +28,9 @@
         </form>
         </div>
         </div>
+        <p>Caso não tenha cadastro</p>
         <button type="submit">
-        <a href="./cadastro.php"> clique aqui</a>
+        <a href="./cadastro.html">clique aqui</a>
         </button>
         </div>
     </main>
