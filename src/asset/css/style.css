@@ -1300,6 +1300,298 @@ a{
   color:rgb(0, 162, 255);
 }
 
+/* =========================================
+   CADASTRO DE LIVROS
+========================================= */
+
+.container {
+    width: min(90%, 700px);
+    margin: 100px auto 50px;
+    padding: 35px;
+
+    background-color: var(--card);
+    color: var(--fg);
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
+
+    box-sizing: border-box;
+}
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.container h1 {
+    text-align: center;
+
+    margin: 0 0 30px;
+
+    font-size: 32px;
+
+    color: var(--fg);
+}
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+
+#formLivro {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/* =========================================
+   CAMPOS
+========================================= */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+/* =========================================
+   LABELS
+========================================= */
+
+.campo > label {
+    font-size: 17px;
+    font-weight: 600;
+
+    color: var(--fg);
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.campo input[type="text"],
+.campo input[type="number"],
+.campo input[type="file"],
+.campo textarea,
+.campo select {
+
+    width: 100%;
+
+    min-height: 42px;
+
+    padding: 9px 12px;
+
+    box-sizing: border-box;
+
+    border: 2px solid var(--fg);
+    border-radius: 8px;
+
+    background-color: var(--bg);
+    color: var(--fg);
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.campo textarea {
+    min-height: 130px;
+
+    resize: vertical;
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+
+    color: var(--fg);
+
+    opacity: 0.6;
+}
+
+
+/* =========================================
+   FOCO NOS CAMPOS
+========================================= */
+
+.campo input:focus,
+.campo textarea:focus,
+.campo select:focus {
+
+    border-color: #8b5fc7;
+
+    box-shadow:
+        0 0 0 3px rgba(139, 95, 199, 0.20);
+}
+
+
+/* =========================================
+   ÁREA DOS GÊNEROS
+========================================= */
+
+.checkbox-group {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+
+    padding: 15px;
+
+    border: 2px solid var(--fg);
+
+    border-radius: 8px;
+
+    background-color: var(--bg);
+
+    box-sizing: border-box;
+}
+
+
+/* Labels dos gêneros */
+
+.checkbox-group label {
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 15px;
+
+    font-weight: normal;
+
+    color: var(--fg);
+
+    cursor: pointer;
+}
+
+
+/* Checkbox */
+
+.checkbox-group input[type="checkbox"] {
+
+    width: 17px;
+    height: 17px;
+
+    margin: 0;
+
+    accent-color: #6b21a8;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   SELECT
+========================================= */
+
+.campo select {
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   BOTÃO
+========================================= */
+
+#formLivro button {
+
+    width: 100%;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #11079c;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#formLivro button:hover {
+
+    background-color: #04066c;
+
+    transform: scale(1.02);
+}
+
+
+#formLivro button:active {
+
+    background-color: #4b59f1;
+
+    transform: scale(0.98);
+}
+
+
+/* =========================================
+   MODO ESCURO
+========================================= */
+
+:root.dark .container {
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+
+:root.dark .campo input,
+:root.dark .campo textarea,
+:root.dark .campo select {
+
+    background-color: var(--bg);
+
+    color: var(--fg);
+}
+
+
+:root.dark .checkbox-group {
+
+    background-color: var(--bg);
+}
+
+
+:root.dark .campo input::placeholder,
+:root.dark .campo textarea::placeholder {
+
+    color: #d4b455;
+
+    opacity: 0.65;
+}
 
 /* ==========================================================
    20. FOOTER
