@@ -1,4 +1,8 @@
 <?php
+// Exibe erros do PHP durante o desenvolvimento (desative em produção)
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 // Conecta com o banco de dados
 include('conexao.php');
 
@@ -22,7 +26,6 @@ if (
 // 2. PROCESSAMENTO E SEGURANÇA DO ARQUIVO DE CAPA ($_FILES)
 // ------------------------------------------------------------------
 
-// CORREÇÃO 1 e 2: Uso do $_FILES e alinhamento com o name="imagem" do HTML
 if (!isset($_FILES['imagem']) || $_FILES['imagem']['error'] !== UPLOAD_ERR_OK) {
     die("Erro no envio da capa do livro. Certifique-se de selecionar um arquivo válido.");
 }
@@ -46,15 +49,18 @@ if (!in_array($extensao, $extensoesPermitidas)) {
 // Gerar nome único para o arquivo
 $novoNome = uniqid("livro_") . "." . $extensao;
 
-// Caminho físico onde o PHP vai salvar a capa no servidor
-$diretorioDestino = "../../uploads/";
+// AJUSTE: Uso de caminho absoluto dinâmico via __DIR__ para garantir a criação do diretório
+$diretorioDestino = __DIR__ . "/../../uploads/";
 
 if (!is_dir($diretorioDestino)) {
-    mkdir($diretorioDestino, 0755, true);
+    // Tenta criar a pasta recursivamente (0755 garante permissão de leitura/execução e escrita do proprietário)
+    if (!mkdir($diretorioDestino, 0755, true)) {
+        die("Falha ao criar o diretório de uploads no servidor. Verifique as permissões de escrita das pastas pai.");
+    }
 }
 
 $caminhoFisico = $diretorioDestino . $novoNome;
-$caminhoBanco = "uploads/" . $novoNome;
+$caminhoBanco  = "uploads/" . $novoNome;
 
 // Mover o arquivo para a pasta de destino
 if (!move_uploaded_file($arquivo['tmp_name'], $caminhoFisico)) {
@@ -65,7 +71,6 @@ if (!move_uploaded_file($arquivo['tmp_name'], $caminhoFisico)) {
 // 3. GRAVAÇÃO NO BANCO DE DADOS (Tabela: produtos)
 // ------------------------------------------------------------------
 
-// CORREÇÃO 3: Ajuste da consulta SQL para a tabela 'produtos' atualizada
 $sql = "INSERT INTO produtos (
             nome_produto, 
             img_produto, 
@@ -75,7 +80,7 @@ $sql = "INSERT INTO produtos (
             autor_produto, 
             paginas_produto,
             editora_produto,
-            preco,
+            preco_produto,
             idioma_produto,
             lancamento_produto,
             tipo_produto,

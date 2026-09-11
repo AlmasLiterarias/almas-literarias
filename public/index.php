@@ -178,7 +178,7 @@ include_once(__DIR__ . '/../src/php/conexao.php');
                                             <div class="card col-md-3" style="width: 18rem;">
                                                 <a href="produto.php?id=<?php echo $prod['id_produto']; ?>">
                                                     <?php if (!empty($prod['img_produto'])): ?>
-                                                        <img src="../../<?php echo htmlspecialchars($prod['img_produto']); ?>" alt="<?php echo htmlspecialchars($prod['nome_produto']); ?>">
+                                                        <img src="../<?php echo htmlspecialchars($prod['img_produto']); ?>" alt="<?php echo htmlspecialchars($prod['nome_produto']); ?>">
                                                     <?php else: ?>
                                                         <div class="capa-placeholder">Sem Imagem</div>
                                                     <?php endif; ?>
@@ -206,7 +206,7 @@ include_once(__DIR__ . '/../src/php/conexao.php');
                                         <div class="card col-md-3" style="width: 18rem;">
                                             <a href="produto.php?id=<?php echo $prod['id_produto']; ?>">
                                                 <?php if (!empty($prod['img_produto'])): ?>
-                                                    <img src="../../<?php echo htmlspecialchars($prod['img_produto']); ?>" alt="<?php echo htmlspecialchars($prod['nome_produto']); ?>">
+                                                    <img src="../<?php echo htmlspecialchars($prod['img_produto']); ?>" alt="<?php echo htmlspecialchars($prod['nome_produto']); ?>">
                                                 <?php else: ?>
                                                     <div class="capa-placeholder">Sem Imagem</div>
                                                 <?php endif; ?>
@@ -268,7 +268,7 @@ include_once(__DIR__ . '/../src/php/conexao.php');
                                             <div class="card col-md-3" style="width: 18rem;">
                                                 <a href="produto.php?id=<?php echo $prod['id_produto']; ?>">
                                                     <?php if (!empty($prod['img_produto'])): ?>
-                                                        <img src="../../<?php echo htmlspecialchars($prod['img_produto']); ?>" alt="<?php echo htmlspecialchars($prod['nome_produto']); ?>">
+                                                        <img src="../<?php echo htmlspecialchars($prod['img_produto']); ?>" alt="<?php echo htmlspecialchars($prod['nome_produto']); ?>">
                                                     <?php else: ?>
                                                         <div class="capa-placeholder">Sem Imagem</div>
                                                     <?php endif; ?>
@@ -305,7 +305,7 @@ include_once(__DIR__ . '/../src/php/conexao.php');
                                         <div class="card col-md-3" style="width: 18rem;">
                                             <a href="produto.php?id=<?php echo $prod['id_produto']; ?>">
                                                 <?php if (!empty($prod['img_produto'])): ?>
-                                                    <img src="../../<?php echo htmlspecialchars($prod['img_produto']); ?>" alt="<?php echo htmlspecialchars($prod['nome_produto']); ?>">
+                                                    <img src="../<?php echo htmlspecialchars($prod['img_produto']); ?>" alt="<?php echo htmlspecialchars($prod['nome_produto']); ?>">
                                                 <?php else: ?>
                                                     <div class="capa-placeholder">Sem Imagem</div>
                                                 <?php endif; ?>
@@ -372,7 +372,7 @@ include_once(__DIR__ . '/../src/php/conexao.php');
                                             <div class="card col-md-3" style="width: 18rem;">
                                                 <a href="produto.php?id=<?php echo $prod['id_produto']; ?>">
                                                     <?php if (!empty($prod['img_produto'])): ?>
-                                                        <img src="../../<?php echo htmlspecialchars($prod['img_produto']); ?>" alt="<?php echo htmlspecialchars($prod['nome_produto']); ?>">
+                                                        <img src="../<?php echo htmlspecialchars($prod['img_produto']); ?>" alt="<?php echo htmlspecialchars($prod['nome_produto']); ?>">
                                                     <?php else: ?>
                                                         <div class="capa-placeholder">Sem Imagem</div>
                                                     <?php endif; ?>
@@ -409,7 +409,7 @@ include_once(__DIR__ . '/../src/php/conexao.php');
                                         <div class="card col-md-3" style="width: 18rem;">
                                             <a href="produto.php?id=<?php echo $prod['id_produto']; ?>">
                                                 <?php if (!empty($prod['img_produto'])): ?>
-                                                    <img src="../../<?php echo htmlspecialchars($prod['img_produto']); ?>" alt="<?php echo htmlspecialchars($prod['nome_produto']); ?>">
+                                                    <img src="../<?php echo htmlspecialchars($prod['img_produto']); ?>" alt="<?php echo htmlspecialchars($prod['nome_produto']); ?>">
                                                 <?php else: ?>
                                                     <div class="capa-placeholder">Sem Imagem</div>
                                                 <?php endif; ?>

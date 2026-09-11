@@ -75,6 +75,6 @@ if (!isset($_SESSION['id_usuario']) || $_SESSION['tipo_usuario'] !== 'admin') {
         </form>
     </main>    
     <?php //include('../php/footer.php') ?>
-    <script src="../assets/js/script.js" defer></script>
+    <script src="../src/asset/js/script.js"></script>
 </body>
 </html> 
