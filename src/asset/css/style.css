@@ -395,16 +395,7 @@ p {
 }
 
 .dark .title-line::after {
-<<<<<<< Updated upstream
   border-bottom: 1px solid rgba(216, 194, 0, 0.918);
-=======
-    border-color: rgb(192 149 26);
-}
-
-li.nav-item {
-  display: flex;
-  align-items: center;
->>>>>>> Stashed changes
 }
 
 .add-to-cart {
@@ -1046,16 +1037,12 @@ button.seta-mini {
   height: 30px;
   padding: 0;
   border-radius: 100%;
-<<<<<<< Updated upstream
   color: white;
   text-align: center;
   display: none; /*flex*/
   align-items: center;
   justify-content: center;
   border: none;
-=======
-  background-color: rgba(101, 0, 216, 0.918);
->>>>>>> Stashed changes
 }
 
 /* ==========================================================
@@ -1116,12 +1103,12 @@ button.seta-mini {
 }
 
 button {
-    background: #11079c;
+ background: #11079c;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 6px;
     cursor: pointer;
     transition: 0.3s;
     margin-top: 10px;
@@ -1190,6 +1177,21 @@ button {
   box-shadow: 0 0 0 3px rgba(212, 180, 85, 0.15);
 }
 
+.form_container .campo {
+    width: 100%;
+    height: 42px;
+    background-color: white;
+    color: var(--fg);
+    padding: 10px;
+    margin: 0px 0px 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(61, 58, 58, 0.4);
+    border-image: none;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+}
 
 /* --------------------------
    LINK ESQUECI A SENHA

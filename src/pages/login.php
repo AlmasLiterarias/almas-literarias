@@ -5,43 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../src/asset/css/style.css">
 </head>
 
 <body>
-        <button id="themeToggle" aria-pressed="false" aria-label="Ativar modo escuro">
-            <img id="theme-icon" src="./imagens/Jerlucitchau.png" alt="Modo escuro">
-        </button>
+    <button id="themeToggle" aria-pressed="false" aria-label="Ativar modo escuro">
+        <img id="theme-icon" src="./imagens/Jerlucitchau.png" alt="Modo escuro">
+    </button>
+
     <main class="form_container">
         <h1>Login</h1>
+
         <form action="../php/login.php" method="post">
             <div class="campo">
-                <label for="E-mail">E-mail </label>
+                <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" placeholder="seu@gmail.com" required>
             </div>
+            
             <div class="campo">
                 <label for="senha">Senha</label>
                 <input type="password" id="senha" name="senha" placeholder="********" required>
             </div>
-            <a href="">Esqueci minha senha</a>
+
+            <a href="#">Esqueci minha senha</a>
             <button type="submit">Entrar</button>
         </form>
-        </div>
-        </div>
-        <button type="submit">
-        <a href="./cadastro.php"> clique aqui</a>
-        </button>
+
+        <div class="cadastro-link">
+            <p>Ainda não tem conta? <a href="./cadastro.php">Clique aqui</a></p>
         </div>
     </main>
+
     <footer class="bg-dark text-white text-center py-3">
         <p class="mb-0">&copy; 2025 AlmasLiterárias - Todos os direitos reservados</p>
         <div>
             <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
             <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
             <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </footer>
 
-                
-  <script src="../js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

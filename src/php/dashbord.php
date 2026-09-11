@@ -7,7 +7,7 @@ session_start();
 
 #caso o usuario não esteja logado, redireciona para a página de login
 if (lisset($_SESSION['id_usuario'])) {
-    header("Location: ../pages/login.html");
+    header("Location: ../pages/login.php");
     exit();}
 
 #armagena o id do usuário logado na variável id
