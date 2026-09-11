@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Painel do Usuário </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../src/asset/css/style.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
                 <li><a href="#"> Perfil </a></li>
                 <li><a href="#"> Meus Preferidos </a></li>
                 <li><a href="#"> Minhas Compras </a></li>
-                <li><a href="../php/logout.php"></a> Sair </a></li>
+                <li><a href="..src/asset/php/logout.php"></a> Sair </a></li>
             </ul>
     </aside>
     </nav>
@@ -30,7 +30,7 @@
         </header>
         <section id="meu-perfil" class="content-section active">
             <h2> Meu Perfil </h2>
-            <form action="../php/dashbord.php" method="POST">
+            <form action="..src/asset/php/dashbord.php" method="POST">
 
                 <label for="nome"> Nome Completo </label>
                 <input type="text" id="nome" placeholder="Nome" required>

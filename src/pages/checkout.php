@@ -3,7 +3,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-include('../php/conexao.php');
+include('../assets/php/conexao.php');
 
 if (!isset($_SESSION['id_usuario'])) {
     header("Location: login.php?msg=Faça login para finalizar a compra");
@@ -53,13 +53,13 @@ while ($f = $resultado->fetch_assoc()) {
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body class="preload">
-    <?php include('../php/header.php'); ?>
+    <?php include('../assets/php/header.php'); ?>
 
     <main class="container">
         <h1>Finalizar Pedido</h1>
 
         <div class="checkout-wrapper">
-            <form action="../php/finalizar_compra.php" method="POST" class="checkout-form">
+            <form action="../assets/php/finalizar_compra.php" method="POST" class="checkout-form">
                 
                 <h3>Onde você quer receber seu pedido?</h3>
                 <br>

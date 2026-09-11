@@ -1,14 +1,14 @@
-<?php require_once('../php/busca.php'); ?>
+<?php require_once('../src/php/busca.php'); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busca de Livros</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
 </head>
 <body class="preload">
-    <?php include('../php/header.php'); ?>
+    <?php include('../public/index.php'); ?>
     
     <main class="container">
         <div class="resultado-busca-container">

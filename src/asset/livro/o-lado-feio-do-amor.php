@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almas Literárias - O Pequeno Príncipe</title>
+    <title>Almas Literárias - O Lado Feio do Amo - Volume único</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -50,13 +50,14 @@
     <main>
         <section id="paginaProduto">
             <div class="produto">
-                <img src="./imagens/capas-livros-pi/pequeno-principe/principe.jpg">
+                <img src="./imagens/capas-livros-pi/o-lado-feio-do-amor/lado feio.jpg">
                 <div class="miniaturas">
                     <div class="carrossel-miniaturas">
                         <button class="seta-mini" id="miniAnterior">❮</button>
                         <div class="miniaturas" id="miniaturas">
-                            <img class="thumb ativa" src="./imagens/capas-livros-pi/pequeno-principe/capa.jpg">
-                            <img class="thumb" src="./imagens/capas-livros-pi/pequeno-principe/verso.jpg">
+                            <img class="thumb ativa" src="./imagens/capas-livros-pi/o-lado-feio-do-amor/lado feio.jpg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/o-lado-feio-do-amor/livro 2.jpg">
+                            <img class="thumb" src="./imagens/capas-livros-pi/o-lado-feio-do-amor/verso.jpg">
                         </div>
                         <button class="seta-mini" id="miniProximo">❯</button>
                     </div>
@@ -64,9 +65,8 @@
             </div>
             <div class="infos-produto">
                 <div class="descricao">
-                    <h2>O Pequeno Príncipe
-                        Capa comum- edição em Português - Volume único</h2>
-                    <p>por: Antonie de Saint-Expéry</p>
+                    <h2>O Lado Feio do Amo - Volume único</h2>
+                    <p>por: Colleen Hoover</p>
                 </div>
                 <div class="avaliacao">
                     <span data-value="1">★</span>
@@ -76,23 +76,21 @@
                     <span data-value="5">★</span>
                 </div>
                 <div class="card-preco">
-                    <p class="preco"><strong>R$ R$ 39,68</strong></p>
+                    <p class="preco"><strong>R$ 39,80</strong></p>
                     <input type="number" placeholder="qtd" value="1">
                     <button class="add-to-cart">comprar</button>
                 </div>
                 <div class="sinopse">
-                    <p>"Quando a glória de um semideus encontra o amor de um príncipe. Grécia Antiga, o lar de
-                        deuses e reis. Pátroclo, um jovem e tímido príncipe, acaba exilado no reino de Fítia,
-                        após um acontecimento trágico. Em seu novo lar, longe de tudo o que conhecia, ele
-                        encontra Aquiles – filho do rei e da deusa Tétis. Aquiles é tudo o que Pátroclo não é:
-                        extraordinário em todos os sentidos, belo e com um futuro brilhante já delimitado por
-                        uma profecia. Mesmo com essas diferenças, eles desenvolvem uma conexão profunda e se
-                        tornam inseparáveis. Durante anos, passam a vida assim, lado a lado, crescendo juntos.
-                        E, quando se tornam jovens adultos, esse relacionamento muda para algo ainda mais
-                        intenso. A vida idílica que levam é interrompida quando surge a notícia de que Helena de
-                        Esparta foi raptada e que os homens gregos devem partir imediatamente para Tróia a fim
-                        de libertá‑la."</p>
+                    <p>"Tate Collins muda‑se para o apartamento do irmão, Corbin, para fazer mestrado em enfermagem.
+                        Ela
+                        não esperava conhecer o ‘lado feio do amor’. Miles Archer, piloto de avião, vizinho e melhor
+                        amigo do irmão, tem uma armadura emocional. Eles se sentem atraídos de forma intensa, mas
+                        ele
+                        impõe duas regras: sem perguntas sobre o passado, e sem esperanças para o futuro. Um
+                        relacionamento casual… Tate prometeu não se apaixonar, mas vai descobrir que nenhuma regra
+                        consegue conter o amor e o desejo."</p>
                 </div>
+            </div>
             </div>
             </div>
         </section>
