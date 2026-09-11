@@ -62,7 +62,7 @@ include_once(__DIR__ . '/../src/php/conexao.php');
                     <?php endif; ?>
 
                     <li class="nav-item">
-                        <div class="cart-icon nav-link" id="cartBtn" style="cursor: pointer;">
+                        <div class="cart-icon nav-link"  id="cartBtn" style="cursor: pointer;">
                             <span id="cartCount">0 🛒</span>
                         </div>
                     </li>
@@ -187,7 +187,7 @@ include_once(__DIR__ . '/../src/php/conexao.php');
                                                 <p><?php echo htmlspecialchars($prod['tipo_produto']); ?> - edição em <?php echo htmlspecialchars($prod['idioma_produto']); ?></p>
                                                 <div class="botao">
                                                     <p><strong>R$ <?php echo number_format($prod['preco_produto'], 2, ',', '.'); ?></strong></p>
-                                                    <button class="add-to-cart">Comprar</button>
+                                                    <button class="add-to-cart" data-id="<?php echo $prod['id_produto']; ?>">Comprar</button>
                                                 </div>
                                             </div>
                                         <?php endforeach; ?>
@@ -215,7 +215,7 @@ include_once(__DIR__ . '/../src/php/conexao.php');
                                             <p><?php echo htmlspecialchars($prod['tipo_produto']); ?> - edição em <?php echo htmlspecialchars($prod['idioma_produto']); ?></p>
                                             <div class="botao">
                                                 <p><strong>R$ <?php echo number_format($prod['preco_produto'], 2, ',', '.'); ?></strong></p>
-                                                <button class="add-to-cart">Comprar</button>
+                                                <button class="add-to-cart" data-id="<?php echo $prod['id_produto']; ?>">Comprar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -277,7 +277,7 @@ include_once(__DIR__ . '/../src/php/conexao.php');
                                                 <p><?php echo htmlspecialchars($prod['tipo_produto']); ?> - edição em <?php echo htmlspecialchars($prod['idioma_produto']); ?></p>
                                                 <div class="botao">
                                                     <p><strong>R$ <?php echo number_format($prod['preco_produto'], 2, ',', '.'); ?></strong></p>
-                                                    <button class="add-to-cart">Comprar</button>
+                                                    <button class="add-to-cart" data-id="<?php echo $prod['id_produto']; ?>">Comprar</button>
                                                 </div>
                                             </div>
                                         <?php endforeach; ?>
@@ -314,7 +314,7 @@ include_once(__DIR__ . '/../src/php/conexao.php');
                                             <p><?php echo htmlspecialchars($prod['tipo_produto']); ?> - edição em <?php echo htmlspecialchars($prod['idioma_produto']); ?></p>
                                             <div class="botao">
                                                 <p><strong>R$ <?php echo number_format($prod['preco_produto'], 2, ',', '.'); ?></strong></p>
-                                                <button class="add-to-cart">Comprar</button>
+                                                <button class="add-to-cart" data-id="<?php echo $prod['id_produto']; ?>">Comprar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -381,7 +381,7 @@ include_once(__DIR__ . '/../src/php/conexao.php');
                                                 <p><?php echo htmlspecialchars($prod['tipo_produto']); ?> - edição em <?php echo htmlspecialchars($prod['idioma_produto']); ?></p>
                                                 <div class="botao">
                                                     <p><strong>R$ <?php echo number_format($prod['preco_produto'], 2, ',', '.'); ?></strong></p>
-                                                    <button class="add-to-cart">Comprar</button>
+                                                    <button class="add-to-cart" data-id="<?php echo $prod['id_produto']; ?>">Comprar</button>
                                                 </div>
                                             </div>
                                         <?php endforeach; ?>
@@ -418,7 +418,7 @@ include_once(__DIR__ . '/../src/php/conexao.php');
                                             <p><?php echo htmlspecialchars($prod['tipo_produto']); ?> - edição em <?php echo htmlspecialchars($prod['idioma_produto']); ?></p>
                                             <div class="botao">
                                                 <p><strong>R$ <?php echo number_format($prod['preco_produto'], 2, ',', '.'); ?></strong></p>
-                                                <button class="add-to-cart">Comprar</button>
+                                                <button class="add-to-cart" data-id="<?php echo $prod['id_produto']; ?>">Comprar</button>
                                             </div>
                                         </div>
                                     </div>
