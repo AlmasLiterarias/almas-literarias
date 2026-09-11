@@ -39,27 +39,27 @@ $status_pedido = ($forma_pagamento === 'pix') ? 'pago' : 'pendente';
 $ids_limpos = array_map('intval', array_keys($_SESSION['carrinho']));
 $ids = implode(',', $ids_limpos);
 
-// 1. Busca os preços e o estoque atual de cada livro no banco
-$res = $conexao->query("SELECT id_livro, preco, estoque, titulo FROM livros WHERE id_livro IN ($ids)");
+// 1. Busca os preços e o estoque atual de cada produto no banco
+$res = $conexao->query("SELECT id_produto, preco_produto, estoque_produto, nome_produto FROM produtos WHERE id_produto IN ($ids)");
 
 $total_pedido = 0;
 $dados_livros = [];
 
 while ($f = $res->fetch_assoc()) {
-    $id_f = $f['id_livro'];
+    $id_f = $f['id_produto'];
     $qtd_desejada = $_SESSION['carrinho'][$id_f];
 
     // Validação de segurança: Verifica se tem estoque suficiente
-    if ($f['estoque'] < $qtd_desejada) {
-        header("Location: ../pages/checkout.php?erro=estoque_insuficiente&livro=" . urlencode($f['titulo']));
+    if ($f['estoque_produto'] < $qtd_desejada) {
+        header("Location: ../pages/checkout.php?erro=estoque_insuficiente&livro=" . urlencode($f['nome_produto']));
         exit();
     }
 
     $dados_livros[$id_f] = [
-        'preco' => $f['preco'],
-        'estoque_atual' => $f['estoque']
+        'preco' => $f['preco_produto'],
+        'estoque_atual' => $f['estoque_produto']
     ];
-    $total_pedido += $f['preco'] * $qtd_desejada;
+    $total_pedido += $f['preco_produto'] * $qtd_desejada;
 }
 
 // 2. Cria o Pedido
@@ -71,21 +71,31 @@ $id_pedido = $stmt_ped->insert_id;
 $stmt_ped->close();
 
 // 3. Insere os Itens do Pedido E Atualiza o Estoque
-$sql_item = "INSERT INTO itens_pedido (id_pedido, id_livro, quantidade, preco_unitario) VALUES (?, ?, ?, ?)";
+$sql_item = "INSERT INTO itens_pedido (id_pedido, id_produto, quantidade, preco_unitario) VALUES (?, ?, ?, ?)";
 $stmt_item = $conexao->prepare($sql_item);
 
-$sql_estoque = "UPDATE livros SET estoque = estoque - ? WHERE id_livro = ?";
+$sql_estoque = "UPDATE produtos SET estoque_produto = estoque_produto - ? WHERE id_produto = ?";
 $stmt_estoque = $conexao->prepare($sql_estoque);
 
-foreach ($_SESSION['carrinho'] as $id_livro => $qtd) {
-    $preco_u = $dados_livros[$id_livro]['preco'];
+// Criei as variáveis vazias aqui para vinculá-las ao bind_param antes do loop
+$id_prod_loop = 0;
+$qtd_loop = 0;
+$preco_u_loop = 0.0;
+
+// ALTERAÇÃO AQUI: O bind_param é feito apenas UMA vez antes de começar o loop
+$stmt_item->bind_param("iiid", $id_pedido, $id_prod_loop, $qtd_loop, $preco_u_loop);
+$stmt_estoque->bind_param("ii", $qtd_loop, $id_prod_loop);
+
+foreach ($_SESSION['carrinho'] as $id_produto => $qtd) {
+    // ALTERAÇÃO AQUI: Apenas atualizamos os valores das variáveis que já estão vinculadas
+    $id_prod_loop = $id_produto;
+    $qtd_loop = $qtd;
+    $preco_u_loop = $dados_livros[$id_produto]['preco'];
     
     // Insere o item na tabela itens_pedido
-    $stmt_item->bind_param("iiid", $id_pedido, $id_livro, $qtd, $preco_u);
     $stmt_item->execute();
 
-    // Desconta a quantidade comprada do estoque do livro
-    $stmt_estoque->bind_param("ii", $qtd, $id_livro);
+    // Desconta a quantidade comprada do estoque do produto
     $stmt_estoque->execute();
 }
 
