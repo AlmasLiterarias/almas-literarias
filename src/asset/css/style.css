@@ -1,0 +1,3024 @@
+/* ==========================================================
+   1. VARIÁVEIS (ROOT)
+========================================================== */
+
+:root {
+  --bg: #d7bbec;
+  --fg: rgb(86, 15, 134);
+  --card: #d7bbec;
+  ;
+}
+
+:root.dark {
+  --bg: #010326;
+  --fg: #d4b455;
+  --card: #072257;
+}
+
+/* ==========================================================
+   2. RESET
+========================================================== */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================================
+   3. ESTRUTURA GERAL
+========================================================== */
+
+main {
+  background: #d7bbec;
+  color: rgb(86, 15, 134);
+}
+
+.content {
+  padding: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ==========================================================
+   4. HEADER
+========================================================== */
+
+header {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--card);
+  box-shadow: 0 1px 4px rgba(185, 74, 74, 0.05);
+}
+
+/* ==========================================================
+   5. NAVBAR
+========================================================== */
+
+
+.navbar-custom {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-custom .navbar-toggler {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.navbar-toggler-icon {
+  /* display: inline-block; */
+  width: 1.5em;
+  height: 1.5em;
+  /* vertical-align: middle; */
+  background-image: var(--bs-navbar-toggler-icon-bg);
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* background-size: 100%; */
+}
+
+nav #navbarNav {
+  flex-direction: column;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s, border-color 0.3s;
+  height: 70px;
+  backdrop-filter: blur(05px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  padding: 15px;
+}
+
+li.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.light .nav-link {
+  color: rgb(86, 15, 134);
+
+}
+
+.light .navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: rgb(86, 15, 134);
+}
+
+.light .navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show:hover {
+  color: rgb(131, 56, 181);
+}
+
+.dark .nav-link {
+  color: #d4b455;
+}
+
+.dark .nav-link:hover {
+  color: #ffe79e;
+}
+
+.dark .navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #d4b455;
+}
+
+/* ==========================================================
+   6. LOGOS E TEMA
+========================================================== */
+
+a.logolight,
+a.logodark {
+  z-index: 9;
+}
+
+.light a.logolight {
+  display: none;
+}
+
+.dark a.logodark {
+  display: none;
+}
+
+.light img.logolight {
+  display: none;
+}
+
+.dark img.logodark {
+  display: none;
+}
+
+header .navbar a.logolight img,
+header .navbar a.logodark img {
+  width: 100px;
+}
+
+/* ==========================================================
+   7. BOTÃO DE TEMA
+========================================================== */
+
+
+button#themeToggle {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 10px solid #0000001f;
+  padding: 5px;
+  margin: 20px;
+}
+
+#themeToggle img {
+  /* border: 10px solid rgba(0, 0, 0, 0.03); */
+  background: transparent;
+  padding: 0.5rem 0.75rem;
+  border-radius: 100%;
+  cursor: pointer;
+  font-weight: 600;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 99;
+  height: 120px;
+  width: 120px;
+}
+
+:root.dark #themeToggle {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+#themeToggle[aria-pressed="true"] {
+  color: #fff;
+}
+
+#themeToggle img {
+  /* border: 20px solid rgba(0, 0, 0, 0.08); */
+  background: transparent;
+  padding: 0.5rem 0.75rem;
+  border-radius: 100%;
+  cursor: pointer;
+  font-weight: 600;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 99;
+}
+
+/* ==========================================================
+   8. BANNER
+========================================================== */
+
+#banner {
+  margin-top: 70px;
+}
+
+.desktop,
+#banner {
+  display: block;
+}
+
+.mobile,
+#bannerMobile {
+  display: none;
+}
+
+/* ==========================================================
+   9. CARROSSEL
+========================================================== */
+
+.dark div#carouselLight {
+  display: none;
+}
+
+.light div#carouselDark-Mobile {
+  display: none;
+}
+
+.dark div#carouselLight-Mobile {
+  display: none;
+}
+
+.light div#carouselDark {
+  display: none;
+}
+
+div#carouselLight .carousel-inner .carousel-item.align-items-center.justify-content-center img,
+div#carouselDark .carousel-inner .carousel-item.align-items-center.justify-content-center img {
+  height: 500px;
+}
+
+.carousel-inner .card a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.light .carousel-control-next-icon,
+.light .carousel-control-prev-icon {
+  background-repeat: no-repeat;
+  background-position: 60%;
+  background-size: 60%;
+  border-radius: 100%;
+  background-color: rgba(101, 0, 216, 0.918);
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.dark .carousel-control-next-icon,
+.dark .carousel-control-prev-icon {
+  background-repeat: no-repeat;
+  background-position: 60%;
+  background-size: 60%;
+  border-radius: 100%;
+  background-color: rgba(192, 149, 26);
+}
+
+.carousel-control-next {
+  right: -120px;
+}
+
+.carousel-control-prev {
+  left: -120px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+}
+
+/* ==========================================================
+   10. LIVROS
+========================================================== */
+
+#livros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(66, 85, 173, 0.06);
+  gap: 10px;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.card img {
+  height: 400px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: black;
+  padding: 0;
+  max-width: 260px;
+}
+
+.card h5 {
+  height: 50px;
+}
+
+.sinopse {
+  display: flex;
+  padding: 12px;
+  font-size: 20px;
+  width: 80%;
+}
+
+h5,
+p {
+  padding: 0 12px;
+}
+
+.botao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 0 12px;
+}
+
+.title-line {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.title-line::after {
+  position: relative;
+  bottom: 5px;
+  margin-left: 10px;
+  border-bottom: 1px solid rgb(84 28 159 / 97%);
+  flex-grow: 1;
+  content: "";
+}
+
+.dark .title-line::after {
+  border-bottom: 1px solid rgba(216, 194, 0, 0.918);
+}
+
+.add-to-cart {
+  background: #46427e;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.add-to-cart:hover {
+  background: #070b3d;
+  ;
+}
+
+/* ==========================================================
+   11. PRODUTOS
+========================================================== */
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.product {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+
+.add-to-cart {
+  background: #11079c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+
+}
+
+.add-to-cart:hover {
+  background: #04066c;
+  transform: scale(1.1);
+
+}
+
+.add-to-cart:active {
+  background-color: #4b59f1;
+  transform: scale(0.95);
+}
+
+
+section {
+  position: relative;
+}
+
+
+
+.carousel-inner .card a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* ==========================================================
+   12. CARRINHO
+========================================================== */
+
+.cart-icon {
+  cursor: pointer;
+  position: relative;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  padding: 25px;
+  display: block;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+#cartCount {
+  background: white;
+  color: #8b75c0;
+  border-radius: 25%;
+  padding: 0.1rem 0.5rem;
+  font-weight: bold;
+  display: flex;
+  min-width: 60px;
+  width: auto;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.add-to-cart {
+  background: #11079c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+
+}
+
+.add-to-cart:hover {
+  background: #04066c;
+  transform: scale(1.1);
+
+}
+
+.add-to-cart:active {
+  background-color: #4b59f1;
+  transform: scale(0.95);
+}
+
+/* Modal do carrinho */
+.cart-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+}
+
+.cart-modal.active {
+  display: flex;
+}
+
+.cart-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  color: #000;
+}
+
+.cart-content h2 {
+  margin-top: 0;
+}
+
+#cartItems {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+#cartItems li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: .5rem;
+}
+
+#cartCount {
+  background: white;
+  color: #8b75c0;
+  border-radius: 25%;
+  padding: 0.1rem 0.5rem;
+  font-weight: bold;
+  display: flex;
+  min-width: 60px;
+  width: auto;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-content h2 {
+  margin-top: 0;
+}
+
+#cartItems {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+
+
+.remove {
+  background: transparent;
+  border: none;
+  color: #070b3d;
+  ;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+
+
+#checkout {
+  background: #46427e;
+  color: white;
+}
+
+.infos-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: start;
+  margin: 0 200px 100px;
+}
+
+
+.remove {
+  background: transparent;
+  border: none;
+  color: #3742a0;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button#closeCart,
+button#checkout {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#closeCart {
+  background: #ddd;
+}
+
+#checkout {
+  background: #070b3d;
+  color: white;
+}
+
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff6699;
+  color: white;
+  padding: 1rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #070b3d;
+  color: white;
+  padding: 1rem;
+}
+
+.card-preco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+
+/* ==========================================================
+   13. CONTATO
+========================================================== */
+
+#contato {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  width: 100%;
+}
+
+#contato .jerluci img {
+  vertical-align: middle;
+  height: 300px;
+  position: absolute;
+  left: 70px;
+
+}
+
+.infos-contato {
+  display: flex;
+  flex-direction: column;
+  margin: 0 200px 100px;
+}
+
+
+#contato .infos-contato h2 {
+  font-size: 52px;
+  padding-bottom: 20px;
+  text-align: right;
+}
+
+#contato .infos-contato ul {
+  list-style: none;
+}
+
+#contato .formulario {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 10px;
+}
+
+#contato .formulario input {
+  height: 40px;
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+}
+
+#contato .formulario textarea {
+  height: 80px;
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  margin-top: 10px;
+}
+
+#contato .formulario .btn {
+  background: #11079c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+#contato .formulario .btn:hover {
+  transform: scale(1.1);
+
+}
+
+.formulario .btn:hover {
+  background: #04066c;
+  transform: scale(1.1);
+
+}
+
+#contato .img {
+  display: flex;
+  width: 100%;
+}
+
+#contato .img img {
+  width: 30px;
+}
+
+#contato .formulario input {
+  height: 40px;
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+}
+
+#contato .formulario textarea {
+  height: 80px;
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  margin-top: 10px;
+}
+
+#contato .formulario .btn {
+  background: #11079c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+#contato .formulario .btn:hover {
+  transform: scale(1.1);
+
+}
+
+.formulario .btn:hover {
+  background: #04066c;
+  transform: scale(1.1);
+
+}
+
+#contato .img {
+  display: flex;
+  width: 100%;
+}
+
+#contato .img img {
+  width: 30px;
+}
+
+
+/* ==========================================================
+   14. PÁGINA DO PRODUTO
+========================================================== */
+
+#paginaProduto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  justify-content: center;
+}
+
+main .produto {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#paginaProduto .produto {
+  margin: 0;
+}
+
+.infos-produto {
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0;
+  width: 900px;
+}
+
+.produto img {
+  padding: 15px;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  max-height: 900px;
+  border-radius: 85px;
+}
+
+.infos-produto .produto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main .produto .descricao {
+  width: 69%;
+  padding: 40px;
+}
+
+main .produto p {
+  text-align: justify;
+}
+
+.card-preco {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px 40px;
+}
+
+.card-preco input {
+  /* width: 60px; */
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+a.btn-voltar {
+    position: relative;
+    top: -20px;
+    background: #11079c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+/* ==========================================================
+   15. AVALIAÇÃO
+========================================================== */
+
+.avaliacao {
+  padding-left: 40px;
+}
+
+.avaliacao span {
+  font-size: 20px;
+  cursor: pointer;
+  color: gray;
+  padding: 0;
+  margin-left: 0;
+}
+
+.avaliacao span.ativo {
+  color: gold;
+}
+
+/* ==========================================================
+   16. LISTAS E ELEMENTOS GERAIS
+========================================================== */
+
+li {
+  text-align: end;
+}
+
+ul {
+  list-style: none;
+}
+
+ol,
+ul {
+  padding-left: 2rem;
+}
+
+hr {
+  margin: 100px 200px;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+.icones {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.icones img {
+  width: 100px;
+  padding: 0;
+}
+
+bg-dark {
+  width: 100%;
+}
+
+.icones {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.icones img {
+  width: 40px;
+  padding: 2px;
+}
+
+/* ==========================================================
+   17. MODO ESCURO
+========================================================== */
+
+.dark main {
+  background: #010326;
+  color: #d4b455;
+  position: relative;
+}
+
+/* ==========================================================
+   19. CARROSEL DE PRODUTOS
+========================================================== */
+
+.miniaturas {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  width: auto;
+  flex-direction: column;
+}
+
+img.thumb {
+  width: 80px;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 8px;
+  opacity: 0.7;
+  transition: 0.3s;
+  padding: 0;
+}
+
+img.thumb:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+img.thumb.ativa {
+  opacity: 1;
+  border: 2px solid #d4b455;
+}
+
+button.seta-mini {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  display: none;
+  /*flex*/
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+/* ==========================================================
+   22. LOGIN / CADASTRO
+========================================================== */
+
+.form_container .campo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0 0 10px;
+}
+
+.form_container .campo label {
+    margin: 0 0 3px;
+}
+
+.form_container .campo input,
+.form_container .campo select {
+    width: 100%;
+    height: 42px;
+    min-height: 42px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.form_container .campo input[type="date"] {
+    height: 42px;
+}
+
+.form_container .campo select {
+    height: 42px;
+}
+
+.form_container {
+  width: min(90%, 450px);
+  margin: 120px auto 50px;
+  padding: 30px;
+  background-color: var(--card);
+  color: var(--fg);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(135, 7, 185, 0.514);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.form_container input#termos {
+  width: 30px;
+  height: 20px;
+}
+
+.form_container form#formCadastro {
+  background: white;
+}
+
+.form_container h1 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: var(--fg);
+}
+
+button {
+  background: #11079c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+
+}
+
+/* --------------------------
+   CAMPOS
+-------------------------- */
+
+.form_container label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+  color: var(--fg);
+  font-weight: 600;
+}
+
+.form_container input {
+  width: 100%;
+  height: 42px;
+  padding: 10px;
+  margin: 0 0 10px;
+  border: 1px solid rgba(61, 58, 58, 0.4);
+  border-radius: 8px;
+  background-color: white;
+  color: var(--fg);
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.form_container form {
+  width: 100%;
+  max-width: 350px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.form_container input::placeholder {
+  color: var(--fg);
+  opacity: 0.55;
+}
+
+.form_container input:focus {
+  border-color: var(--fg);
+  box-shadow: 0 0 0 3px rgba(212, 180, 85, 0.15);
+}
+
+/* --------------------------
+   LINK ESQUECI A SENHA
+-------------------------- */
+
+.form_container .esqueci-senha {
+  display: block;
+
+  margin: 5px 0 15px;
+
+  color: var(--fg);
+  text-decoration: none;
+  font-size: 14px;
+
+  transition: opacity 0.3s ease;
+}
+
+.form_container .esqueci-senha:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+
+/* --------------------------
+   BOTÃO ENTRAR
+-------------------------- */
+
+.form_container .btn-cadastrar {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 12px 20px;
+  margin: 10px 0 0;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: var(--fg);
+  color: var(--bg);
+
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form_container .btn-cadastrar:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form_container .btn-cadastrar:active {
+  transform: scale(0.97);
+}
+
+
+/* --------------------------
+   ÁREA DE CADASTRO
+-------------------------- */
+
+.form_cadastro {
+  width: 100%;
+  max-width: 350px;
+
+  margin-top: 20px;
+
+  text-align: center;
+}
+
+.form_cadastro p {
+  margin-bottom: 10px;
+  padding: 0;
+
+  color: var(--fg);
+}
+
+.form_cadastro a {
+  color: var(--fg);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.form_cadastro a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------
+  MODO ESCURO
+-------------------------- */
+
+:root.dark .form_container {
+  box-shadow: 0 8px 30px rgba(252, 220, 40, 0.596);
+}
+
+:root.dark .form_container form {
+  box-shadow: 0 3px 15px rgba(255, 214, 30, 0.575);
+}
+
+:root.dark .form_container input {
+  border-color: rgba(235, 178, 8, 0.644);
+}
+
+a {
+  color: rgb(0, 162, 255);
+}
+
+/* =========================================
+   CADASTRO DE LIVROS
+========================================= */
+
+.container {
+  width: min(90%, 700px);
+  margin: 100px auto 50px;
+  padding: 35px;
+  background-color: var(--card);
+  color: var(--fg);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.container h1 {
+  text-align: center;
+  margin: 0 0 30px;
+  font-size: 32px;
+  color: var(--fg);
+}
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+
+#formLivro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+/* =========================================
+   CAMPOS
+========================================= */
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+
+/* =========================================
+   LABELS
+========================================= */
+
+.campo>label {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--fg);
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.campo input[type="text"],
+.campo input[type="number"],
+.campo input[type="file"],
+.campo textarea,
+.campo select {
+
+  width: 100%;
+  min-height: 42px;
+  padding: 9px 12px;
+  box-sizing: border-box;
+  border: 2px solid var(--fg);
+  border-radius: 8px;
+  background-color: white;
+  color: var(--fg);
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.campo textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+
+  color: var(--fg);
+  opacity: 0.6;
+}
+
+
+/* =========================================
+   FOCO NOS CAMPOS
+========================================= */
+
+.campo input:focus,
+.campo textarea:focus,
+.campo select:focus {
+
+  border-color: #8b5fc7;
+  box-shadow:
+    0 0 0 3px rgba(139, 95, 199, 0.20);
+}
+
+
+/* =========================================
+   ÁREA DOS GÊNEROS
+========================================= */
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 15px;
+  border: 2px solid var(--fg);
+  border-radius: 8px;
+  background-color: var(--bg);
+  box-sizing: border-box;
+}
+
+
+/* Labels dos gêneros */
+
+.checkbox-group label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+  font-size: 15px;
+  font-weight: normal;
+  color: var(--fg);
+  cursor: pointer;
+  justify-content: flex-start;
+}
+
+
+/* Checkbox */
+
+.checkbox-group input[type="checkbox"] {
+
+  width: 17px;
+  height: 17px;
+
+  margin: 0;
+
+  accent-color: #6b21a8;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   SELECT
+========================================= */
+
+.campo select {
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   BOTÃO
+========================================= */
+
+#formLivro button {
+
+  width: 100%;
+
+  padding: 12px 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background-color: #11079c;
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+
+#formLivro button:hover {
+
+  background-color: #04066c;
+
+  transform: scale(1.02);
+}
+
+
+#formLivro button:active {
+
+  background-color: #4b59f1;
+
+  transform: scale(0.98);
+}
+
+
+/* =========================================
+   MODO ESCURO
+========================================= */
+
+:root.dark .container {
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+
+:root.dark .campo input,
+:root.dark .campo textarea,
+:root.dark .campo select {
+
+  background-color: var(--bg);
+
+  color: var(--fg);
+}
+
+
+:root.dark .checkbox-group {
+
+  background-color: var(--bg);
+}
+
+
+:root.dark .campo input::placeholder,
+:root.dark .campo textarea::placeholder {
+
+  color: #d4b455;
+
+  opacity: 0.65;
+}
+
+/* ========================================
+   CADASTRO DE LIVROS
+======================================== */
+
+#formLivro {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--bg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Título */
+
+.container h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+/* Cada campo */
+
+#formLivro .campo {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+
+#formLivro .campo > label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--fg);
+}
+
+/* Inputs e textarea */
+
+#formLivro input[type="text"],
+#formLivro input[type="number"],
+#formLivro input[type="file"],
+#formLivro textarea,
+#formLivro select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: white;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Textarea */
+
+#formLivro textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Quando clicar no campo */
+
+#formLivro input:focus,
+#formLivro textarea:focus,
+#formLivro select:focus {
+    outline: none;
+    border-color: #b8860b;
+    box-shadow: 0 0 5px rgba(184, 134, 11, 0.3);
+}
+
+/* ========================================
+   CHECKBOX / GÊNEROS
+======================================== */
+
+#formLivro .checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#formLivro .checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: normal;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#formLivro .checkbox-group input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+#formLivro button[type="submit"]:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* =========================================
+   CATÁLOGO DE LIVROS
+========================================= */
+
+.header-catalogo {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.busca-livro {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.busca-livro form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Select da categoria */
+
+#categoria {
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    color: #333;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 50px !important;
+}
+
+/* Campo de pesquisa */
+
+.busca-livro input[type="text"] {
+    flex: 1;
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+    margin-top: 50px !important;
+}
+
+/* Botão da busca */
+
+.busca-livro button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    background-color: #b8860b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.busca-livro button:hover {
+    transform: scale(1.05);
+}
+
+.busca-livro button img {
+    width: 22px;
+    height: 22px;
+}
+
+/* =========================================
+   LIVROS
+========================================= */
+
+#livros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+/* Link do card */
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Card */
+
+#livros .card {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: var(--bg);
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+#livros .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================================
+   CAPA
+========================================= */
+
+.card-capa {
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-capa img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #777;
+    font-size: 16px;
+}
+
+/* =========================================
+   INFORMAÇÕES DO LIVRO
+========================================= */
+
+#livros .card-header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#livros .card-header h2 {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.3;
+    color: var(--fg);
+}
+
+/* =========================================
+   CLASSIFICAÇÃO
+========================================= */
+
+.badge-classificacao {
+    min-width: 35px;
+    height: 35px;
+    padding: 0 6px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b8860b;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.classificacao {
+    text-align: center;
+}
+
+/* =========================================
+   NENHUM LIVRO ENCONTRADO
+========================================= */
+
+.nadaEncontrado {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: var(--fg);
+}
+
+/* =========================================
+   BOTÃO CADASTRAR LIVRO
+========================================= */
+
+a.botao {
+    background: #11079c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+    width: 15%;
+    height: 45px;
+  }
+
+.botao:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* =========================================
+   CONTATO
+========================================= */
+
+#contato {
+    margin-top: 50px;
+}
+
+/* ==========================================================
+   CORREÇÃO - PÁGINA INTERNA DO LIVRO
+========================================================== */
+
+.pagina-livro {
+    width: 95%;
+    max-width: 1200px;
+    margin: 100px auto 50px;
+    padding: 30px;
+    background-color: var(--bg);
+    color: var(--fg);
+    box-sizing: border-box;
+}
+
+.detalhes-livro-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+/* ==========================================================
+   CAPA + MINIATURAS
+========================================================== */
+
+.livro-capa-area {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+/* IMAGEM GRANDE */
+
+.livro-capa-grande {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.livro-capa-grande img {
+    width: auto;
+    max-width: 430px;
+    max-height: 650px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+    padding: 0;
+    display: block;
+}
+
+
+/* ==========================================================
+   MINIATURAS - DESKTOP
+========================================================== */
+
+.livro-capa-area .miniaturas {
+    order: -1;
+
+    width: 70px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 10px;
+
+    padding: 0;
+    margin: 0;
+
+    flex-shrink: 0;
+}
+
+
+.livro-capa-area .miniaturas img.thumb {
+    width: 100px;
+    height: 150px;
+
+    object-fit: cover;
+
+    padding: 0;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    opacity: 0.7;
+
+    transition: 0.3s;
+}
+
+
+.livro-capa-area .miniaturas img.thumb:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
+.livro-capa-area .miniaturas img.thumb-ativa {
+    opacity: 1;
+    border: 2px solid #d4b455;
+}
+
+
+/* ==========================================================
+   INFORMAÇÕES
+========================================================== */
+
+.livro-info-completa {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.livro-titulo-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.livro-titulo-header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+}
+
+.genero-tag {
+    margin: 10px 0 20px;
+    padding: 0;
+}
+
+.bloco-preco-compra {
+    margin: 20px 0;
+}
+
+.preco-livro {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.controle-quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.btn-qtd {
+    width: 35px;
+    height: 35px;
+}
+
+.input-qtd {
+    width: 50px;
+    text-align: center;
+}
+
+.sinopse-bloco {
+    margin-top: 25px;
+}
+
+.sinopse-bloco p {
+    padding: 0;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.ficha-tecnica {
+    margin-top: 25px;
+}
+
+.ficha-tecnica p {
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+/* ==========================================================
+   Favoritos
+========================================================== */
+
+.btn-favoritar {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.btn-favoritar .icone-coracao {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.btn-favoritar:hover .icone-coracao {
+    transform: scale(1.15);
+}
+
+/* Coração "preenchido" quando já é favorito */
+.btn-favoritar.curtido .icone-coracao {
+    filter: drop-shadow(0 0 0 red) sepia(1) saturate(6) hue-rotate(-50deg);
+}
+
+/* ==========================================================
+   20. FOOTER
+========================================================== */
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* ==========================================================
+   PAINEL DO USUÁRIO
+========================================================== */
+
+.painel-usuario {
+    min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--fg);
+}
+
+/* Título superior */
+.painel-usuario > .container {
+    width: 100%;
+    margin: 0;
+    padding: 25px;
+    border-radius: 0;
+    background-color: var(--fg);
+    color: var(--bg);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Menu lateral */
+.painel-usuario .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 230px;
+    height: 100vh;
+    padding-top: 90px;
+    background-color: var(--fg);
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+}
+
+/* Lista do menu */
+.painel-usuario .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Itens do menu */
+.painel-usuario .sidebar li {
+    text-align: left;
+    padding: 0;
+    margin: 5px 0;
+}
+
+/* Links */
+.painel-usuario .sidebar a {
+    display: block;
+    padding: 16px 25px;
+    color: var(--bg);
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.painel-usuario .sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding-left: 35px;
+}
+
+/* Área principal */
+.painel-usuario .content {
+    margin-left: 230px;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+/* Cabeçalho do perfil */
+.painel-usuario .painel {
+    background-color: var(--card);
+    padding: 25px 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    width: 50%;
+}
+
+/* "Meu Perfil" */
+.painel-usuario .painelUsuario {
+    color: #b8860b;
+    font-size: 18px;
+}
+
+/* Olá */
+.painel-usuario .painel h1 {
+    margin-top: 10px;
+    padding: 0;
+    color: var(--fg);
+    font-size: 30px;
+}
+
+/* Caixa do perfil */
+.painel-usuario .content-section {
+width: 100%;
+    max-width: 800px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    margin: auto;
+    transform: translateY(100px);
+}
+
+/* Título Meu Perfil */
+.painel-usuario .content-section h2 {
+    margin: 0 0 30px;
+    padding: 0 0 10px;
+    color: var(--fg);
+    border-bottom: 2px solid #b8860b;
+}
+
+/* Formulário */
+.painel-usuario .content-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Labels */
+.painel-usuario .content-section label {
+    color: var(--fg);
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Campos */
+.painel-usuario .content-section input {
+    width: 100%;
+    height: 45px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    color: #333;
+    font-size: 15px;
+}
+
+/* Foco nos campos */
+.painel-usuario .content-section input:focus {
+    outline: none;
+    border-color: #b8860b;
+    box-shadow: 0 0 5px rgba(184, 134, 11, 0.3);
+}
+
+/* Botão */
+.painel-usuario .content-section button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #11079c;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.painel-usuario .content-section button:hover {
+    background-color: #04066c;
+    transform: translateY(-2px);
+    
+}
+/* ==========================================================
+   PAINEL DO USUÁRIO
+========================================================== */
+
+.painel-usuario {
+    min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--fg);
+}
+
+/* Título superior */
+.painel-usuario > .container {
+    width: 100%;
+    margin: 0;
+    padding: 25px;
+    border-radius: 0;
+    background-color: var(--fg);
+    color: var(--bg);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Menu lateral */
+.painel-usuario .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 230px;
+    height: 100vh;
+    padding-top: 90px;
+    background-color: var(--fg);
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+}
+
+/* Lista do menu */
+.painel-usuario .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Itens do menu */
+.painel-usuario .sidebar li {
+    text-align: left;
+    padding: 0;
+    margin: 5px 0;
+}
+
+/* Links */
+.painel-usuario .sidebar a {
+    display: block;
+    padding: 16px 25px;
+    color: var(--bg);
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.painel-usuario .sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding-left: 35px;
+}
+
+/* Área principal */
+.painel-usuario .content {
+    margin-left: 230px;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+/* Cabeçalho do perfil */
+.painel-usuario .painel {
+    background-color: var(--card);
+    padding: 25px 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    width: 150px;
+    margin-top: 147px;
+}
+
+/* "Meu Perfil" */
+.painel-usuario .painelUsuario {
+    color: #b8860b;
+    font-size: 18px;
+}
+
+/* Olá */
+.painel-usuario .painel h1 {
+    margin-top: 10px;
+    padding: 0;
+    color: var(--fg);
+    font-size: 30px;
+}
+
+/* Caixa do perfil */
+.painel-usuario .content-section {
+    width: 100%;
+    max-width: 800px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Título Meu Perfil */
+.painel-usuario .content-section h2 {
+    margin: 0 0 30px;
+    padding: 0 0 10px;
+    color: var(--fg);
+    border-bottom: 2px solid #b8860b;
+}
+
+/* Formulário */
+.painel-usuario .content-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Labels */
+.painel-usuario .content-section label {
+    color: var(--fg);
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Campos */
+.painel-usuario .content-section input {
+    width: 100%;
+    height: 45px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    color: #333;
+    font-size: 15px;
+}
+
+/* Foco nos campos */
+.painel-usuario .content-section input:focus {
+    outline: none;
+    border-color: #b8860b;
+    box-shadow: 0 0 5px rgba(184, 134, 11, 0.3);
+}
+
+/* Botão */
+.painel-usuario .content-section button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #11079c;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.painel-usuario .content-section button:hover {
+    background-color: #04066c;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================
+   PAINEL - MODO ESCURO
+========================================================== */
+
+:root.dark .painel-usuario .content-section {
+    background-color: var(--card);
+}
+
+:root.dark .painel-usuario .content-section input {
+    background-color: #010326;
+    color: #d4b455;
+    border-color: #d4b455;
+}
+
+:root.dark .painel-usuario .content-section input::placeholder {
+    color: #d4b455;
+}
+
+
+/* ==========================================================
+   21. RESPONSIVIDADE
+========================================================== */
+
+@media screen and (max-width: 768px) {
+  .navbar-custom .navbar-toggler {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  /*html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+    }*/
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop,
+  #banner {
+    display: none;
+  }
+
+  .mobile,
+  #bannerMobile {
+    display: block;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  /*img {
+    width: 100%;
+    padding: 15px;
+  }*/
+
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    background-color: #ffff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+
+  .card img {
+    width: 100%;
+    /*height: 350px;*/
+    object-fit: cover;
+  }
+
+  /*Página interna*/
+
+  #paginaProduto .produto {
+    margin: 0;
+  }
+
+  .infos-produto .produto {
+    margin-top: 0;
+  }
+
+  .produto img {
+    padding: 20px;
+    height: auto;
+    border-radius: 60px;
+    padding-bottom: 20px;
+  }
+
+  .miniaturas {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  img.thumb {
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 8px;
+    opacity: 0.7;
+    transition: 0.3s;
+    padding: 0;
+  }
+
+  .infos-produto .produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infos-produto .produto p {
+    text-align: center;
+  }
+
+  .sinopse {
+    width: 100%;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 18px;
+  }
+
+  .card-preco {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin: 0;
+  }
+
+  #formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(86, 15, 134);
+    padding: 20px;
+    border-right: none;
+    border-bottom: 5px solid #ffffff;
+    border: 5px solid #000;
+    margin: 0;
+  }
+
+  #formulario input,
+  select {
+    width: 100%;
+  }
+
+  #lista {
+    width: 100%;
+    height: auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    word-break: break-all;
+    margin: 0;
+    gap: 10px;
+  }
+
+  div#salvo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: #ffff;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+  }
+
+
+  #contato {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    width: 100%;
+  }
+
+  #contato .jerluci img {
+    vertical-align: middle;
+    height: 300px;
+    position: absolute;
+    left: 70px;
+
+  }
+
+  .infos-contato {
+    display: flex;
+    flex-direction: column;
+    margin: 0 200px 100px;
+  }
+
+  #contato .infos-contato h2 {
+    font-size: 52px;
+    padding-bottom: 20px;
+    text-align: right;
+  }
+
+  #contato .infos-contato ul {
+    list-style: none;
+  }
+
+  #contato .formulario {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 10px;
+  }
+
+  hr {
+    margin: 100px 200px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  #themeToggle img {
+    height: 120px;
+    width: 100px;
+    right: 0px;
+  }
+
+  .cart-icon {
+    cursor: pointer;
+    position: relative;
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav {
+    align-items: flex-end;
+  }
+
+
+  main .produto .descricao {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  header .navbar a.logolight img,
+  header .navbar a.logodark img {
+    width: 90px;
+    height: auto;
+  }
+
+  #formulario input,
+  select {
+    width: 100%;
+  }
+
+  #contato .jerluci img {
+    vertical-align: middle;
+    /* height: 300px;*/
+    position: unset;
+    left: unset;
+    height: 150px;
+  }
+
+  #contato .infos-contato h2 {
+    font-size: 52px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .contatoInfos {
+    display: flex;
+    justify-content: center;
+  }
+
+  .infos-contato {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+  }
+
+  #contato .formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    align-items: center;
+  }
+
+div#navbarNav {
+    height: 55% !important;
+}
+
+  hr {
+    margin: 2px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  #contato {
+    width: 100%;
+  }
+
+  #contato .infos-contato ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-icon {
+    cursor: pointer;
+    position: relative;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  /*.dark .carousel-control-next-icon, .dark .carousel-control-prev-icon {
+  background-repeat: no-repeat;
+  background-position: 60%;
+  background-size: 60%;
+  border-radius: 100%;
+  background-color: rgba(192, 149, 26);
+}*/
+
+  .dark .carousel-control-next {
+    right: 40px;
+    width: 45px;
+  }
+
+  .dark .carousel-control-prev {
+    left: 40px;
+    width: 45px;
+  }
+
+  .carousel-control-next {
+    right: 40px;
+    width: 45px;
+    gap: 50px;
+  }
+
+  .carousel-control-prev {
+    left: 40px;
+    width: 45px;
+  }
+
+
+  /* --------------------------
+ PÁGINA INTERNA
+-------------------------- */
+
+  .infos-produto {
+    margin: 10px 0;
+  }
+
+  #navbarNav {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 160px;
+    z-index: 1000;
+  }
+
+  #navbarNav .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #navbarNav .nav-item {
+    width: 100%;
+    text-align: left;
+  }
+
+  #navbarNav .nav-link {
+    display: block !important;
+    padding: 8px 15px !important;
+    position: relative !important;
+    left: 100px !important;
+    margin-top: 20px !important;
+    height: 10px;
+  }
+
+  /* Botão hambúrguer */
+  .navbar-toggler {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1100;
+  }
+
+}
+
+/* --------------------------
+  LOGIN 
+-------------------------- */
+
+@media screen and (max-width: 768px) {
+
+  .form_container {
+    width: calc(100% - 30px);
+    max-width: 450px;
+
+    margin: 100px auto 30px;
+    padding: 20px 15px;
+
+    border-radius: 12px;
+  }
+
+  .form_container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .form_container form {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .form_container input {
+    height: 44px;
+    font-size: 16px;
+  }
+
+  .form_container .btn-cadastrar {
+    min-height: 44px;
+  }
+
+  .form_cadastro {
+    width: 100%;
+  }
+
+  /* ==========================================================
+   MOBILE — PAINEL DO USUÁRIO
+========================================================== */
+
+.painel-usuario .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+        border-radius: 0 0 15px 15px; /* Arredonda apenas os cantos inferiores */
+    }
+
+    /* 2. Remove o recuo esquerdo da área principal */
+    .painel-usuario .content {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    /* 3. Remove a margem exagerada de 400px e ajusta o formulário */
+    .painel-usuario .content-section {
+        padding: 20px;
+        width: 80%;
+        box-sizing: border-box;
+    }
+
+    /* 4. Ajusta o card de perfil se houver */
+    .painel-usuario .painel {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* 1. Empilha a imagem e as informações verticalmente */
+    .detalhes-livro-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* 2. Ajusta o tamanho da imagem para não cobrir a tela nem ultrapassar os limites */
+    .detalhes-livro-wrapper img,
+    .livro-capa { /* Ajuste conforme a classe da sua tag <img> */
+        width: 100%;
+        max-width: 280px; /* Evita que a capa fique gigante */
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    /* 3. Garante que a coluna de informações ocupe a largura completa */
+    .livro-info-completa {
+        width: 100%;
+        position: relative;
+        z-index: 2; /* Faz o texto ficar à frente caso haja overlapping */
+    }
+.livro-capa-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* 2. Deixa a imagem principal grande e centralizada */
+    .livro-capa-grande {
+        width: 100%;
+        max-width: 320px; /* Define o tamanho máximo da capa no mobile */
+        display: flex;
+        justify-content: center;
+    }
+
+    .livro-capa-grande img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        border-radius: 10px;
+    }
+
+/* 3. Força as miniaturas a ficarem centralizadas embaixo da imagem */
+.miniaturas {
+    order: 2 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 15px auto 0 auto !important; /* Remove o margin-left: auto */
+    gap: 10px;
+    padding: 0;
+}
+
+    /* 4. Ajusta o tamanho e formato das miniaturas */
+    .miniaturas img,
+    .miniaturas .thumb {
+        width: 55px !important;
+        height: 75px !important; /* Altura proporcional para capas de livros */
+        object-fit: cover;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+}
