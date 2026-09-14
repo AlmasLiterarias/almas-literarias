@@ -59,15 +59,18 @@ if (isset($_SESSION['id_usuario'])) {
                     <label>Resposta da Pergunta:</label>
                     <input type="text" name="resposta_seguranca" required placeholder="Sua resposta secreta">
                 </div>
-                <div class="campo">
-                    <label for="senha1">Senha</label>
+                <div class="senha">
+                    <label for="senha">Senha </label>
                     <input type="password" name="senha" id="senha1" placeholder="Insira sua senha">
                 </div>
+                <!-- <div class="termos">
+                    <input type="checkbox" name="" id="termos">
+                    <a href="./Termos aceite.html"> Estou ciente e CONCORDO com os termos </a>
+                </div> -->
                 <button type="submit">Cadastrar</button>
             </div>
         </form>
     </main>
-
     <footer class="bg-dark text-white text-center py-3">
         <p class="mb-0">&copy; 2025 AlmasLiterárias - Todos os direitos reservados</p>
         <div>

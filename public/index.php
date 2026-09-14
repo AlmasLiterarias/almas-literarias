@@ -1,4 +1,3 @@
-
 <?php
 // Inicia a sessão para permitir a verificação das credenciais no cabeçalho
 session_start();
@@ -14,7 +13,6 @@ include_once(__DIR__ . '/../src/php/conexao.php');
     <title>Almas Literárias</title>
     <link rel="stylesheet" href="../src/asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="../src/asset/css/style.css">
-
 </head>
 
 <body>

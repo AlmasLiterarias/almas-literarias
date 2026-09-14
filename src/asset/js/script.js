@@ -119,12 +119,12 @@ addToCartBtns.forEach(button => {
       const precoTexto = card.querySelector('.botao p strong, .card-preco .preco strong').innerText;
       const precoNumerico = parseFloat(precoTexto.replace('R$', '').replace(',', '.').trim());
 
-      const itemExistente = cart.find(item => item.name === nomeLivro);
+      const itemExistente = cart.find(item => item.id === button.dataset.id);
 
       if (itemExistente) {
         itemExistente.quantity += quantidadeDesejada;
       } else {
-        cart.push({ name: nomeLivro, price: precoNumerico, quantity: quantidadeDesejada });
+        cart.push({ id: button.dataset.id, name: nomeLivro, price: precoNumerico, quantity: quantidadeDesejada });
       }
 
       updateCart();
@@ -211,10 +211,23 @@ if (checkoutBtn) {
       alert('Seu carrinho está vazio!');
       return;
     }
-    alert('Compra finalizada com sucesso! 🛍️');
-    cart = [];
-    updateCart();
-    cartModal.classList.remove('active');
+
+    fetch('../src/php/salvar_carrinho.php', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(cart)
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.sucesso) {
+          window.location.href = '../src/pages/checkout.php';
+        } else {
+          alert('Não foi possível ir para o checkout. Tente novamente.');
+        }
+      })
+      .catch(() => {
+        alert('Erro ao conectar com o servidor.');
+      });
   });
 }
 

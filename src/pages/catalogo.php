@@ -11,11 +11,68 @@ include('../php/conexao.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Livros</title>
-    <link rel="stylesheet" href="/almas-literarias/src/asset/css/bootstrap.min.css">
-<link rel="stylesheet" href="/almas-literarias/src/asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
 </head>
 <body class="preload">
-    <?php include($_SERVER['DOCUMENT_ROOT'] . '/almas-literarias/src/php/header.php'); ?>
+    <header>
+        <nav class="navbar navbar-custom navbar-expand-lg navbar-dark px-3">
+            <a class="logolight" href="../public/index.php">
+                <img src="../src/asset/imagens/logoescurodourada.png" alt="logo do site">
+            </a>
+            <a class="logodark" href="../public/index.php">
+                <img src="../src/asset/imagens/logoclaro.png" alt="logo do site">
+            </a>
+            
+            <div class="container-xl d-lg-none">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="../public/index.php">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lancamentos">Lançamentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destaques">Destaques</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+
+                    <?php if (isset($_SESSION['id_usuario'])): ?> 
+                        <?php if (isset($_SESSION['tipo_usuario']) && $_SESSION['tipo_usuario'] === 'admin'): ?>
+                            <li class="nav-item">
+                                <a href="../src/pages/cadastroLivro.php" class="nav-link <?php echo (isset($pagina_atual) && $pagina_atual === 'cadastroLivro.php') ? 'ativo' : ''; ?>">Cadastrar Livro</a>
+                            </li>
+                        <?php endif; ?>
+
+                        <li class="nav-item">
+                            <a href="../src/pages/painel.php" class="nav-link <?php echo (isset($pagina_atual) && $pagina_atual === 'painel.php') ? 'ativo' : ''; ?>">Meu Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../src/php/logout.php">Sair</a>
+                        </li>
+                    <?php else: ?>
+                        <li class="nav-item">        
+                            <a href="../src/pages/login.php" class="nav-link <?php echo (isset($pagina_atual) && $pagina_atual === 'login.php') ? 'ativo' : ''; ?>">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../src/pages/cadastro.php" class="nav-link <?php echo (isset($pagina_atual) && $pagina_atual === 'cadastro.php') ? 'ativo' : ''; ?>">Cadastrar-se</a>
+                        </li>
+                    <?php endif; ?>
+
+                    <li class="nav-item">
+                        <div class="cart-icon nav-link" id="cartBtn" style="cursor: pointer;">
+                            <span id="cartCount">0 🛒</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <button id="themeToggle" aria-pressed="false" aria-label="Ativar modo escuro">
+            <img id="theme-icon" src="../src/asset/imagens/Jerlucitchau.png" alt="Modo escuro">
+        </button>
+    </header>
     <main class="container">
         <header class="header-catalogo">
             <div class="busca-livro">
@@ -82,7 +139,7 @@ include('../php/conexao.php');
             <a href="cadastroLivro.php" class="botao">+ Cadastrar Novo Livro</a>
         <?php endif; ?>
     </main>    
-    <hr>
+    <<hr>
     
     <div class="cart-modal" id="cartModal">
         <div class="cart-content">

@@ -26,7 +26,7 @@ if (session_status() === PHP_SESSION_NONE) {
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" placeholder="seu@gmail.com" required>
             </div>
-
+            
             <div class="campo">
                 <label for="senha">Senha</label>
                 <input type="password" id="senha" name="senha" placeholder="********" required>

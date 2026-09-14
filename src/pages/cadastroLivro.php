@@ -14,17 +14,18 @@ if (!isset($_SESSION['id_usuario']) || $_SESSION['tipo_usuario'] !== 'admin') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Livro - Almas Literárias</title>
-<link rel="stylesheet" href="/almas-literarias/src/asset/css/bootstrap.min.css">
-<link rel="stylesheet" href="/almas-literarias/src/asset/css/style.css">
+    <link rel="stylesheet" href="../../src/asset/css/style.css">
 </head>
-<script src="/almas-literarias/src/asset/js/bootstrap.bundle.min.js"></script>
-<script src="/almas-literarias/src/asset/js/script.js"></script>
 <body class="preload">
     <!-- Inclui o cabeçalho dinâmico único -->
-    <?php include($_SERVER['DOCUMENT_ROOT'] . '/almas-literarias/src/php/header.php'); ?>
+    <?php // include('../php/header.php'); ?>
     <main class="container">
         <h1>Cadastro de livros</h1>
         <form action="../php/cadastrarLivro.php" method="post" enctype="multipart/form-data" id="formLivro">
+            <div class="campo">
+                <label for="imagem">Capa do Livro</label>
+                <input type="file" id="imagem" name="imagem" accept="image/png, image/jpeg, image/webp" required>
+            </div>
             <div class="campo">
                 <label for="titulo">Título do Livro</label>
                 <input type="text" id="titulo" name="titulo" placeholder="Título">

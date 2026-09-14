@@ -1,4 +1,4 @@
-<?php require_once('../php/busca.php'); ?>
+<?php require_once('../src/php/busca.php'); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

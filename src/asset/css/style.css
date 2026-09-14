@@ -14,7 +14,6 @@
   --fg: #d4b455;
   --card: #072257;
 }
-
 /* ==========================================================
    2. RESET
 ========================================================== */
@@ -24,7 +23,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
+  justify-content: center;
 }
 
 body {
@@ -142,15 +141,14 @@ li.nav-item {
 }
 
 .dark .nav-link {
-  color: #d4b455;
-}
+    color: #d4b455;
+  }
 
-.dark .nav-link:hover {
+.dark .nav-link:hover{ 
   color: #ffe79e;
 }
 
-.dark .navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
+.dark .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: #d4b455;
 }
 
@@ -171,11 +169,11 @@ a.logodark {
   display: none;
 }
 
-.light img.logolight {
+.light img.logolight{
   display: none;
 }
 
-.dark img.logodark {
+.dark img.logodark{
   display: none;
 }
 
@@ -285,8 +283,7 @@ div#carouselDark .carousel-inner .carousel-item.align-items-center.justify-conte
   justify-content: center;
 }
 
-.light .carousel-control-next-icon,
-.light .carousel-control-prev-icon {
+.light .carousel-control-next-icon, .light .carousel-control-prev-icon {
   background-repeat: no-repeat;
   background-position: 60%;
   background-size: 60%;
@@ -297,8 +294,7 @@ div#carouselDark .carousel-inner .carousel-item.align-items-center.justify-conte
   height: 2rem;
 }
 
-.dark .carousel-control-next-icon,
-.dark .carousel-control-prev-icon {
+.dark .carousel-control-next-icon, .dark .carousel-control-prev-icon {
   background-repeat: no-repeat;
   background-position: 60%;
   background-size: 60%;
@@ -876,7 +872,7 @@ main .produto {
   margin: 0;
 }
 
-.infos-produto {
+.infos-produto{
   display: flex;
   flex-direction: column;
   margin: 80px 0;
@@ -1124,7 +1120,7 @@ button.seta-mini {
   height: 20px;
 }
 
-.form_container form#formCadastro {
+.form_container form#formCadastro{
   background: white;
 }
 
@@ -1134,22 +1130,39 @@ button.seta-mini {
   color: var(--fg);
 }
 
+.form_container form {
+  width: 100%;
+  max-width: 350px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition:background-color 0.3s ease,box-shadow 0.3s ease;
+}
+
 button {
-  background: #11079c;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  font-size: 14px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-  margin-top: 10px;
+ background: #11079c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
 
 }
 
 /* --------------------------
    CAMPOS
 -------------------------- */
+
+.form_container .campo {
+  width: 100%;
+}
 
 .form_container label {
   display: block;
@@ -1163,23 +1176,36 @@ button {
 .form_container input {
   width: 100%;
   height: 42px;
+
   padding: 10px;
   margin: 0 0 10px;
-  border: 1px solid rgba(61, 58, 58, 0.4);
+
+  border: 1px solid rgba(128, 128, 128, 0.4);
   border-radius: 8px;
-  background-color: white;
+
+  background-color: var(--card);
   color: var(--fg);
+
   outline: none;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
-.form_container form {
-  width: 100%;
-  max-width: 350px;
-  padding: 25px;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+.form_container input {
+    width: 100%;
+    height: 42px;
+    padding: 10px;
+    margin: 0 0 10px;
+    border: 1px solid rgba(61, 58, 58, 0.4);
+    border-radius: 8px;
+    background-color: white;
+    color: var(--fg);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .form_container input::placeholder {
@@ -1190,6 +1216,22 @@ button {
 .form_container input:focus {
   border-color: var(--fg);
   box-shadow: 0 0 0 3px rgba(212, 180, 85, 0.15);
+}
+
+.form_container .campo {
+    width: 100%;
+    height: 42px;
+    background-color: white;
+    color: var(--fg);
+    padding: 10px;
+    margin: 0px 0px 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(61, 58, 58, 0.4);
+    border-image: none;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
 
 /* --------------------------
@@ -2649,7 +2691,7 @@ width: 100%;
     gap: 10px;
   }
 
-  div#salvo {
+ div#salvo {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -2663,52 +2705,52 @@ width: 100%;
   }
 
 
-  #contato {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 50px auto;
-    width: 100%;
-  }
+#contato {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  width: 100%;
+}
 
-  #contato .jerluci img {
-    vertical-align: middle;
-    height: 300px;
-    position: absolute;
-    left: 70px;
+#contato .jerluci img {
+  vertical-align: middle;
+  height: 300px;
+  position: absolute;
+  left: 70px;
 
-  }
+}
 
-  .infos-contato {
-    display: flex;
-    flex-direction: column;
-    margin: 0 200px 100px;
-  }
+.infos-contato {
+  display: flex;
+  flex-direction: column;
+  margin: 0 200px 100px;
+}
 
-  #contato .infos-contato h2 {
-    font-size: 52px;
-    padding-bottom: 20px;
-    text-align: right;
-  }
+#contato .infos-contato h2 {
+  font-size: 52px;
+  padding-bottom: 20px;
+  text-align: right;
+}
 
-  #contato .infos-contato ul {
-    list-style: none;
-  }
+#contato .infos-contato ul {
+  list-style: none;
+}
 
-  #contato .formulario {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    gap: 10px;
-  }
+#contato .formulario {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 10px;
+}
 
-  hr {
-    margin: 100px 200px;
-    height: 3px;
-    background-color: #ffffff;
-  }
+hr {
+  margin: 100px 200px;
+  height: 3px;
+  background-color: #ffffff;
+}
 
-  #themeToggle img {
+#themeToggle img {
     height: 120px;
     width: 100px;
     right: 0px;
@@ -2785,7 +2827,7 @@ div#navbarNav {
     background-color: #ffffff;
   }
 
-  #contato {
+    #contato {
     width: 100%;
   }
 
@@ -2922,103 +2964,4 @@ div#navbarNav {
   .form_cadastro {
     width: 100%;
   }
-
-  /* ==========================================================
-   MOBILE — PAINEL DO USUÁRIO
-========================================================== */
-
-.painel-usuario .sidebar {
-        position: relative;
-        width: 100%;
-        height: auto;
-        padding-top: 0;
-        border-radius: 0 0 15px 15px; /* Arredonda apenas os cantos inferiores */
-    }
-
-    /* 2. Remove o recuo esquerdo da área principal */
-    .painel-usuario .content {
-        margin-left: 0;
-        padding: 15px;
-    }
-
-    /* 3. Remove a margem exagerada de 400px e ajusta o formulário */
-    .painel-usuario .content-section {
-        padding: 20px;
-        width: 80%;
-        box-sizing: border-box;
-    }
-
-    /* 4. Ajusta o card de perfil se houver */
-    .painel-usuario .painel {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    /* 1. Empilha a imagem e as informações verticalmente */
-    .detalhes-livro-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    /* 2. Ajusta o tamanho da imagem para não cobrir a tela nem ultrapassar os limites */
-    .detalhes-livro-wrapper img,
-    .livro-capa { /* Ajuste conforme a classe da sua tag <img> */
-        width: 100%;
-        max-width: 280px; /* Evita que a capa fique gigante */
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    /* 3. Garante que a coluna de informações ocupe a largura completa */
-    .livro-info-completa {
-        width: 100%;
-        position: relative;
-        z-index: 2; /* Faz o texto ficar à frente caso haja overlapping */
-    }
-.livro-capa-area {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    /* 2. Deixa a imagem principal grande e centralizada */
-    .livro-capa-grande {
-        width: 100%;
-        max-width: 320px; /* Define o tamanho máximo da capa no mobile */
-        display: flex;
-        justify-content: center;
-    }
-
-    .livro-capa-grande img {
-        width: 100%;
-        height: auto;
-        max-height: none;
-        border-radius: 10px;
-    }
-
-/* 3. Força as miniaturas a ficarem centralizadas embaixo da imagem */
-.miniaturas {
-    order: 2 !important;
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: center !important;
-    width: 100% !important;
-    margin: 15px auto 0 auto !important; /* Remove o margin-left: auto */
-    gap: 10px;
-    padding: 0;
-}
-
-    /* 4. Ajusta o tamanho e formato das miniaturas */
-    .miniaturas img,
-    .miniaturas .thumb {
-        width: 55px !important;
-        height: 75px !important; /* Altura proporcional para capas de livros */
-        object-fit: cover;
-        border-radius: 6px;
-        cursor: pointer;
-    }
 }
